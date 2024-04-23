@@ -2,37 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: x-large !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footercol {
+  background-color: rgb(136, 11, 6);
+  color: antiquewhite;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textBlack {
+  color: black !important;
+}
+
+svg {
+  color: rgb(148, 14, 14);
+  margin-right: 3px;
+}
+
+.cover-image {
+  object-fit: cover;
+}
+
+li a {
+  color: rgb(218, 132, 19);
+}
+
+.buttonColor {
+  border-color: orange !important;
+  color: orange !important;
+  background-color: brown !important;
+}
+
+.navBackground {
+  background: linear-gradient(to left, #ffaf00, rgb(235, 213, 172), #8e001c) !important;
+}
+
+.dropdown-item:hover {
+  background-image: linear-gradient(to left, #8e001c, rgb(235, 213, 172), #ffaf00) !important;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  z-index: 1;
 }
