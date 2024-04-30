@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 
 function BasicExample() {
   return (
@@ -18,7 +19,7 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="#home">
+            <Nav.Link as={Link} to="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -31,7 +32,7 @@ function BasicExample() {
               </svg>
               Home
             </Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link as={Link} to="/Tickets">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -89,7 +90,7 @@ function BasicExample() {
             </Nav.Link>
 
             <NavDropdown title="Stagione 23/24" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item as={Link} to="/Rosa">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

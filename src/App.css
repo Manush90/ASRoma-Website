@@ -33,7 +33,7 @@ a {
 }
 
 svg {
-  color: rgb(148, 14, 14);
+  color: rgb(0, 0, 0);
   margin-right: 3px;
 }
 
@@ -52,15 +52,27 @@ li a {
 }
 
 .navBackground {
-  background: linear-gradient(to left, #ffaf00, rgb(235, 213, 172), #8e001c) !important;
+  background: linear-gradient(to left, #ffaf00, #8e001c) !important;
 }
 
 .dropdown-item:hover {
-  background-image: linear-gradient(to left, #8e001c, rgb(235, 213, 172), #ffaf00) !important;
+  background-image: linear-gradient(to left, #8e001c, #ffaf00) !important;
 }
 
 .card:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
   z-index: 1;
+}
+a.nav-link:hover {
+  transform: scale(1.4);
+  transition: transform 0.5s ease;
+  z-index: 1;
+  border-radius: 15px;
+  color: white !important;
+  background-color: #ffaf00;
+}
+
+a.nav-link {
+  color: white !important;
 }

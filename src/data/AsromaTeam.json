@@ -1,0 +1,51 @@
+[
+  {
+    "Nome": "Mile Svilar",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/6b09f81f0f11-svilar-copia.png",
+    "Presenze": 35,
+    "Goal": 0,
+    "Numero": 99,
+    "Ruolo": "Portiere"
+  },
+  {
+    "Nome": "Gianluca Mancini",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/32fd4b3b9ea2-mancini-copia.png",
+    "Presenze": 33,
+    "Goal": 5,
+    "Numero": 23,
+    "Ruolo": "Difensore"
+  },
+  {
+    "Nome": "Evan Ndicka",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/0722504e9111-ndicka-copia.png",
+    "Presenze": 24,
+    "Goal": 1,
+    "Numero": 5,
+    "Ruolo": "Difensore"
+  },
+  {
+    "Nome": "Angelino",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/f1a0b4d75482-angelino.png",
+    "Presenze": 13,
+    "Goal": 0,
+    "Numero": 69,
+    "Ruolo": "Difensore"
+  },
+
+  {
+    "Nome": "Lorenzo Pellegrini",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/f7945170b758-pellegrini-copia.png",
+    "Presenze": 33,
+    "Goal": 9,
+    "Numero": 7,
+    "Ruolo": "Centrocampista"
+  },
+  {
+    "Nome": "Romelu Lukaku",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/c431a82a89dd-5be9a56f0985-lukaku-copia.png",
+    "Presenze": 33,
+    "Goal": 19,
+    "Numero": 90,
+    "Ruolo": "Attaccante"
+  }
+]
