@@ -9,7 +9,7 @@ function Carosello() {
   };
 
   return (
-    <div className="container  mt-2">
+    <div className="container  mt-3">
       <div className="row justify-content-center ">
         <div className="col-12 col-md-12">
           <Carousel className="shadow" activeIndex={index} onSelect={handleSelect}>
@@ -18,7 +18,7 @@ function Carosello() {
                 <img
                   src="https://www.ilromanista.eu/writable/uploads/GettyImages-1483671976.jpg"
                   alt="Logo"
-                  className="d-block w-100 cover-image"
+                  className="d-block w-100 cover-image "
                   height="500px"
                 />
               </div>

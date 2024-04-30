@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -65,14 +65,17 @@ li a {
   z-index: 1;
 }
 a.nav-link:hover {
-  transform: scale(1.4);
-  transition: transform 0.5s ease;
   z-index: 1;
   border-radius: 15px;
   color: white !important;
   background-color: #ffaf00;
+  border: 2px solid white;
 }
 
 a.nav-link {
   color: white !important;
+}
+
+.border-radius {
+  border-radius: 10px !important; /* Imposta il raggio del bordo a 10px, ma puoi regolare questo valore secondo le tue esigenze */
 }

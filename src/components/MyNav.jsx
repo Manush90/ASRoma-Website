@@ -8,7 +8,7 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="navBackground p-0 border">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/">
           <img
             alt="logo"
             height="70px"
