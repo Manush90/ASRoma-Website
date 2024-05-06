@@ -85,7 +85,7 @@ function Rosa({ giocatori }) {
           <Col key={index}>
             <Card>
               <Card.Img variant="top" src={giocatore.img} />
-              <Card.Body>
+              <Card.Body className="backgroundcolor">
                 <Card.Title className="text-center">{giocatore.Nome}</Card.Title>
                 <Card.Text className="text-center">
                   Presenze: {giocatore.Presenze}

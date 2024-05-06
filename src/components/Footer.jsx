@@ -58,8 +58,9 @@ function Footer() {
         </Row>
         <Row className="mt-3">
           <Col className="mb-0 h6">
-            <p className="text-center">
+            <p className="text-center mb-1">
               © {new Date().getFullYear()} AsromaFans.it Tutti i diritti riservati.
+              <br></br> Created By Manuel Dell'Oste
             </p>
           </Col>
         </Row>

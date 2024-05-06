@@ -79,3 +79,8 @@ a.nav-link {
 .border-radius {
   border-radius: 10px !important; /* Imposta il raggio del bordo a 10px, ma puoi regolare questo valore secondo le tue esigenze */
 }
+
+.card-img-top {
+  background-color: #a52515;
+  background-image: url(https://w0.peakpx.com/wallpaper/829/330/HD-wallpaper-a-s-roma-3d-sport-emblem-roma-as-roma-logo-soccer-thumbnail.jpg);
+}

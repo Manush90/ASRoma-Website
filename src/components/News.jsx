@@ -50,7 +50,7 @@ function BasicExample() {
             <Card.Body className="d-flex flex-column justify-content-center shadow">
               <Card.Title className="display-6 text-center">Europa League</Card.Title>
               <Card.Text className="h5 text-center">
-                Guarda Live i sorteggi del prossimo turno di Uefa europa league !
+                Guarda Live i sorteggi <br></br>del prossimo turno di Uefa europa league !
               </Card.Text>
               <Button className="mx-auto buttonColor shadow" variant="primary">
                 Guarda ora
