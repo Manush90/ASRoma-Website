@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 function BasicExample() {
   return (
     <Container className="mt-3">
-      <h2> Ultime News </h2>
+      <h2> ASR Info </h2>
       <Row className="mb-3">
         <Col sm={6} md={4} lg={3}>
           <Card className="mb-3">

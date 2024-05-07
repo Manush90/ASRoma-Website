@@ -7,6 +7,7 @@ import Footer from "./components/Footer.jsx";
 import Tickets from "./components/Tickets.jsx";
 import Rosa from "./components/Rosa.jsx";
 import AsromaTeam from "./data/AsromaTeam.json";
+import SerieA from "./components/SerieA.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tickets/" element={<Tickets />} />
           <Route path="/Rosa/" element={<Rosa giocatori={AsromaTeam} />} />
+          <Route path="/SerieA/" element={<SerieA />} />
         </Routes>
         <Footer />
       </div>

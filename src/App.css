@@ -75,3 +75,8 @@ a.nav-link:hover {
 a.nav-link {
   color: white !important;
 }
+
+.static.card:hover {
+  transform: none;
+  transition: none;
+}

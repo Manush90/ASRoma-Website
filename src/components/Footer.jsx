@@ -22,6 +22,11 @@ function Footer() {
               <li>
                 <a href="/contact">Contatti</a>
               </li>
+              <li>
+                <li>
+                  <img alt="logo" height="100px" src="/images/bbb.png" />
+                </li>
+              </li>
             </ul>
           </Col>
           <Col className="mt-3 h6 text-center" md={4}>
