@@ -7,6 +7,25 @@
     "Numero": 99,
     "Ruolo": "Portiere"
   },
+
+  {
+    "Nome": "Rui Patricio",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/143a6bf28f85-rui-patricio-copia.png",
+    "Presenze": 3,
+    "Goal": 0,
+    "Numero": 1,
+    "Ruolo": "Portiere"
+  },
+
+  {
+    "Nome": "Pietro Boer",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/0af2fb1ad511-boer-copia.png",
+    "Presenze": 0,
+    "Goal": 0,
+    "Numero": 63,
+    "Ruolo": "Portiere"
+  },
+
   {
     "Nome": "Gianluca Mancini",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/32fd4b3b9ea2-mancini-copia.png",
@@ -29,6 +48,33 @@
     "Presenze": 13,
     "Goal": 0,
     "Numero": 69,
+    "Ruolo": "Difensore"
+  },
+
+  {
+    "Nome": "Dean Huijsen",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/aef74ac7c597-huijsen-dean.png",
+    "Presenze": 5,
+    "Goal": 1,
+    "Numero": 3,
+    "Ruolo": "Difensore"
+  },
+
+  {
+    "Nome": "Rasmus Kristiansen",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/de6a5092c0b5-kristensen-copia.png",
+    "Presenze": 13,
+    "Goal": 1,
+    "Numero": 43,
+    "Ruolo": "Difensore"
+  },
+
+  {
+    "Nome": "Chris Smalling",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/0505b8664565-smalling-copia.png",
+    "Presenze": 8,
+    "Goal": 0,
+    "Numero": 6,
     "Ruolo": "Difensore"
   },
 

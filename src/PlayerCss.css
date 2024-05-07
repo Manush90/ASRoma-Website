@@ -1,0 +1,27 @@
+.player-card .border-radius {
+  border-radius: 10px !important; /* Imposta il raggio del bordo a 10px, ma puoi regolare questo valore secondo le tue esigenze */
+}
+
+.player-card .card-img-top {
+  background-color: #a52515;
+  background-image: url(https://w0.peakpx.com/wallpaper/829/330/HD-wallpaper-a-s-roma-3d-sport-emblem-roma-as-roma-logo-soccer-thumbnail.jpg);
+}
+
+.player-card .text-center.card-title.h5 {
+  background-color: #d47f0c;
+  border: 2px solid #700100;
+  font-size: 3.25rem;
+}
+
+.player-card .card-body {
+  --bs-card-spacer-x: 0rem;
+  --bs-card-spacer-y: 0rem;
+  line-height: 1.1;
+}
+
+.player-card .playerbutton {
+  background-color: #910010 !important;
+  border: 2px solid black !important;
+  border-radius: 20px !important;
+  font-size: x-large !important;
+}
