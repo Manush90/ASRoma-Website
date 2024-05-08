@@ -24,7 +24,7 @@ function Footer() {
               </li>
               <li>
                 <li>
-                  <img alt="logo" height="100px" src="/images/bbb.png" />
+                  <img alt="logo" height="100px" src="/images/logosito.png" />
                 </li>
               </li>
             </ul>

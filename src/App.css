@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -17,10 +17,12 @@ body {
   font-weight: 400 !important;
   font-style: normal !important;
   font-size: x-large !important;
+  background-color: rgb(48, 48, 48) !important;
+  color: whitesmoke !important;
 }
 
 .footercol {
-  background-color: rgb(136, 11, 6);
+  background-color: rgb(141, 39, 39);
   color: antiquewhite;
 }
 
@@ -51,19 +53,31 @@ li a {
   background-color: brown !important;
 }
 
+.buttonColor:hover {
+  background-color: orange !important;
+  color: brown !important;
+  border-color: brown !important;
+}
 .navBackground {
-  background: linear-gradient(to left, #ffaf00, #8e001c) !important;
+  background: linear-gradient(to left, #8e001c, #ffaf00) !important;
 }
 
 .dropdown-item:hover {
   background-image: linear-gradient(to left, #8e001c, #ffaf00) !important;
 }
-
-.card:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
-  z-index: 1;
+@media (min-width: 576px) {
+  .card:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
 }
+
+.nohover:hover {
+  transform: none;
+  transition: none;
+}
+
 a.nav-link:hover {
   z-index: 1;
   border-radius: 15px;
@@ -99,11 +113,35 @@ a.nav-link {
 }
 
 .roma-row {
-  background-color: red;
-  /* Altri stili opzionali per migliorare l'aspetto visivo */
-  color: white; /* Testo bianco per migliorare la leggibilità sullo sfondo rosso */
+  background-color: red !important;
+  color: rgb(211, 111, 18) !important;
 }
 
-.sfondo {
-  background-image: url(https://cdn.corrieredellosport.it/images/2023/10/01/214052733-f59df395-f2dd-451e-95cf-0786446005ed.jpg);
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #ffaf00 !important;
+  background-color: #9f1815 !important;
+  border-color: black;
+}
+
+button#uncontrolled-tab-example-tab-marcatori.nav-link {
+  color: brown;
+}
+
+button#uncontrolled-tab-example-tab-incontri.nav-link {
+  color: brown;
+}
+button#uncontrolled-tab-example-tab-classifica.nav-link {
+  color: brown;
+}
+
+.cover_all {
+  position: absolute;
+  inset: 0;
+}
+
+.coverimg {
+  object-fit: cover;
+  height: 140px;
+  width: 100%;
 }

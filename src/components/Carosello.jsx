@@ -1,65 +1,74 @@
-import { useState } from "react";
-import { Carousel } from "react-bootstrap";
+import React from "react";
+import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
 
-function Carosello() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
-  return (
-    <div className="container  mt-3">
-      <div className="row justify-content-center ">
-        <div className="col-12 col-md-12">
-          <Carousel className="shadow" activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-              <div className="carousel-image">
+class MyComponent extends React.Component {
+  render() {
+    return (
+      <Container className="mt-4">
+        <Row>
+          <Col xs={12} sm={12} md={12} lg={8}>
+            <Carousel className="border rounded">
+              {/* Inserisci le tue immagini qui */}
+              <Carousel.Item className="carousel-image">
                 <img
-                  src="https://www.ilromanista.eu/writable/uploads/GettyImages-1483671976.jpg"
-                  alt="Logo"
-                  className="d-block w-100 cover-image "
-                  height="500px"
+                  className="d-block w-100 rounded"
+                  src="https://hips.hearstapps.com/hmg-prod/images/the-roma-starting-line-up-during-the-match-roma-v-milan-at-news-photo-1695122646.jpg?crop=1xw:0.84334xh;center,top"
+                  alt="First slide"
                 />
-              </div>
-              <Carousel.Caption>
-                <h1>Sold Out !</h1>
-                <p>Tutto esaurito per l'ottavo di Europa League</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="carousel-image ">
+                <a href="./Highlights.jsx" className="cover_all">
+                  <Carousel.Caption>
+                    <h3>Titolo dell'immagine 1</h3>
+                  </Carousel.Caption>
+                </a>
+              </Carousel.Item>
+              <Carousel.Item className="carousel-image">
                 <img
-                  src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/03/07/3924669-79726148-2560-1440.jpg"
-                  alt="Logo"
-                  className="d-block w-100 cover-image"
-                  height="500px"
+                  className="d-block w-100 rounded"
+                  onClick={this.scrollToBottom}
+                  src="https://assets.goal.com/images/v3/blt8c4b9a6edaf8e773/Dybala_Roma_Bayer_Leverkusen_2024.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+                  alt="Second slide"
                 />
-              </div>
-              <Carousel.Caption>
-                <h1>Super Lukaku !</h1>
-                <p>Guarda i due assist procurati a Dybala Nel match contro il Verona</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="carousel-image ">
+                <Carousel.Caption>
+                  <h3>Guarda gli Highlights di Roma-Leverkusen</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item className="carousel-image">
                 <img
-                  src="https://static.sky.it/editorialimages/fc8ad75a799d05f63a38fdaf19098efbe7f1dad5/skysport/it/calcio/serie-a/partite/2022/giornata-18/roma-fiorentina/highlights/content/10_dybala_esultanza_roma_ipa.jpg"
-                  alt="Logo"
-                  className="d-block w-100 cover-image"
-                  height="500px"
+                  className="d-block w-100 rounded"
+                  src="https://i.eurosport.com/2024/05/05/3962694-80448588-2560-1440.jpg"
+                  alt="Third slide"
                 />
-              </div>
-              <Carousel.Caption>
-                <h1>La Joya!</h1>
-                <p>Tripletta dell'argentino e 15° gol in campionato</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </div>
-      </div>
-    </div>
-  );
+                <Carousel.Caption>
+                  <h3>Titolo dell'immagine 3</h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </Col>
+          <Col xs={12} sm={12} md={12} lg={4}>
+            <Card className="mt-3 nohover">
+              <Card.Body className="text-white bg-dark border rounded">
+                <Card.Title className="text-center">
+                  <i class="bi bi-newspaper"></i>Ultime Notizie
+                </Card.Title>
+                <ul>
+                  {/* Lista delle notizie */}
+                  <li>Obiettivo Rimonta a Leverkusen</li>
+                  <hr></hr>
+                  <li>Probabili Formazioni di Giovedì</li>
+                  <hr></hr>
+                  <li>Ranking UEFA Aggiornato </li>
+                  <hr></hr>
+                  <li>Indagati Pallotta e Friedkin</li>
+                  <hr></hr>
+                  <li>Indagati Pallotta e Friedkin</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
 
-export default Carosello;
+export default MyComponent;

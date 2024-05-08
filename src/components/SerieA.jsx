@@ -8,6 +8,11 @@ const Classifica = () => {
     const nuovaClassifica = {};
 
     partite.forEach((partita) => {
+      partita.Giornata = parseInt(partita.Giornata);
+      partita.Incontro = parseInt(partita.Incontro);
+      partita.GolCasa = parseInt(partita.GolCasa ? partita.GolCasa : 0);
+      partita.GolTrasferta = parseInt(partita.GolTrasferta ? partita.GolTrasferta : 0);
+
       nuovaClassifica[partita.SquadraCasa] = nuovaClassifica[partita.SquadraCasa] || {
         vinte: 0,
         pareggiate: 0,
@@ -70,7 +75,7 @@ const Classifica = () => {
         <Col md={{ span: 10, offset: 1 }}>
           <div>
             <h2 className="text-center mt-2 text-white">Classifica Serie A</h2>
-            <Table striped bordered hover responsive>
+            <Table striped bordered hover responsive rounded>
               <thead>
                 <tr className="text-center">
                   <th>Posizione</th>

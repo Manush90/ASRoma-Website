@@ -26,3 +26,8 @@
   font-size: x-large !important;
   color: #e09d3f !important;
 }
+
+.player-card .playerbutton:hover {
+  background-color: #e09d3f !important; /* Cambia il colore al passaggio del mouse */
+  color: #910010 !important; /* Cambia anche il colore del testo se necessario */
+}

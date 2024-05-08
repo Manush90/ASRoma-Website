@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Tickets() {
   return (
@@ -11,10 +12,7 @@ function Tickets() {
         <Row xs={1} sm={2} md={2} lg={2} className="p-2 g-4">
           <Col>
             <Card className="player-card static">
-              <Card.Img
-                variant="top"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Stadio_Olimpico_2024.jpg/1200px-Stadio_Olimpico_2024.jpg"
-              />
+              <Card.Img variant="top" src="/ticket1.jpg" />
               <Card.Body>
                 <Card.Title className="text-center">AS Roma - Genoa</Card.Title>
                 <Card.Text className="text-center ">
@@ -24,9 +22,12 @@ function Tickets() {
                   <br />
                   ore 20:45
                   <hr></hr>
-                  <Button variant="danger" className=" mt-0 mb-3 playerbutton">
-                    Compra ora
-                  </Button>
+                  <Link
+                    to="https://www.asroma.com/it/biglietti/"
+                    className="mt-0 mb-3 playerbutton btn btn-primary"
+                  >
+                    Compra Ora
+                  </Link>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -34,10 +35,7 @@ function Tickets() {
 
           <Col>
             <Card className="player-card static">
-              <Card.Img
-                variant="top"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Stadio_Olimpico_2024.jpg/1200px-Stadio_Olimpico_2024.jpg"
-              />
+              <Card.Img variant="top" src="/ticket2.jpg" />
               <Card.Body>
                 <Card.Title className="text-center">AS Roma - Empoli</Card.Title>
                 <Card.Text className="text-center ">
@@ -47,9 +45,12 @@ function Tickets() {
                   <br />
                   ore 20:45
                   <hr></hr>
-                  <Button variant="danger" className=" mt-0 mb-3 playerbutton">
-                    Compra ora
-                  </Button>
+                  <Link
+                    to="https://www.asroma.com/it/biglietti/"
+                    className="mt-0 mb-3 playerbutton btn btn-primary"
+                  >
+                    Compra Ora
+                  </Link>
                 </Card.Text>
               </Card.Body>
             </Card>

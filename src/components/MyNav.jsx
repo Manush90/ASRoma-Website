@@ -9,8 +9,8 @@ function BasicExample() {
     <Navbar expand="xl" className="navBackground p-0 border">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <img alt="logo" height="70px" src="/images/aaa.png" />
-          aesseromani.it
+          <img className="me-2" alt="logo" height="70px" src="/images/logosito.png" />
+          aesseromanisti.it
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -28,6 +28,19 @@ function BasicExample() {
               </svg>
               Home
             </Nav.Link>
+            <Nav.Link as={Link} to="/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-paper"
+                viewBox="0 0 16 16"
+              >
+                <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267zm13 .566v5.734l-4.778-2.867zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083zM1 13.116V7.383l4.778 2.867L1 13.117Z" />
+              </svg>
+              News
+            </Nav.Link>
             <Nav.Link as={Link} to="/Tickets">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +55,7 @@ function BasicExample() {
               </svg>
               Ticket
             </Nav.Link>
-            <Nav.Link href="/SerieA">
+            <Nav.Link href="/TabsSerieA">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -71,18 +84,19 @@ function BasicExample() {
               </svg>
               Europa League
             </Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link href="/Highlights">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="20"
+                height="20"
                 fill="currentColor"
-                class="bi bi-trophy"
+                class="bi bi-play-circle"
                 viewBox="0 0 16 16"
               >
-                <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z" />
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
               </svg>
-              Coppa Italia
+              Highlights
             </Nav.Link>
 
             <NavDropdown title=" Stagione 23/24" id="basic-nav-dropdown">
@@ -148,11 +162,11 @@ function BasicExample() {
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand href="#home">
-          <img
-            alt="logo"
+          {/* <img
+            alt="logoadidas"
             height="50px"
             src="https://styles.redditmedia.com/t5_8pga9f/styles/profileIcon_psl3envaej8b1.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=31fbda56413eb14b8f7415fa9425ea7e7800df7b"
-          />
+          /> */}
         </Navbar.Brand>
         <svg
           xmlns="http://www.w3.org/2000/svg"

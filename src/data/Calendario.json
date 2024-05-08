@@ -4,8 +4,8 @@
     "Incontro": 1,
     "SquadraCasa": "Roma",
     "SquadraTrasferta": "Lazio",
-    "GolCasa": "",
-    "GolTrasferta": ""
+    "GolCasa": "3",
+    "GolTrasferta": "0"
   },
   {
     "Giornata": 1,
@@ -76,15 +76,15 @@
     "Incontro": 10,
     "SquadraCasa": "Salernitana",
     "SquadraTrasferta": "Sassuolo",
-    "GolCasa": "",
-    "GolTrasferta": ""
+    "GolCasa": "5",
+    "GolTrasferta": "1"
   },
   {
     "Giornata": 2,
     "Incontro": 1,
     "SquadraCasa": "Salernitana",
     "SquadraTrasferta": "Sassuolo",
-    "GolCasa": "",
-    "GolTrasferta": ""
+    "GolCasa": "2",
+    "GolTrasferta": "3"
   }
 ]
