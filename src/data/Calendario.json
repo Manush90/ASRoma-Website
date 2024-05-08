@@ -1,0 +1,90 @@
+[
+  {
+    "Giornata": 1,
+    "Incontro": 1,
+    "SquadraCasa": "Roma",
+    "SquadraTrasferta": "Lazio",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 2,
+    "SquadraCasa": "Milan",
+    "SquadraTrasferta": "Inter",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 3,
+    "SquadraCasa": "Fiorentina",
+    "SquadraTrasferta": "Empoli",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 4,
+    "SquadraCasa": "Napoli",
+    "SquadraTrasferta": "Bologna",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 5,
+    "SquadraCasa": "Atalanta",
+    "SquadraTrasferta": "Frosinone",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 6,
+    "SquadraCasa": "Udinese",
+    "SquadraTrasferta": "Juventus",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 7,
+    "SquadraCasa": "Monza",
+    "SquadraTrasferta": "Genoa",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 8,
+    "SquadraCasa": "Torino",
+    "SquadraTrasferta": "Lecce",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 9,
+    "SquadraCasa": "Cagliari",
+    "SquadraTrasferta": "Verona",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 10,
+    "SquadraCasa": "Salernitana",
+    "SquadraTrasferta": "Sassuolo",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  },
+  {
+    "Giornata": 2,
+    "Incontro": 1,
+    "SquadraCasa": "Salernitana",
+    "SquadraTrasferta": "Sassuolo",
+    "GolCasa": "",
+    "GolTrasferta": ""
+  }
+]

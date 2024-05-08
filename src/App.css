@@ -80,3 +80,26 @@ a.nav-link {
   transform: none;
   transition: none;
 }
+
+.top-4-row > td:first-child {
+  background-color: rgb(112, 151, 209);
+}
+.top-5-row > td:first-child {
+  background-color: rgb(255, 181, 43);
+}
+
+.top-6-row > td:first-child {
+  background-color: rgb(255, 181, 43);
+}
+.top-7-row > td:first-child {
+  background-color: rgb(99, 221, 99);
+}
+.bottom-3-row > td:first-child {
+  background-color: rgb(235, 121, 121);
+}
+
+.roma-row {
+  background-color: red;
+  /* Altri stili opzionali per migliorare l'aspetto visivo */
+  color: white; /* Testo bianco per migliorare la leggibilità sullo sfondo rosso */
+}
