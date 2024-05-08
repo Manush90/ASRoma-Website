@@ -65,11 +65,11 @@ const Classifica = () => {
   }, []);
 
   return (
-    <Container fluid>
+    <Container fluid className="sfondo">
       <Row>
         <Col md={{ span: 10, offset: 1 }}>
           <div>
-            <h2 className="text-center mt-2">Classifica Serie A</h2>
+            <h2 className="text-center mt-2 text-white">Classifica Serie A</h2>
             <Table striped bordered hover responsive>
               <thead>
                 <tr className="text-center">

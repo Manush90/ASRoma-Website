@@ -103,3 +103,7 @@ a.nav-link {
   /* Altri stili opzionali per migliorare l'aspetto visivo */
   color: white; /* Testo bianco per migliorare la leggibilità sullo sfondo rosso */
 }
+
+.sfondo {
+  background-image: url(https://cdn.corrieredellosport.it/images/2023/10/01/214052733-f59df395-f2dd-451e-95cf-0786446005ed.jpg);
+}
