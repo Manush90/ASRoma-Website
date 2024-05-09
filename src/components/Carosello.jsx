@@ -63,15 +63,25 @@ class MyComponent extends React.Component {
                   </Card.Title>
                   <ul>
                     {/* Lista delle notizie */}
-                    <li>Obiettivo Rimonta a Leverkusen</li>
+                    <a href="www">
+                      <li>Obiettivo Rimonta a Leverkusen</li>
+                    </a>
                     <hr></hr>
-                    <li>Probabili Formazioni di Giovedì</li>
+                    <a href="www">
+                      <li>Probabili Formazioni di Giovedì</li>
+                    </a>
                     <hr></hr>
-                    <li>Ranking UEFA Aggiornato </li>
+                    <a href="www">
+                      <li>Ranking UEFA Aggiornato </li>
+                    </a>
                     <hr></hr>
-                    <li>Indagati Pallotta e Friedkin</li>
+                    <a href="www">
+                      <li>Indagati Pallotta e Friedkin</li>
+                    </a>
                     <hr></hr>
-                    <li>Indagati Pallotta e Friedkin</li>
+                    <a href="www">
+                      <li>Indagati Pallotta e Friedkin</li>
+                    </a>
                   </ul>
                 </Card.Body>
               </Card>

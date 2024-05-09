@@ -9,8 +9,8 @@ function BasicExample() {
     <Navbar expand="xl" className="navBackground p-0 ">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <img className="me-2" alt="logo" height="70px" src="/images/logosito.png" />
-          aesseromanisti.it
+          <img className="me-2" alt="logo" height="130px" src="/images/aesseromanisti.png" />
+          {/* aesseromanisti.it */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

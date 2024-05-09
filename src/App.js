@@ -10,13 +10,17 @@ import AsromaTeam from "./data/AsromaTeam.json";
 import TabsSerieA from "./components/TabsSerieA.jsx";
 import Highlights from "./components/Highlights.jsx";
 import Alerts from "./components/Alerts.jsx";
+import MyCountdown from "./components/MyCountdown.jsx";
 
 function App() {
+  const targetDate = "2024-05-09T21:00:00";
+
   return (
     <Router>
       <div>
         <Alerts />
         <MyNav />
+        <MyCountdown targetDate={targetDate} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tickets/" element={<Tickets />} />

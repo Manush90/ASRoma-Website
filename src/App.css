@@ -59,7 +59,7 @@ li a {
   border-color: brown !important;
 }
 .navBackground {
-  background: linear-gradient(to bottom, #8e001c, #f1960c) !important;
+  background: linear-gradient(to bottom, #303030, #8e001c 30%, #ff9100 60%, #303030) !important;
 }
 
 .dropdown-item:hover {
@@ -149,8 +149,8 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
   border: none !important;
   margin: 0 !important;
   border-radius: 0px !important;
-  background-color: #8e001c !important;
-  color: #ffaf00 !important;
+  background-color: #303030 !important;
+  color: #e3e62a !important;
   text-align: center !important;
   padding: 2px !important;
   width: auto !important;
@@ -189,4 +189,23 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
 
 .height100 {
   height: 100% !important;
+}
+
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul a {
+  color: orange;
+}
+
+ul a:hover {
+  color: #e3e62a;
+}
+
+.navbar-toggler {
+  background-color: orange !important;
+  border-color: brown !important;
 }

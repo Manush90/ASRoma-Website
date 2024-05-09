@@ -6,7 +6,9 @@ function ScrollingTextAlert() {
     <div className="alertContainer">
       <Alert variant="primary" className="alertMsg">
         <div className="scrolling-text">
-          <span>Matchday ! Bayer Leverkusen - AS Roma</span>
+          <span className="jersey-15-regular">
+            - Matchday - Semi-Final Uefa Europa League - Bayer Leverkusen - AS Roma
+          </span>
         </div>
       </Alert>
     </div>
