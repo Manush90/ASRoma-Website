@@ -2,6 +2,8 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import SerieA from "./SerieA";
 import Marcatori from "./Marcatori";
+import Risultati from "./Risultati";
+import Calendario from "../data/Calendario.json";
 
 function UncontrolledExample() {
   return (
@@ -13,7 +15,7 @@ function UncontrolledExample() {
         {<Marcatori />}
       </Tab>
       <Tab eventKey="incontri" title="Incontri">
-        {/* Inserisci qui il componente per gli incontri */}
+        <Risultati partite={Calendario} />
       </Tab>
     </Tabs>
   );

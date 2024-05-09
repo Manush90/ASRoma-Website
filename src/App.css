@@ -81,8 +81,8 @@ li a {
 a.nav-link:hover {
   z-index: 1;
   border-radius: 15px;
-  color: white !important;
-  background-color: #e48e1f;
+  color: black !important;
+  background-color: rgb(255, 181, 43);
   border: 2px solid white;
 }
 
@@ -208,4 +208,8 @@ ul a:hover {
 .navbar-toggler {
   background-color: orange !important;
   border-color: brown !important;
+}
+
+.newfont {
+  font-size: xx-large !important;
 }
