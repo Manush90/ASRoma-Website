@@ -86,5 +86,13 @@
     "SquadraTrasferta": "Sassuolo",
     "GolCasa": "2",
     "GolTrasferta": "3"
+  },
+  {
+    "Giornata": 2,
+    "Incontro": 2,
+    "SquadraCasa": "Roma",
+    "SquadraTrasferta": "Inter",
+    "GolCasa": "4",
+    "GolTrasferta": "1"
   }
 ]

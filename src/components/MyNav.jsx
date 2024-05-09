@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function BasicExample() {
   return (
-    <Navbar expand="xl" className="navBackground p-0 border">
+    <Navbar expand="xl" className="navBackground p-0 ">
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img className="me-2" alt="logo" height="70px" src="/images/logosito.png" />

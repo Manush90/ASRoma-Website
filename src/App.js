@@ -9,11 +9,13 @@ import Rosa from "./components/Rosa.jsx";
 import AsromaTeam from "./data/AsromaTeam.json";
 import TabsSerieA from "./components/TabsSerieA.jsx";
 import Highlights from "./components/Highlights.jsx";
+import Alerts from "./components/Alerts.jsx";
 
 function App() {
   return (
     <Router>
       <div>
+        <Alerts />
         <MyNav />
         <Routes>
           <Route path="/" element={<Home />} />

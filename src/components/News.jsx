@@ -70,7 +70,7 @@ function BasicExample() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEot3_bG5y5KZfn5KYRN17iMWpkEvRpzno5becr94vpA&s"
             />
             <Card.Body className="d-flex flex-column justify-content-center shadow">
-              <Card.Title className="display-6 text-center">Tim Cup</Card.Title>
+              <Card.Title className="display-6 text-center">Coppa Italia</Card.Title>
               <Card.Text className="h5 text-center">
                 Acquistai biglietti per la stracittadina di Venerdi 26 Maggio!
               </Card.Text>

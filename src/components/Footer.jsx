@@ -23,9 +23,7 @@ function Footer() {
                 <a href="/contact">Contatti</a>
               </li>
               <li>
-                <li>
-                  <img alt="logo" height="100px" src="/images/logosito.png" />
-                </li>
+                <li></li>
               </li>
             </ul>
           </Col>

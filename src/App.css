@@ -59,7 +59,7 @@ li a {
   border-color: brown !important;
 }
 .navBackground {
-  background: linear-gradient(to left, #8e001c, #ffaf00) !important;
+  background: linear-gradient(to bottom, #8e001c, #f1960c) !important;
 }
 
 .dropdown-item:hover {
@@ -82,7 +82,7 @@ a.nav-link:hover {
   z-index: 1;
   border-radius: 15px;
   color: white !important;
-  background-color: #ffaf00;
+  background-color: #e48e1f;
   border: 2px solid white;
 }
 
@@ -144,4 +144,49 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
   object-fit: cover;
   height: 140px;
   width: 100%;
+}
+.alertMsg {
+  border: none !important;
+  margin: 0 !important;
+  border-radius: 0px !important;
+  background-color: #8e001c !important;
+  color: #ffaf00 !important;
+  text-align: center !important;
+  padding: 2px !important;
+  width: auto !important;
+}
+
+.white {
+  color: white !important;
+  margin-right: 5px;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll-left 20s linear infinite; /* Modifica la velocità e la direzione qui */
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll-left 30s linear infinite; /* Modifica la velocità e la direzione qui */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.alertContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.height100 {
+  height: 100% !important;
 }

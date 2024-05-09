@@ -80,13 +80,13 @@ const Classifica = () => {
                 <tr className="text-center">
                   <th>Posizione</th>
                   <th>Squadra</th>
+                  <th>Punti</th>
                   <th>Vinte</th>
                   <th>Pareggiate</th>
                   <th>Perse</th>
                   <th>Gol +</th>
                   <th>Gol -</th>
                   <th>Diff. Reti</th>
-                  <th>Punti</th>
                 </tr>
               </thead>
               <tbody>
@@ -121,13 +121,13 @@ const Classifica = () => {
                     </td>
 
                     <td>{squadra.nome}</td>
+                    <td className="text-center">{squadra.punti}</td>
                     <td className="text-center">{squadra.vinte}</td>
                     <td className="text-center">{squadra.pareggiate}</td>
                     <td className="text-center">{squadra.perse}</td>
                     <td className="text-center">{squadra.golFatti}</td>
                     <td className="text-center">{squadra.golSubiti}</td>
                     <td className="text-center">{squadra.differenzaReti}</td>
-                    <td className="text-center">{squadra.punti}</td>
                   </tr>
                 ))}
               </tbody>
