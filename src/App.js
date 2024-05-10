@@ -13,7 +13,7 @@ import Alerts from "./components/Alerts.jsx";
 import MyCountdown from "./components/MyCountdown.jsx";
 
 function App() {
-  const targetDate = "2024-05-09T21:00:00";
+  const targetDate = "2024-05-12T20:45:00";
 
   return (
     <Router>

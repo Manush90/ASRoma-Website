@@ -7,7 +7,7 @@ function ScrollingTextAlert() {
       <Alert variant="primary" className="alertMsg">
         <div className="scrolling-text">
           <span className="jersey-15-regular">
-            - Matchday - Semi-Final Uefa Europa League - Bayer Leverkusen - AS Roma
+            Semi-Final Uefa Europa League - Bayer Leverkusen 2-2 AS Roma
           </span>
         </div>
       </Alert>

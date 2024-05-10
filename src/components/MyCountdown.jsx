@@ -36,20 +36,22 @@ const MyCountdown = ({ targetDate }) => {
     <Container>
       <Row>
         <Col>
-          <h2 className="text-center mt-2">
+          <h6 className="text-center mb-0">Prossimo Incontro</h6>
+          <h2 className="text-center">
             <img
               className="mx-3"
               alt="logohome"
               height="50px"
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Bayer_04_Leverkusen_logo.svg/1200px-Bayer_04_Leverkusen_logo.svg.png"
+              src="https://upload.wikimedia.org/wikipedia/it/thumb/0/0e/AS_Roma_Logo_2017.svg/1200px-AS_Roma_Logo_2017.svg.png"
             />
-            Leverkusen - AS Roma
+            AS Roma - Atalanta
             <img
               className="mx-3"
               alt="logoaway"
               height="50px"
-              src="https://upload.wikimedia.org/wikipedia/it/thumb/0/0e/AS_Roma_Logo_2017.svg/1200px-AS_Roma_Logo_2017.svg.png"
+              src="https://upload.wikimedia.org/wikipedia/it/thumb/8/81/Logo_Atalanta_Bergamo.svg/1200px-Logo_Atalanta_Bergamo.svg.png"
             />
+            <h6>Serie A Tim - 12/5 20:45</h6>
           </h2>
           <hr></hr>
           <div className="text-center">
