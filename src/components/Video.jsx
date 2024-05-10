@@ -31,6 +31,7 @@ function Video() {
               allowfullscreen
             ></iframe>
           </Col>
+          <hr></hr>
         </Row>
       </Container>
     </>

@@ -81,6 +81,7 @@ function BasicExample() {
           </Card>
         </Col>
       </Row>
+      <hr></hr>
     </Container>
   );
 }

@@ -88,6 +88,7 @@ class MyComponent extends React.Component {
             </div>
           </Col>
         </Row>
+        <hr></hr>
       </Container>
     );
   }

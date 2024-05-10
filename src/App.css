@@ -59,7 +59,7 @@ li a {
   border-color: brown !important;
 }
 .navBackground {
-  background: linear-gradient(to bottom, #303030, #8e001c 30%, #ff9100 60%, #303030) !important;
+  background: linear-gradient(to left, #303030, #8e001c 30%, #ff9100 60%, #303030) !important;
 }
 
 .dropdown-item:hover {
@@ -162,20 +162,15 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
 }
 
 .scrolling-text {
+  width: max-content;
   white-space: nowrap;
-  overflow: hidden;
-  animation: scroll-left 20s linear infinite; /* Modifica la velocità e la direzione qui */
-}
-
-.scrolling-text {
-  white-space: nowrap;
-  overflow: hidden;
-  animation: scroll-left 30s linear infinite; /* Modifica la velocità e la direzione qui */
+  /* overflow: hidden; */
+  animation: scroll-left 20s linear infinite;
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(100vw);
   }
   100% {
     transform: translateX(-100%);
@@ -207,9 +202,17 @@ ul a:hover {
 
 .navbar-toggler {
   background-color: orange !important;
-  border-color: brown !important;
+  border-color: black !important;
 }
 
 .newfont {
   font-size: xx-large !important;
+}
+
+.customcolor {
+  color: orange !important;
+}
+
+hr {
+  color: orange !important ;
 }

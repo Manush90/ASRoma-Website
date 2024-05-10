@@ -61,8 +61,8 @@
     "Incontro": 8,
     "SquadraCasa": "Torino",
     "SquadraTrasferta": "Lecce",
-    "GolCasa": "",
-    "GolTrasferta": ""
+    "GolCasa": "1",
+    "GolTrasferta": "0"
   },
   {
     "Giornata": 1,
