@@ -51,12 +51,12 @@ const MyCountdown = ({ targetDate }) => {
                 height="50px"
                 src="https://upload.wikimedia.org/wikipedia/it/thumb/0/0e/AS_Roma_Logo_2017.svg/1200px-AS_Roma_Logo_2017.svg.png"
               />
-              AS Roma - Atalanta
+              AS Roma - FC Genoa
               <img
                 className="mx-3"
                 alt="logoaway"
                 height="50px"
-                src="https://upload.wikimedia.org/wikipedia/it/thumb/8/81/Logo_Atalanta_Bergamo.svg/1200px-Logo_Atalanta_Bergamo.svg.png"
+                src="https://upload.wikimedia.org/wikipedia/it/thumb/9/99/Genoa_Cricket_and_Football_Club_logo.svg/1200px-Genoa_Cricket_and_Football_Club_logo.svg.png"
               />
               <h6 className="text-center">Serie A Tim - 12/5/2024 - 20:45</h6>
             </h2>

@@ -4,7 +4,7 @@ import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
 class MyComponent extends React.Component {
   render() {
     return (
-      <Container className="mt-4">
+      <Container className="mt-0">
         <Row>
           <Col xs={12} sm={12} md={12} lg={8}>
             <Carousel className="border rounded height100">

@@ -1,9 +1,9 @@
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import SerieA from "./SerieA";
+import EuropaClassifica from "./EuropaClassifica";
 import Marcatori from "./Marcatori";
 import Risultati from "./Risultati";
-import Calendario from "../data/Calendario.json";
+import CalendarioEuropa from "../data/CalendarioEuropa.json";
 
 function UncontrolledExample() {
   return (
@@ -13,13 +13,16 @@ function UncontrolledExample() {
       className="justify-content-center mb-3 mt-2"
     >
       <Tab eventKey="classifica" title="Classifica">
-        {<SerieA />}
+        {<EuropaClassifica />}
       </Tab>
       <Tab eventKey="marcatori" title="Marcatori">
         {<Marcatori />}
       </Tab>
       <Tab eventKey="incontri" title="Incontri">
-        <Risultati partite={Calendario} />
+        <Risultati partite={CalendarioEuropa} />
+      </Tab>
+      <Tab eventKey="incontri" title="Incontri">
+        <Risultati partite={CalendarioEuropa} />
       </Tab>
     </Tabs>
   );

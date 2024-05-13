@@ -1,0 +1,52 @@
+[
+  {
+    "Giornata": 1,
+    "Incontro": 1,
+    "SquadraCasa": "Roma",
+    "SquadraTrasferta": "Slavia Praga",
+    "GolCasa": "2",
+    "GolTrasferta": "0",
+    "Marcatori": "Montella 33',45',89'"
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 2,
+    "SquadraCasa": "Servette",
+    "SquadraTrasferta": "Roma",
+    "GolCasa": "1",
+    "GolTrasferta": "1"
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 3,
+    "SquadraCasa": "Roma",
+    "SquadraTrasferta": "Sheriff",
+    "GolCasa": "3",
+    "GolTrasferta": "0"
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 4,
+    "SquadraCasa": "Sheriff",
+    "SquadraTrasferta": "Roma",
+    "GolCasa": "1",
+    "GolTrasferta": "2"
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 5,
+    "SquadraCasa": "Roma",
+    "SquadraTrasferta": "Servette",
+    "GolCasa": "4",
+    "GolTrasferta": "0"
+  },
+  {
+    "Giornata": 1,
+    "Incontro": 1,
+    "SquadraCasa": "Slavia Praga",
+    "SquadraTrasferta": "Roma",
+    "GolCasa": "2",
+    "GolTrasferta": "0",
+    "Marcatori": "Montella 33',45',89'"
+  }
+]

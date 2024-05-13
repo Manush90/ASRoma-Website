@@ -7,7 +7,7 @@ function ScrollingTextAlert() {
       <Alert variant="primary" className="alertMsg">
         <div className="scrolling-text">
           <span className="jersey-15-regular">
-            Semi-Final Uefa Europa League - Bayer Leverkusen 2-2 AS Roma
+            Serie A TIM - Atalanta 2 - 1 AS Roma De Keatelare x2, Pellegrini rig.
           </span>
         </div>
       </Alert>

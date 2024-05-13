@@ -11,9 +11,10 @@ import TabsSerieA from "./components/TabsSerieA.jsx";
 import Highlights from "./components/Highlights.jsx";
 import Alerts from "./components/Alerts.jsx";
 import MyCountdown from "./components/MyCountdown.jsx";
+import Europa from "./components/Europa.jsx";
 
 function App() {
-  const targetDate = "2024-05-12T20:45:00";
+  const targetDate = "2024-05-19T20:45:00";
 
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/tickets/" element={<Tickets />} />
           <Route path="/Rosa/" element={<Rosa giocatori={AsromaTeam} />} />
           <Route path="/TabsSerieA/" element={<TabsSerieA />} />
+          <Route path="/EuropaLeague/" element={<Europa />} />
           <Route path="/Highlights/" element={<Highlights />} />
         </Routes>
         <Footer />

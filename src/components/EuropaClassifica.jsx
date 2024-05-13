@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Table, Row, Col } from "react-bootstrap";
-import partite from "../data/Calendario.json";
+import partite from "../data/CalendarioEuropa.json";
 
 const Classifica = () => {
   const [classifica, setClassifica] = useState([]);
@@ -74,7 +74,7 @@ const Classifica = () => {
       <Row>
         <Col md={{ span: 10, offset: 1 }}>
           <div>
-            <h2 className="text-center mt-2 text-white">Classifica Serie A</h2>
+            <h2 className="text-center mt-2 text-white">Classifica Girone</h2>
             <Table striped bordered hover responsive rounded>
               <thead>
                 <tr className="text-center">
@@ -94,15 +94,15 @@ const Classifica = () => {
                   <tr
                     key={index}
                     className={
-                      index < 5
+                      index < 2
                         ? "top-4-row"
-                        : index === 5
+                        : index === 1
                         ? "top-5-row"
                         : index === 6
                         ? "top-6-row"
                         : index === 7
                         ? "top-7-row"
-                        : index >= classifica.length - 3 && index <= classifica.length - 1
+                        : index >= classifica.length - 1 && index <= classifica.length - 1
                         ? "bottom-3-row"
                         : squadra.nome === "Roma"
                         ? "roma-row"
@@ -111,12 +111,12 @@ const Classifica = () => {
                   >
                     <td>
                       {index + 1}
-                      {index < 5 ? (
-                        <img className="ms-4" src="/UEFA.png" height="30px" alt="UEFA" />
-                      ) : index === 5 || index === 6 ? (
-                        <img className="ms-4" src="/UEL.png" height="30px" alt="UEL" />
-                      ) : index === 7 ? (
-                        <img className="ms-4" src="/UCL.png" height="30px" alt="UCL" />
+                      {index < 2 ? (
+                        <img className="ms-4" src="/garrow.png" height="30px" alt="UEFA" />
+                      ) : index === 2 || index === 2 ? (
+                        <img className="ms-4" src="UCL.png" height="30px" alt="UEL" />
+                      ) : index === 3 ? (
+                        <img className="ms-4" src="rarrow.png" height="30px" alt="UCL" />
                       ) : null}
                     </td>
 
