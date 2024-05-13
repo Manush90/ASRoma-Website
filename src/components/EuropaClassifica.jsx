@@ -112,11 +112,11 @@ const Classifica = () => {
                     <td>
                       {index + 1}
                       {index < 2 ? (
-                        <img className="ms-4" src="/garrow.png" height="30px" alt="UEFA" />
+                        <img className="ms-3" src="/garrow.png" height="30px" alt="UEFA" />
                       ) : index === 2 || index === 2 ? (
                         <img className="ms-4" src="UCL.png" height="30px" alt="UEL" />
                       ) : index === 3 ? (
-                        <img className="ms-4" src="rarrow.png" height="30px" alt="UCL" />
+                        <img className="ms-3" src="rarrow.png" height="30px" alt="UCL" />
                       ) : null}
                     </td>
 
