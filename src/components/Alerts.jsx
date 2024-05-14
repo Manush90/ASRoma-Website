@@ -3,7 +3,7 @@ import Alert from "react-bootstrap/Alert";
 
 function ScrollingTextAlert() {
   return (
-    <div className="alertContainer">
+    <div className="alertContainer stopalerts">
       <Alert variant="primary" className="alertMsg">
         <div className="scrolling-text">
           <span className="jersey-15-regular">

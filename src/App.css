@@ -59,7 +59,7 @@ li a {
   border-color: brown !important;
 }
 .navBackground {
-  background: linear-gradient(to left, #303030, #8e001c 30%, #ff9100 60%, #303030) !important;
+  background: linear-gradient(to left, #303030, #8e001c 20%, #ff9100 50%, #303030) !important;
 }
 
 .dropdown-item:hover {
@@ -215,4 +215,44 @@ ul a:hover {
 
 hr {
   color: orange !important ;
+}
+
+.stopbar {
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 10 !important;
+  top: 0 !important;
+  box-shadow: 0 4px 10px rgba(1, 1, 1, 3) !important ;
+  margin-top: 38px;
+}
+
+.main-content {
+  margin-top: 145px;
+}
+
+@media screen and (max-width: 576px) {
+  .main-content {
+    margin-top: 123px;
+  }
+}
+
+.logopers {
+  height: 90px;
+}
+
+@media screen and (max-width: 576px) {
+  .logopers {
+    height: 70px;
+  }
+}
+
+.stopalerts {
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 10 !important;
+  top: 0 !important;
+}
+
+button.navbar-toggler.collapsed {
+  margin-left: 20px;
 }

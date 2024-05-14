@@ -38,7 +38,7 @@ const MyCountdown = ({ targetDate }) => {
 
   return (
     <>
-      <Container>
+      <Container className="main-content">
         <Row>
           <Col>
             <u>

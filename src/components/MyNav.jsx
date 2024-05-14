@@ -6,10 +6,15 @@ import { Link } from "react-router-dom";
 
 function BasicExample() {
   return (
-    <Navbar expand="xl" className="navBackground p-0 ">
+    <Navbar expand="xl" className="navBackground p-0 stopbar ">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <img className="me-2" alt="logo" height="100px" src="/images/aesseromanisti.png" />
+          <img
+            className="me-2 logopers"
+            alt="logo"
+            height="100px"
+            src="/images/aesseromanisti.png"
+          />
           {/* aesseromanisti.it */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
