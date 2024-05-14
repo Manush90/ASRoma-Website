@@ -1,7 +1,7 @@
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import EuropaClassifica from "./EuropaClassifica";
-import Marcatori from "./Marcatori";
+import MarcatoriEuropa from "./MarcatoriEuropa";
 import RisultatiEuropa from "./RisultatiEuropa";
 import CalendarioEuropa from "../data/CalendarioEuropa.json";
 
@@ -16,7 +16,7 @@ function UncontrolledExample() {
         {<EuropaClassifica />}
       </Tab>
       <Tab eventKey="marcatori" title="Marcatori">
-        {<Marcatori />}
+        {<MarcatoriEuropa />}
       </Tab>
 
       <Tab eventKey="incontri" title="Incontri">
