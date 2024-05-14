@@ -164,7 +164,7 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
 .scrolling-text {
   width: max-content;
   white-space: nowrap;
-  /* overflow: hidden; */
+
   animation: scroll-left 20s linear infinite;
 }
 
