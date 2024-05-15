@@ -23,7 +23,7 @@ function BasicExample() {
           <img
             className="me-2 logopers"
             alt="logo"
-            height="100px"
+            height="120px"
             src="/images/aesseromanisti.png"
           />
 
