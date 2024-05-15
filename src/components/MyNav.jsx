@@ -44,7 +44,7 @@ function BasicExample() {
               </svg>
               Home
             </Nav.Link>
-            <Nav.Link href="#">
+            <Nav.Link as={Link} to="/News">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -57,7 +57,7 @@ function BasicExample() {
               </svg>
               News
             </Nav.Link>
-            <Nav.Link href="/Tickets">
+            <Nav.Link as={Link} to="/Tickets">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -71,7 +71,7 @@ function BasicExample() {
               </svg>
               Ticket
             </Nav.Link>
-            <Nav.Link href="/TabsSerieA">
+            <Nav.Link as={Link} to="/TabsSerieA">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -87,7 +87,7 @@ function BasicExample() {
               </svg>
               Serie A
             </Nav.Link>
-            <Nav.Link href="/EuropaLeague">
+            <Nav.Link as={Link} to="/EuropaLeague">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -100,7 +100,7 @@ function BasicExample() {
               </svg>
               Europa League
             </Nav.Link>
-            <Nav.Link href="/Highlights">
+            <Nav.Link as={Link} to="/Highlights">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -116,7 +116,7 @@ function BasicExample() {
             </Nav.Link>
 
             <NavDropdown title=" Stagione 23/24" id="basic-nav-dropdown">
-              <NavDropdown.Item href="Rosa">
+              <NavDropdown.Item as={Link} to="/Rosa">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -129,7 +129,7 @@ function BasicExample() {
                 </svg>
                 Rosa
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item as={Link} to="/#action/3.2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -143,7 +143,7 @@ function BasicExample() {
                 </svg>
                 Allenatore
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
+              <NavDropdown.Item as={Link} to="/action/3.3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -158,7 +158,7 @@ function BasicExample() {
                 Staff
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item as={Link} to="/action/3.4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -177,7 +177,7 @@ function BasicExample() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/">
           {/* <img
             alt="logoadidas"
             height="50px"
@@ -212,7 +212,7 @@ function BasicExample() {
             </svg>
             Profilo
           </NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">
+          <NavDropdown.Item as={Link} to="/action/3.2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -226,7 +226,7 @@ function BasicExample() {
             </svg>
             Impostazioni
           </NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">
+          <NavDropdown.Item as={Link} to="/action/3.3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -241,7 +241,7 @@ function BasicExample() {
             Abbonamento
           </NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">
+          <NavDropdown.Item as={Link} to="/action/3.4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -255,7 +255,7 @@ function BasicExample() {
             </svg>
             Log In
           </NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.4">
+          <NavDropdown.Item as={Link} to="/action/3.4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
