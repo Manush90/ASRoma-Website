@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -7,31 +7,19 @@ import { Link } from "react-router-dom";
 
 function BasicExample() {
   const [expanded, setExpanded] = useState(false);
-
-  useEffect(() => {
-    const handleWindowClick = () => {
-      setExpanded(false);
-    };
-
-    window.addEventListener("click", handleWindowClick);
-
-    return () => {
-      window.removeEventListener("click", handleWindowClick);
-    };
-  }, []);
-
-  const handleToggle = () => {
-    setExpanded(!expanded);
-  };
-
-  const handleNavLinkClick = () => {
-    setExpanded(false);
-  };
+  const handleToggle = () => setExpanded(!expanded);
+  const closeNav = () => setExpanded(false);
 
   return (
-    <Navbar expand="xl" className="navBackground p-0 stopbar ">
+    <Navbar
+      onToggle={handleToggle}
+      expanded={expanded}
+      collapseOnSelect
+      expand="xl"
+      className="navBackground p-0 stopbar "
+    >
       <Container>
-        <Navbar.Brand as={Link} to="/" onClick={handleNavLinkClick}>
+        <Navbar.Brand as={Link} to="/">
           <img
             className="me-2 logopers"
             alt="logo"
@@ -40,10 +28,10 @@ function BasicExample() {
           />
           {/* aesseromanisti.it */}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/" onClick={closeNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -56,7 +44,7 @@ function BasicExample() {
               </svg>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/News" onClick={handleNavLinkClick}>
+            <Nav.Link as={Link} to="/News" onClick={closeNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -69,7 +57,7 @@ function BasicExample() {
               </svg>
               News
             </Nav.Link>
-            <Nav.Link as={Link} to="/Tickets">
+            <Nav.Link as={Link} to="/Tickets" onClick={closeNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -83,7 +71,7 @@ function BasicExample() {
               </svg>
               Ticket
             </Nav.Link>
-            <Nav.Link as={Link} to="/TabsSerieA">
+            <Nav.Link as={Link} to="/TabsSerieA" onClick={closeNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -99,7 +87,7 @@ function BasicExample() {
               </svg>
               Serie A
             </Nav.Link>
-            <Nav.Link as={Link} to="/EuropaLeague">
+            <Nav.Link as={Link} to="/EuropaLeague" onClick={closeNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -112,7 +100,7 @@ function BasicExample() {
               </svg>
               Europa League
             </Nav.Link>
-            <Nav.Link as={Link} to="/Highlights">
+            <Nav.Link as={Link} to="/Highlights" onClick={closeNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -128,7 +116,7 @@ function BasicExample() {
             </Nav.Link>
 
             <NavDropdown title=" Stagione 23/24" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/Rosa">
+              <NavDropdown.Item as={Link} to="/Rosa" onClick={closeNav}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -141,7 +129,7 @@ function BasicExample() {
                 </svg>
                 Rosa
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/#action/3.2">
+              <NavDropdown.Item as={Link} to="/#action/3.2" onClick={closeNav}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -155,7 +143,7 @@ function BasicExample() {
                 </svg>
                 Allenatore
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/action/3.3">
+              <NavDropdown.Item as={Link} to="/action/3.3" onClick={closeNav}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -170,7 +158,7 @@ function BasicExample() {
                 Staff
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/action/3.4">
+              <NavDropdown.Item as={Link} to="/action/3.4" onClick={closeNav}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -211,7 +199,7 @@ function BasicExample() {
           />
         </svg>
         <NavDropdown title="" id="basic-nav-dropdown " drop="start">
-          <NavDropdown.Item href="#action/3.1">
+          <NavDropdown.Item href="#action/3.1" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -224,7 +212,7 @@ function BasicExample() {
             </svg>
             Profilo
           </NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/action/3.2">
+          <NavDropdown.Item as={Link} to="/action/3.2" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -238,7 +226,7 @@ function BasicExample() {
             </svg>
             Impostazioni
           </NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/action/3.3">
+          <NavDropdown.Item as={Link} to="/action/3.3" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -253,7 +241,7 @@ function BasicExample() {
             Abbonamento
           </NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item as={Link} to="/action/3.4">
+          <NavDropdown.Item as={Link} to="/action/3.4" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -267,7 +255,7 @@ function BasicExample() {
             </svg>
             Log In
           </NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/action/3.4">
+          <NavDropdown.Item as={Link} to="/action/3.4" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
