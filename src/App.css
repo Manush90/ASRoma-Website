@@ -69,7 +69,7 @@ li a {
 }
 
 .closed-nav {
-  background-position: center -60px;
+  background-position: center -63px;
 }
 
 .dropdown-item:hover {
@@ -298,6 +298,6 @@ a.navbar-brand {
 
 @media screen and (max-width: 576px) {
   .opacityColor {
-    background-color: rgba(0, 0, 0, 0.301);
+    background-color: rgba(85, 0, 0, 0.603);
   }
 }
