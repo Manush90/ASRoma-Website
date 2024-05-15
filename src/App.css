@@ -59,7 +59,17 @@ li a {
   border-color: brown !important;
 }
 .navBackground {
-  background: linear-gradient(to left, #303030, #8e001c 20%, #ff9100 50%, #303030) !important;
+  /* background: linear-gradient(to left, #303030, #8e001c 20%, #ff9100 50%, #303030) !important; */
+  background-image: url(https://citynews-romatoday.stgy.ovh/~media/original-hi/13353299044575/roma-conference-league.jpg);
+  background-size: cover; /* Questa proprietà fa sì che l'immagine copra l'intera area del background */
+  background-position: center; /* Centra l'immagine orizzontalmente e verticalmente */
+  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+  background-position: center 0px;
+  /* height: 70px; */
+}
+
+.closed-nav {
+  background-position: center -60px;
 }
 
 .dropdown-item:hover {
@@ -260,4 +270,34 @@ button.navbar-toggler.collapsed {
 .table-full-width {
   width: 100%;
   overflow-x: auto;
+}
+
+div.m-auto.navbar-nav {
+  align-items: center;
+}
+
+div.m-auto.navbar-nav svg {
+  color: orange;
+}
+
+@media screen and (min-width: 576px) {
+  .navBackground {
+    background: linear-gradient(to left, #303030, #8e001c 20%, #ff9100 50%, #303030) !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  div.m-auto.navbar-nav svg {
+    color: rgb(0, 0, 0);
+  }
+}
+
+a.navbar-brand {
+  color: orange;
+}
+
+@media screen and (max-width: 576px) {
+  .opacityColor {
+    background-color: rgba(0, 0, 0, 0.301);
+  }
 }

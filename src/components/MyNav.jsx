@@ -16,16 +16,17 @@ function BasicExample() {
       expanded={expanded}
       collapseOnSelect
       expand="xl"
-      className="navBackground p-0 stopbar "
+      className={"navBackground p-0 stopbar " + (expanded ? "" : "closed-nav")}
     >
-      <Container>
-        <Navbar.Brand as={Link} to="/">
+      <Container className="opacityColor">
+        <Navbar.Brand as={Link} to="/" onClick={closeNav}>
           <img
             className="me-2 logopers"
             alt="logo"
             height="100px"
             src="/images/aesseromanisti.png"
           />
+
           {/* aesseromanisti.it */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -177,12 +178,12 @@ function BasicExample() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand as={Link} to="/">
-          {/* <img
+        {/* <Navbar.Brand as={Link} to="/" onClick={closeNav}>
+          <img
             alt="logoadidas"
             height="50px"
             src="https://styles.redditmedia.com/t5_8pga9f/styles/profileIcon_psl3envaej8b1.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=31fbda56413eb14b8f7415fa9425ea7e7800df7b"
-          /> */}
+          />
         </Navbar.Brand>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -197,8 +198,8 @@ function BasicExample() {
             fill-rule="evenodd"
             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
           />
-        </svg>
-        <NavDropdown title="" id="basic-nav-dropdown " drop="start">
+        </svg> */}
+        {/* <NavDropdown title="" id="basic-nav-dropdown " drop="start">
           <NavDropdown.Item href="#action/3.1" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -268,7 +269,7 @@ function BasicExample() {
             </svg>
             Log Out
           </NavDropdown.Item>
-        </NavDropdown>
+        </NavDropdown> */}
       </Container>
     </Navbar>
   );
