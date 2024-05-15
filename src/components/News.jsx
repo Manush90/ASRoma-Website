@@ -1,4 +1,3 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -38,9 +37,9 @@ function BasicExample() {
               <Card.Text className="h5 text-center">
                 Le ultime news, aggiornamenti dal campo Agostino di Bartolomei!
               </Card.Text>
-              <Button className="mx-auto buttonColor shadow" variant="primary">
-                Leggi di più
-              </Button>
+              <Link to="/Allenamenti" className="mx-auto buttonColor shadow btn btn-primary">
+                Acquista Ora
+              </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -54,11 +53,11 @@ function BasicExample() {
             <Card.Body className="d-flex flex-column justify-content-center shadow">
               <Card.Title className="display-6 text-center">Europa League</Card.Title>
               <Card.Text className="h5 text-center">
-                Guarda Live i sorteggi <br></br>del prossimo turno di Uefa europa league !
+                Segui Live i sorteggi, <br></br> Classifiche, incontri e marcatori !
               </Card.Text>
-              <Button className="mx-auto buttonColor shadow" variant="primary">
-                Guarda ora
-              </Button>
+              <Link to="/EuropaLeague" className="mx-auto buttonColor shadow btn btn-primary">
+                Visita Ora
+              </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -74,9 +73,9 @@ function BasicExample() {
               <Card.Text className="h5 text-center">
                 Acquistai biglietti per la stracittadina di Venerdi 26 Maggio!
               </Card.Text>
-              <Button className="mx-auto buttonColor shadow" variant="primary">
+              <Link to="/CoppaItalia" className="mx-auto buttonColor shadow btn btn-primary">
                 Acquista Ora
-              </Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>
