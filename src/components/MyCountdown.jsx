@@ -38,11 +38,11 @@ const MyCountdown = ({ targetDate }) => {
 
   return (
     <>
-      <Container className="main-content">
+      <Container className="main-content ">
         <Row className="flagColor">
           <Col>
             <u>
-              <h6 className="text-center mt-2 mb-0">Prossimo Incontro</h6>
+              <h6 className="text-center mt-3 mb-0">Prossimo Incontro</h6>
             </u>
             <h2 className="text-center">
               <img
@@ -62,10 +62,12 @@ const MyCountdown = ({ targetDate }) => {
             </h2>
 
             <div className="text-center customcolor small ">
-              <span>{addLeadingZero(timeLeft.days)}</span>&nbsp;giorni -&nbsp;
-              <span>{addLeadingZero(timeLeft.hours)}</span>&nbsp;ore -&nbsp;
-              <span>{addLeadingZero(timeLeft.minutes)}</span>&nbsp;minuti -&nbsp;
-              <span>{addLeadingZero(timeLeft.seconds)}</span>&nbsp;secondi&nbsp;
+              <span className="fontlarge">{addLeadingZero(timeLeft.days)}</span>&nbsp;giorni -&nbsp;
+              <span className="fontlarge">{addLeadingZero(timeLeft.hours)}</span>&nbsp;ore -&nbsp;
+              <span className="fontlarge">{addLeadingZero(timeLeft.minutes)}</span>&nbsp;minuti
+              -&nbsp;
+              <span className="fontlarge">{addLeadingZero(timeLeft.seconds)}</span>
+              &nbsp;secondi&nbsp;
             </div>
           </Col>
         </Row>

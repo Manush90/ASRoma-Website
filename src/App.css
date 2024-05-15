@@ -162,7 +162,7 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
   background-color: #303030 !important;
   color: #e3e62a !important;
   text-align: center !important;
-  padding: 2px !important;
+  padding: 1px !important;
   width: auto !important;
 }
 
@@ -200,6 +200,7 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
   font-family: "Jersey 15", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: large;
 }
 
 ul a {
@@ -313,4 +314,8 @@ a.navbar-brand {
 
     #303030
   ) !important;
+}
+
+.fontlarge {
+  font-size: xx-large;
 }
