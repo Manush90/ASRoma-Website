@@ -75,7 +75,7 @@ const Classifica = () => {
         <Col md={{ span: 10, offset: 1 }}>
           <div>
             <h2 className="text-center mt-2 text-white">Classifica Serie A</h2>
-            <Table striped bordered hover responsive rounded>
+            <Table striped bordered hover responsive rounded className="table-full-width">
               <thead>
                 <tr className="text-center">
                   <th>Posizione</th>

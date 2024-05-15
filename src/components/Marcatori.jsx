@@ -17,32 +17,34 @@ const Marcatori = () => {
   ];
 
   return (
-    <Container className="sfondo1">
+    <Container className="sfondo1 ">
       <Row>
         <Col>
           <h2 className="text-center text-white">Marcatori</h2>
-          <Table striped bordered hover>
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Squadra</th>
-                <th>Gol</th>
-                <th>Assist</th>
-                <th>Presenze</th>
-              </tr>
-            </thead>
-            <tbody>
-              {marcatori.map((giocatore, index) => (
-                <tr key={index}>
-                  <td>{giocatore.nome}</td>
-                  <td>{giocatore.squadra}</td>
-                  <td>{giocatore.gol}</td>
-                  <td>{giocatore.assist}</td>
-                  <td>{giocatore.presenze}</td>
+          <div className="table-responsive ">
+            <Table striped bordered hover className="table-full-width">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Squadra</th>
+                  <th>Gol</th>
+                  <th>Assist</th>
+                  <th>Presenze</th>
                 </tr>
-              ))}
-            </tbody>
-          </Table>
+              </thead>
+              <tbody>
+                {marcatori.map((giocatore, index) => (
+                  <tr key={index}>
+                    <td>{giocatore.nome}</td>
+                    <td>{giocatore.squadra}</td>
+                    <td>{giocatore.gol}</td>
+                    <td>{giocatore.assist}</td>
+                    <td>{giocatore.presenze}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
         </Col>
       </Row>
     </Container>

@@ -256,3 +256,8 @@ hr {
 button.navbar-toggler.collapsed {
   margin-left: 20px;
 }
+
+.table-full-width {
+  width: 100%;
+  overflow-x: auto;
+}

@@ -21,7 +21,7 @@ function Video() {
           </Col>
           <Col sm={6} md={6} lg={6}>
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/oE3xaHof3hQ?si=_0OTrwPkymAT3yoF"
               title="YouTube video player"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -7,6 +7,18 @@ import { Link } from "react-router-dom";
 
 function BasicExample() {
   const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    const handleWindowClick = () => {
+      setExpanded(false);
+    };
+
+    window.addEventListener("click", handleWindowClick);
+
+    return () => {
+      window.removeEventListener("click", handleWindowClick);
+    };
+  }, []);
 
   const handleToggle = () => {
     setExpanded(!expanded);
@@ -31,7 +43,7 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="/">
+            <Nav.Link as={Link} to="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -44,7 +56,7 @@ function BasicExample() {
               </svg>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/News">
+            <Nav.Link as={Link} to="/News" onClick={handleNavLinkClick}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
