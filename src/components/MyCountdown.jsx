@@ -39,7 +39,7 @@ const MyCountdown = ({ targetDate }) => {
   return (
     <>
       <Container className="main-content">
-        <Row>
+        <Row className="flagColor">
           <Col>
             <u>
               <h6 className="text-center mt-2 mb-0">Prossimo Incontro</h6>
@@ -61,12 +61,11 @@ const MyCountdown = ({ targetDate }) => {
               <h6 className="text-center">Serie A Tim - 12/5/2024 - 20:45</h6>
             </h2>
 
-            <div className="text-center customcolor small">
+            <div className="text-center customcolor small ">
               <span>{addLeadingZero(timeLeft.days)}</span>&nbsp;giorni -&nbsp;
               <span>{addLeadingZero(timeLeft.hours)}</span>&nbsp;ore -&nbsp;
               <span>{addLeadingZero(timeLeft.minutes)}</span>&nbsp;minuti -&nbsp;
               <span>{addLeadingZero(timeLeft.seconds)}</span>&nbsp;secondi&nbsp;
-              <hr></hr>
             </div>
           </Col>
         </Row>

@@ -242,7 +242,7 @@ hr {
 
 @media screen and (max-width: 576px) {
   .main-content {
-    margin-top: 123px;
+    margin-top: 114px;
   }
 }
 
@@ -300,4 +300,17 @@ a.navbar-brand {
   .opacityColor {
     background-color: rgba(85, 0, 0, 0.603);
   }
+}
+
+.flagColor {
+  background: linear-gradient(
+    to left,
+    #303030,
+    #8e001c 20%,
+
+    #ff9100 50%,
+    #8e001c 20%,
+
+    #303030
+  ) !important;
 }
