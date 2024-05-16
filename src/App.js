@@ -13,6 +13,7 @@ import Alerts from "./components/Alerts.jsx";
 import MyCountdown from "./components/MyCountdown.jsx";
 import Europa from "./components/Europa.jsx";
 import Newsletter from "./components/Newsletter.jsx";
+import Article from "./components/Article.jsx";
 
 function App() {
   const targetDate = "2024-05-19T20:45:00";
@@ -25,6 +26,7 @@ function App() {
         <MyCountdown targetDate={targetDate} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="News" element={<Article />} />
           <Route path="/tickets/" element={<Tickets />} />
           <Route path="/Rosa/" element={<Rosa giocatori={AsromaTeam} />} />
           <Route path="/TabsSerieA/" element={<TabsSerieA />} />
