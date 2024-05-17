@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
@@ -8,47 +8,7 @@ class MyComponent extends React.Component {
     return (
       <Container className="mt-0">
         <Row>
-          <Col xs={12} sm={12} md={12} lg={8}>
-            <Carousel className="border rounded height100">
-              {/* Ins erisci le tue immagini qui */}
-              <Carousel.Item className="carousel-image">
-                <img
-                  className="d-block w-100 rounded"
-                  src="https://media.gqitalia.it/photos/660bdc358de57cf68781c8a1/16:9/w_1920,h_1080,c_limit/adidas%20x%20AS%20roma_Origins%20Jersey_2_16x9.jpg"
-                  alt="First slide"
-                />
-                <a href="/Article" className="cover_all">
-                  <Carousel.Caption>
-                    <h3>
-                      Nuova Maglia Home Vintage !<br></br> disponibile dal 13/04
-                    </h3>
-                  </Carousel.Caption>
-                </a>
-              </Carousel.Item>
-              <Carousel.Item className="carousel-image">
-                <img
-                  className="d-block w-100 rounded"
-                  onClick={this.scrollToBottom}
-                  src="https://static.open.online/wp-content/uploads/2024/04/roma-stadio-olimpico.jpg"
-                  alt="Second slide"
-                />
-                <Carousel.Caption>
-                  <h3>Date e orari per la nuova campagna abbonamenti</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item className="carousel-image">
-                <img
-                  className="d-block w-100 rounded"
-                  src="https://assets.goal.com/images/v3/blt44085cd7737a0843/GOAL_-_Blank_WEB_-_Facebook_-_2023-09-17T225738.075.jpg?auto=webp&format=pjpg&width=1200&quality=60"
-                  alt="Third slide"
-                />
-                <Carousel.Caption>
-                  <h3>Lukaku: "Vorrei restare anche l'anno prossimo"</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </Col>
-          <Col xs={12} sm={12} md={12} lg={4}>
+          <Col xs={12} sm={12} md={12} lg={12}>
             <div className="mt-2 p-0">
               <Card className="nohover height100 ">
                 <Card.Body className="text-white bg-dark border rounded">

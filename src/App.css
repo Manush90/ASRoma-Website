@@ -222,6 +222,15 @@ ul a:hover {
 
 .customcolor {
   color: orange !important;
+  margin: 0 !important;
+}
+
+.customFont {
+  font-size: 1.3rem !important;
+}
+
+.customFontp {
+  font-size: 0.9rem !important;
 }
 
 hr {
