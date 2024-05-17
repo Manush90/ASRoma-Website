@@ -5,9 +5,9 @@ function Video() {
   return (
     <>
       <Container>
-        <h2 className="text-center"> highlights ultime partite</h2>
+        <h2 className="text-center mt-2"> highlights ultime partite</h2>
         <Row>
-          <Col sm={6} md={6} lg={6}>
+          <Col xs={12} sm={6} md={6} lg={6}>
             <iframe
               width="100%"
               height="315"
@@ -19,7 +19,7 @@ function Video() {
               allowfullscreen
             ></iframe>
           </Col>
-          <Col sm={6} md={6} lg={6}>
+          <Col xs={12} sm={6} md={6} lg={6}>
             <iframe
               width="100%"
               height="315"
