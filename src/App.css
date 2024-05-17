@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.carousel-item-cover {
+  height: 100vh; /* Puoi cambiare l'altezza secondo le tue necessità */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .carousel-image::before {
   content: "";
   position: absolute;
@@ -91,9 +98,18 @@ li a {
 a.nav-link:hover {
   z-index: 1;
   border-radius: 15px;
-  color: black !important;
-  background-color: rgb(255, 181, 43);
-  border: 2px solid white;
+  color: orange !important;
+  background-color: brown;
+}
+
+@media (max-width: 576px) {
+  a.nav-link:hover {
+    z-index: 1;
+    border-radius: none;
+    color: brown !important;
+    background-color: unset;
+    border: none;
+  }
 }
 
 a.nav-link {

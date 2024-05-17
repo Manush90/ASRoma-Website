@@ -6,14 +6,14 @@ import Nav from "react-bootstrap/Nav";
 class MyComponent extends React.Component {
   render() {
     return (
-      <Container className="mt-0">
+      <Container className="mt-0 mb-2">
         <Row>
-          <Col xs={12} sm={12} md={12} lg={8}>
-            <Carousel className="border rounded height100">
+          <Col xs={12} sm={12} md={12} lg={12} xl={8}>
+            <Carousel className="border rounded  height100">
               {/* Ins erisci le tue immagini qui */}
-              <Carousel.Item className="carousel-image">
+              <Carousel.Item className="carousel-image ">
                 <img
-                  className="d-block w-100 rounded heightcustom"
+                  className="d-block w-100 rounded heightcustom "
                   src="https://media.gqitalia.it/photos/660bdc358de57cf68781c8a1/16:9/w_1920,h_1080,c_limit/adidas%20x%20AS%20roma_Origins%20Jersey_2_16x9.jpg"
                   alt="First slide"
                 />
@@ -48,8 +48,8 @@ class MyComponent extends React.Component {
               </Carousel.Item>
             </Carousel>
           </Col>
-          <Col xs={12} sm={12} md={12} lg={4}>
-            <div className="mt-2 p-0">
+          <Col xs={12} sm={12} md={12} lg={12} xl={4}>
+            <div className="mt-2 text-center">
               <Card className="nohover height100 ">
                 <Card.Body className="text-white bg-dark border rounded">
                   <Card.Title className="text-center">
