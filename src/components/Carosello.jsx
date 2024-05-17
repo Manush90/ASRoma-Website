@@ -13,7 +13,7 @@ class MyComponent extends React.Component {
               {/* Ins erisci le tue immagini qui */}
               <Carousel.Item className="carousel-image">
                 <img
-                  className="d-block w-100 rounded"
+                  className="d-block w-100 rounded heightcustom"
                   src="https://media.gqitalia.it/photos/660bdc358de57cf68781c8a1/16:9/w_1920,h_1080,c_limit/adidas%20x%20AS%20roma_Origins%20Jersey_2_16x9.jpg"
                   alt="First slide"
                 />
@@ -27,7 +27,7 @@ class MyComponent extends React.Component {
               </Carousel.Item>
               <Carousel.Item className="carousel-image">
                 <img
-                  className="d-block w-100 rounded"
+                  className="d-block w-100 rounded heightcustom"
                   onClick={this.scrollToBottom}
                   src="https://static.open.online/wp-content/uploads/2024/04/roma-stadio-olimpico.jpg"
                   alt="Second slide"
@@ -38,7 +38,7 @@ class MyComponent extends React.Component {
               </Carousel.Item>
               <Carousel.Item className="carousel-image">
                 <img
-                  className="d-block w-100 rounded"
+                  className="d-block w-100 rounded heightcustom"
                   src="https://assets.goal.com/images/v3/blt44085cd7737a0843/GOAL_-_Blank_WEB_-_Facebook_-_2023-09-17T225738.075.jpg?auto=webp&format=pjpg&width=1200&quality=60"
                   alt="Third slide"
                 />
