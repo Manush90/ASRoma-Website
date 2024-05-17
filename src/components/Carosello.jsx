@@ -7,8 +7,9 @@ class MyComponent extends React.Component {
   render() {
     return (
       <Container className="mt-0 mb-2">
+        <hr className="d-none d-sm-block"></hr>
         <Row>
-          <Col xs={12} sm={12} md={12} lg={12} xl={8}>
+          <Col xs={12} sm={12} md={12} lg={12} xl={9}>
             <Carousel className="border rounded  height100">
               {/* Ins erisci le tue immagini qui */}
               <Carousel.Item className="carousel-image ">
@@ -48,7 +49,7 @@ class MyComponent extends React.Component {
               </Carousel.Item>
             </Carousel>
           </Col>
-          <Col xs={12} sm={12} md={12} lg={12} xl={4}>
+          <Col xs={12} sm={12} md={12} lg={12} xl={3}>
             <div className="mt-2 text-center">
               <Card className="nohover height100 ">
                 <Card.Body className="text-white bg-dark border rounded">
