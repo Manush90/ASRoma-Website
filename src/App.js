@@ -15,6 +15,7 @@ import Europa from "./components/Europa.jsx";
 import Newsletter from "./components/Newsletter.jsx";
 import NewsPage from "./components/NewsPage.jsx";
 import Article from "./components/Article.jsx";
+import Article_2 from "./components/Article_2.jsx";
 import Allenamenti from "./components/Allenamenti.jsx";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/News" element={<NewsPage />} />
           <Route path="/Article" element={<Article />} />
+          <Route path="/Article_2" element={<Article_2 />} />
           <Route path="/tickets/" element={<Tickets />} />
           <Route path="/Allenamenti/" element={<Allenamenti />} />
           <Route path="/Rosa/" element={<Rosa giocatori={AsromaTeam} />} />

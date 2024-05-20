@@ -215,6 +215,7 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
 @media screen and (max-width: 576px) {
   .heightcustom {
     height: 250px !important;
+    object-fit: cover;
   }
 }
 .jersey-15-regular {
@@ -363,4 +364,14 @@ a.navbar-brand {
 }
 .imgTraining {
   margin-bottom: 10px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 576px) {
+  .d-sm-table-cell {
+    display: table-cell !important;
+  }
 }

@@ -80,7 +80,7 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article2">
+                  <Nav.Link as={Link} to="/Article_2">
                     <p className="customcolor">Ranking UEFA per club Aggiornato </p>
                     <h6 className="customFontp">
                       Scaliamo ed arriviamo al 6° posto della classifica !

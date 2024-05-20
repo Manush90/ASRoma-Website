@@ -40,6 +40,7 @@ const ImageGallery = () => {
   return (
     <Container className="mt-3">
       <Row>
+        <h3 className="text-center customcolor mb-2">Fonte: sito Ufficiale asroma</h3>
         {images.map((image, index) => (
           <Col key={index} xs={6} sm={4} md={3} lg={3} xl={3}>
             <Image src={image.src} alt={image.alt} className="imgTraining" fluid />

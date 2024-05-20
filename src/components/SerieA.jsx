@@ -59,6 +59,10 @@ const Classifica = () => {
         nome,
         ...nuovaClassifica[nome],
         differenzaReti: nuovaClassifica[nome].golFatti - nuovaClassifica[nome].golSubiti,
+        giocate:
+          nuovaClassifica[nome].vinte +
+          nuovaClassifica[nome].pareggiate +
+          nuovaClassifica[nome].perse,
       }))
       .sort((a, b) => b.punti - a.punti);
 
@@ -89,11 +93,12 @@ const Classifica = () => {
                   <th>Posizione</th>
                   <th>Squadra</th>
                   <th>Punti</th>
-                  <th>Vinte</th>
-                  <th>Pareggiate</th>
-                  <th>Perse</th>
-                  <th>Gol +</th>
-                  <th>Gol -</th>
+                  <th className="d-none d-sm-table-cell">Vinte</th>
+                  <th className="d-none d-sm-table-cell">Pareggiate</th>
+                  <th className="d-none d-sm-table-cell">Perse</th>
+                  <th className="d-none d-sm-table-cell">Gol +</th>
+                  <th className="d-none d-sm-table-cell">Gol -</th>
+                  <th>Giocate</th>
                   <th>Diff. Reti</th>
                 </tr>
               </thead>
@@ -130,11 +135,12 @@ const Classifica = () => {
 
                     <td>{squadra.nome}</td>
                     <td className="text-center">{squadra.punti}</td>
-                    <td className="text-center">{squadra.vinte}</td>
-                    <td className="text-center">{squadra.pareggiate}</td>
-                    <td className="text-center">{squadra.perse}</td>
-                    <td className="text-center">{squadra.golFatti}</td>
-                    <td className="text-center">{squadra.golSubiti}</td>
+                    <td className="text-center d-none d-sm-table-cell">{squadra.vinte}</td>
+                    <td className="text-center d-none d-sm-table-cell">{squadra.pareggiate}</td>
+                    <td className="text-center d-none d-sm-table-cell">{squadra.perse}</td>
+                    <td className="text-center d-none d-sm-table-cell">{squadra.golFatti}</td>
+                    <td className="text-center d-none d-sm-table-cell">{squadra.golSubiti}</td>
+                    <td className="text-center">{squadra.giocate}</td>
                     <td className="text-center">{squadra.differenzaReti}</td>
                   </tr>
                 ))}

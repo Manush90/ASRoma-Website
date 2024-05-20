@@ -7,7 +7,7 @@ const ArticoloSportivo = () => {
       <Row>
         <Col>
           <Image
-            src="https://media.asroma.com/prod/images/landscape_medium_fill/fe928137c26f-download-2.png"
+            src="https://upload.wikimedia.org/wikipedia/it/thumb/2/2a/UEFA_logo_%282012%29.svg/1200px-UEFA_logo_%282012%29.svg.png"
             fluid
             className="mt-3 "
           />
@@ -15,7 +15,9 @@ const ArticoloSportivo = () => {
       </Row>
       <Row className="mt-4">
         <Col>
-          <h1 className="text-center">Disponibili i kit Home Adidas 24/25</h1>
+          <h1 className="text-center">
+            Nuovo Ranking UEFA di Fine Anno <br></br> Saliamo al 6° Posto !
+          </h1>
           <h5 className="customcolor">di Manuel Dell'Oste</h5>
           <h6 className="customcolor">del 16/05/2024</h6>
           <hr></hr>
@@ -25,7 +27,8 @@ const ArticoloSportivo = () => {
             finibus. Cras tristique, nunc id molestie vehicula, ligula neque faucibus elit, non
             maximus nisi purus ac ex. Morbi dapibus arcu a erat commodo, a varius lorem eleifend.
           </p>
-          <p>
+          <Image src="/rankingUEFA.png" fluid className="mt-3 " />
+          <p className="mt-2">
             In this article, we will discuss the recent match between Team A and Team B in the
             Champions League. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
             nisi ut dolor mollis finibus. Cras tristique, nunc id molestie vehicula, ligula neque
