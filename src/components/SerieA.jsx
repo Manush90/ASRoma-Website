@@ -73,8 +73,16 @@ const Classifica = () => {
     <Container fluid className="sfondo">
       <Row>
         <Col md={{ span: 10, offset: 1 }}>
-          <div>
-            <h2 className="text-center mt-2 text-white">Classifica Serie A</h2>
+          <div className="justify-content-center">
+            <h2 className="text-center mt-2 text-white">
+              Classifica Serie A <br></br>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/it/thumb/c/c5/Logo_Serie_A_TIM_2021.svg/1200px-Logo_Serie_A_TIM_2021.svg.png"
+                height="90px"
+                alt="SA"
+              />
+            </h2>
+
             <Table striped bordered hover responsive rounded className="table-full-width">
               <thead>
                 <tr className="text-center">

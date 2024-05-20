@@ -15,9 +15,10 @@ import Europa from "./components/Europa.jsx";
 import Newsletter from "./components/Newsletter.jsx";
 import NewsPage from "./components/NewsPage.jsx";
 import Article from "./components/Article.jsx";
+import Allenamenti from "./components/Allenamenti.jsx";
 
 function App() {
-  const targetDate = "2024-05-19T20:45:00";
+  const targetDate = "2024-05-26T20:45:00";
 
   return (
     <Router>
@@ -30,6 +31,7 @@ function App() {
           <Route path="/News" element={<NewsPage />} />
           <Route path="/Article" element={<Article />} />
           <Route path="/tickets/" element={<Tickets />} />
+          <Route path="/Allenamenti/" element={<Allenamenti />} />
           <Route path="/Rosa/" element={<Rosa giocatori={AsromaTeam} />} />
           <Route path="/TabsSerieA/" element={<TabsSerieA />} />
           <Route path="/EuropaLeague/" element={<Europa />} />

@@ -44,7 +44,7 @@ class MyComponent extends React.Component {
                   alt="Third slide"
                 />
                 <Carousel.Caption>
-                  <h3>Lukaku: "Vorrei restare anche l'anno prossimo"</h3>
+                  <h3>Lukaku regala il 6° posto matematico alla Roma, Ultimo gol all'olimpico</h3>
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>

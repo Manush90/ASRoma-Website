@@ -7,7 +7,7 @@ function ScrollingTextAlert() {
       <Alert variant="primary" className="alertMsg">
         <div className="scrolling-text">
           <span className="jersey-15-regular">
-            Serie A TIM - Atalanta 2 - 1 AS Roma De Keatelare x2, Pellegrini rig.
+            Serie A TIM - AS Roma 1 - 0 Genoa (Lukaku 79', Paredes esp. 72)
           </span>
         </div>
       </Alert>

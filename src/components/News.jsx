@@ -38,7 +38,7 @@ function BasicExample() {
                 Le ultime news, aggiornamenti dal campo Agostino di Bartolomei!
               </Card.Text>
               <Link to="/Allenamenti" className="mx-auto buttonColor shadow btn btn-primary">
-                Acquista Ora
+                Guarda Gallery
               </Link>
             </Card.Body>
           </Card>

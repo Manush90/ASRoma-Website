@@ -10,7 +10,7 @@ class MyComponent extends React.Component {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
             <div className="mt-2 p-0">
-              <Card className="nohover height100 ">
+              <Card className=" nohover height100 ">
                 <Card.Body className="text-white bg-dark border rounded">
                   <Card.Title className="text-center">
                     <svg
@@ -28,11 +28,13 @@ class MyComponent extends React.Component {
 
                   {/* Lista delle notizie */}
                   <Nav.Link as={Link} to="/Article">
+                    <h6 className="m-0 p-0">16/5/24</h6>
                     <p className="customcolor">La Probabile Formazione vs il Genoa</p>
                     <h6 className="customFontp">Ancora in dubbio Dybala, ricaduta per zalewski</h6>
                   </Nav.Link>
                   <hr></hr>
                   <Nav.Link as={Link} to="/Article1">
+                    <h6 className="m-0 p-0">15/5/24</h6>
                     <p className="customcolor">Contattato L'entourage di Icardi</p>
                     <h6 className="customFontp">
                       Wanda Nara: "trattative avanzate" ma serve tempo
@@ -40,6 +42,7 @@ class MyComponent extends React.Component {
                   </Nav.Link>
                   <hr></hr>
                   <Nav.Link as={Link} to="/Article2">
+                    <h6 className="m-0 p-0">14/5/24</h6>
                     <p className="customcolor">Ranking UEFA per club Aggiornato </p>
                     <h6 className="customFontp">
                       Scaliamo ed arriviamo al 6° posto della classifica !
@@ -47,6 +50,7 @@ class MyComponent extends React.Component {
                   </Nav.Link>
                   <hr></hr>
                   <Nav.Link as={Link} to="/Article3">
+                    <h6 className="m-0 p-0">13/5/24</h6>
                     <p className="customcolor">Il 6° posto può valere la Champions</p>
                     <h6 className="customFontp">
                       Se l'Atalanta vince la coppa ed arriva 5a ci sarebbe...
@@ -54,6 +58,7 @@ class MyComponent extends React.Component {
                   </Nav.Link>
                   <hr></hr>
                   <Nav.Link as={Link} to="/Article4">
+                    <h6 className="m-0 p-0">12/5/24</h6>
                     <p className="customcolor">Situazione Finanziaria Migliorata</p>
                     <h6 className="customFontp">
                       Sembra ci sia stato un miglioramento delle entrate...

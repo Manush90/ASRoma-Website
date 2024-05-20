@@ -11,7 +11,7 @@ function Video() {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/Ca95XZZ6wuo?si=12UbQpDPN3Y6DxSA"
+              src="https://www.youtube.com/embed/uIoF_GxDNno?si=-0gwUj6Fzzg87m6R"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -23,7 +23,7 @@ function Video() {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/V1aXJpgih8o?si=5RiQdbs_6L5pXkKS"
+              src="https://www.youtube.com/embed/bVnFYT_-3DI?si=eQEbtYbhHmAzGx2W"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -49,16 +49,16 @@ const MyCountdown = ({ targetDate }) => {
                 className="mx-3"
                 alt="logohome"
                 height="50px"
-                src="https://upload.wikimedia.org/wikipedia/it/thumb/0/0e/AS_Roma_Logo_2017.svg/1200px-AS_Roma_Logo_2017.svg.png"
+                src="https://upload.wikimedia.org/wikipedia/it/thumb/e/e4/Empoli_logo_2021.svg/1200px-Empoli_logo_2021.svg.png"
               />
-              AS Roma - FC Genoa
+              FC Empoli - AS Roma
               <img
                 className="mx-3"
                 alt="logoaway"
                 height="50px"
-                src="https://upload.wikimedia.org/wikipedia/it/thumb/9/99/Genoa_Cricket_and_Football_Club_logo.svg/1200px-Genoa_Cricket_and_Football_Club_logo.svg.png"
+                src="https://upload.wikimedia.org/wikipedia/it/thumb/0/0e/AS_Roma_Logo_2017.svg/1200px-AS_Roma_Logo_2017.svg.png"
               />
-              <h6 className="text-center">Serie A Tim - 12/5/2024 - 20:45</h6>
+              <h6 className="text-center">Serie A Tim - 26/5/2024 - Orario da definire</h6>
             </h2>
 
             <div className="text-center customcolor small ">
