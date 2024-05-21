@@ -296,7 +296,7 @@ hr {
 }
 
 button.navbar-toggler.collapsed {
-  margin-right: 64px;
+  margin-right: 53px;
 }
 
 .table-full-width {
@@ -384,4 +384,40 @@ h1 {
   color: orange !important;
   background-color: brown !important;
   border-color: orange !important;
+}
+
+.dropstart .dropdown-toggle::before {
+  border: none !important;
+  background-image: url(../public/person-circle.svg) !important;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block !important;
+  margin: 0px !important;
+}
+
+.dropend .dropdown-toggle:empty::after {
+  border: none !important;
+  background-image: url(../public/person-circle.svg) !important;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block !important;
+  margin: 0px !important;
+}
+
+.carousel-image {
+  height: 100% !important;
+}
+
+.carousel-inner {
+  height: 100% !important;
+}
+
+@media screen and (min-width: 576px) {
+  .dropstart .dropdown-toggle::before {
+    justify-content: center;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -7,8 +7,30 @@ import { Link } from "react-router-dom";
 
 function BasicExample({ welcomeMessage }) {
   const [expanded, setExpanded] = useState(false);
+  const [storedWelcomeMessage, setStoredWelcomeMessage] = useState("");
+
+  useEffect(() => {
+    const savedMessage = localStorage.getItem("welcomeMessage");
+    if (savedMessage) {
+      setStoredWelcomeMessage(savedMessage);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (welcomeMessage) {
+      localStorage.setItem("welcomeMessage", welcomeMessage);
+      setStoredWelcomeMessage(welcomeMessage);
+    }
+  }, [welcomeMessage]);
+
   const handleToggle = () => setExpanded(!expanded);
   const closeNav = () => setExpanded(false);
+
+  const handleLogout = () => {
+    localStorage.removeItem("welcomeMessage");
+
+    window.location.href = "/login";
+  };
 
   return (
     <Navbar
@@ -201,10 +223,10 @@ function BasicExample({ welcomeMessage }) {
           />
         </svg> */}
 
-        <NavDropdown title="" id="basic-nav-dropdown " drop="start">
-          <h6 className="text-center p-1">
-            {welcomeMessage} <hr></hr>
-          </h6>
+        <NavDropdown title="" id="basic-nav-dropdown " drop={expanded ? "end" : "start"}>
+          {storedWelcomeMessage && (
+            <h6 className="welcome-message text-center p-2">{storedWelcomeMessage}</h6>
+          )}
           <NavDropdown.Item href="#action/3.1" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +270,7 @@ function BasicExample({ welcomeMessage }) {
             </svg>
             Log In
           </NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/action/3.4" onClick={closeNav}>
+          <NavDropdown.Item as={Link} to="login" onClick={handleLogout}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

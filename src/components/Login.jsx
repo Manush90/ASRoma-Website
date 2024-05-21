@@ -1,5 +1,3 @@
-// Login.jsx
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
@@ -19,10 +17,13 @@ const Login = ({ onLogin }) => {
 
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      onLogin(userCredential.user);
-      setWelcomeMessage(
-        `Bentornato! ${userCredential.user.displayName || userCredential.user.email}!`
-      );
+      const user = userCredential.user;
+
+      // Salva i dati utente nel local storage
+      localStorage.setItem("user", JSON.stringify(user));
+
+      onLogin(user);
+      setWelcomeMessage(`Bentornato! ${user.displayName || user.email}!`);
     } catch (err) {
       setError(err.message);
     }
@@ -39,7 +40,7 @@ const Login = ({ onLogin }) => {
             width="36"
             height="36"
             fill="currentColor"
-            class="bi bi-door-open customcolor mb-2"
+            className="bi bi-door-open customcolor mb-2"
             viewBox="0 0 16 16"
           >
             <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1" />
