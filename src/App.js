@@ -1,43 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MyNav from "./components/MyNav.jsx";
-import Home from "./components/Home.jsx";
-import "./App.css";
-import Footer from "./components/Footer.jsx";
-import Tickets from "./components/Tickets.jsx";
-import Rosa from "./components/Rosa.jsx";
+import MyNav from "./components/MyNav";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Tickets from "./components/Tickets";
+import Rosa from "./components/Rosa";
 import AsromaTeam from "./data/AsromaTeam.json";
-import TabsSerieA from "./components/TabsSerieA.jsx";
-import VideoHighlights from "./components/VideoHighlights.jsx";
-import Alerts from "./components/Alerts.jsx";
-import MyCountdown from "./components/MyCountdown.jsx";
-import Europa from "./components/Europa.jsx";
-import Newsletter from "./components/Newsletter.jsx";
-import NewsPage from "./components/NewsPage.jsx";
-import Article from "./components/Article.jsx";
-import Article_2 from "./components/Article_2.jsx";
-import Allenamenti from "./components/Allenamenti.jsx";
+import TabsSerieA from "./components/TabsSerieA";
+import VideoHighlights from "./components/VideoHighlights";
+import Alerts from "./components/Alerts";
+import MyCountdown from "./components/MyCountdown";
+import Europa from "./components/Europa";
+import Newsletter from "./components/Newsletter";
+import NewsPage from "./components/NewsPage";
+import Article from "./components/Article";
+import Article2 from "./components/Article2";
+import Allenamenti from "./components/Allenamenti";
+import Login from "./components/Login";
+import Registration from "./components/Registration";
+import "./App.css";
 
 function App() {
   const targetDate = "2024-05-26T20:45:00";
+  const [user, setUser] = useState(null);
+  const [welcomeMessage, setWelcomeMessage] = useState("");
+  const handleLogin = (loggedInUser) => {
+    setUser(loggedInUser);
+    setWelcomeMessage(`Benvenuto, ${loggedInUser.email}!`);
+  };
+
+  const handleRegistration = (registeredUser) => {
+    setUser(registeredUser);
+    setWelcomeMessage(`Benvenuto, ${registeredUser.email}!`);
+  };
 
   return (
     <Router>
       <div>
         <Alerts />
-        <MyNav />
+        <MyNav welcomeMessage={welcomeMessage} />
         <MyCountdown targetDate={targetDate} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/News" element={<NewsPage />} />
-          <Route path="/Article" element={<Article />} />
-          <Route path="/Article_2" element={<Article_2 />} />
-          <Route path="/tickets/" element={<Tickets />} />
-          <Route path="/Allenamenti/" element={<Allenamenti />} />
-          <Route path="/Rosa/" element={<Rosa giocatori={AsromaTeam} />} />
-          <Route path="/TabsSerieA/" element={<TabsSerieA />} />
-          <Route path="/EuropaLeague/" element={<Europa />} />
-          <Route path="/Highlights/" element={<VideoHighlights />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/article" element={<Article />} />
+          <Route path="/article2" element={<Article2 />} />
+          <Route path="/tickets" element={<Tickets />} />
+          <Route path="/allenamenti" element={<Allenamenti />} />
+          <Route path="/rosa" element={<Rosa giocatori={AsromaTeam} />} />
+          <Route path="/tabs-serie-a" element={<TabsSerieA />} />
+          <Route path="/europa-league" element={<Europa />} />
+          <Route path="/highlights" element={<VideoHighlights />} />
+          <Route path="/login" element={<Login onLogin={handleLogin} />} />
+          <Route path="/register" element={<Registration onRegister={handleRegistration} />} />
         </Routes>
         <Newsletter />
         <Footer />

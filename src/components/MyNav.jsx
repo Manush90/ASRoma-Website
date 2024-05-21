@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 
-function BasicExample() {
+function BasicExample({ welcomeMessage }) {
   const [expanded, setExpanded] = useState(false);
   const handleToggle = () => setExpanded(!expanded);
   const closeNav = () => setExpanded(false);
@@ -184,13 +184,14 @@ function BasicExample() {
             height="50px"
             src="https://styles.redditmedia.com/t5_8pga9f/styles/profileIcon_psl3envaej8b1.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=31fbda56413eb14b8f7415fa9425ea7e7800df7b"
           />
-        </Navbar.Brand>
-        <svg
+        </Navbar.Brand> */}
+
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
           height="25"
           fill="currentColor"
-          class="bi bi-person-circle"
+          class="bi bi-person-circle customcolor "
           viewBox="0 0 16 16"
         >
           <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -199,7 +200,11 @@ function BasicExample() {
             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
           />
         </svg> */}
-        {/* <NavDropdown title="" id="basic-nav-dropdown " drop="start">
+
+        <NavDropdown title="" id="basic-nav-dropdown " drop="start">
+          <h6 className="text-center p-1">
+            {welcomeMessage} <hr></hr>
+          </h6>
           <NavDropdown.Item href="#action/3.1" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -227,22 +232,9 @@ function BasicExample() {
             </svg>
             Impostazioni
           </NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/action/3.3" onClick={closeNav}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-ticket-detailed"
-              viewBox="0 0 16 16"
-            >
-              <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" />
-              <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z" />
-            </svg>
-            Abbonamento
-          </NavDropdown.Item>
+
           <NavDropdown.Divider />
-          <NavDropdown.Item as={Link} to="/action/3.4" onClick={closeNav}>
+          <NavDropdown.Item as={Link} to="/login" onClick={closeNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -269,7 +261,7 @@ function BasicExample() {
             </svg>
             Log Out
           </NavDropdown.Item>
-        </NavDropdown> */}
+        </NavDropdown>
       </Container>
     </Navbar>
   );

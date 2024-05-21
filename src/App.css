@@ -296,7 +296,7 @@ hr {
 }
 
 button.navbar-toggler.collapsed {
-  margin-left: 20px;
+  margin-right: 64px;
 }
 
 .table-full-width {
@@ -374,4 +374,14 @@ a.navbar-brand {
   .d-sm-table-cell {
     display: table-cell !important;
   }
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+.customButton {
+  color: orange !important;
+  background-color: brown !important;
+  border-color: orange !important;
 }
