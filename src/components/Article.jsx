@@ -5,7 +5,7 @@ const ArticoloSportivo = () => {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className="d-flex column">
           <Image
             src="https://media.asroma.com/prod/images/landscape_medium_fill/fe928137c26f-download-2.png"
             fluid

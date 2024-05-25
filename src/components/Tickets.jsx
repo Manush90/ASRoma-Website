@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Tickets() {
   return (
     <>
-      <Container fluid className="mt-3">
+      <Container fluid className="mt-3 ">
         <h1 className="text-center mt-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ function Tickets() {
           Campagna Abbonamenti
         </h1>
         <h3 className="text-center mt-2">Stagione 2024/2025</h3>
-        <Row xs={1} sm={3} md={3} lg={3} className="p-2 g-4">
+        <Row xs={1} sm={3} md={3} lg={3} className="p-2 g-4 d-flex justify-content-center">
           <Col>
             <Card className="player-card static">
               <Card.Img variant="top" src="/Abbonamento.png" />
@@ -65,7 +65,7 @@ function Tickets() {
       <Container fluid className="mt-3">
         <h1 className="text-center mt-2">Biglietti Disponibili</h1>
         <h3 className="text-center mt-2">(Il link reindirizza al sito ufficiale della A.S.Roma)</h3>
-        <Row xs={2} sm={3} md={3} lg={3} className="p-2 g-4">
+        <Row xs={2} sm={3} md={3} lg={3} className="p-2 g-4 d-flex justify-content-center">
           <Col>
             <Card className="player-card static">
               <Card.Img variant="top" src="/ticket1.png" />
