@@ -29,7 +29,7 @@ class MyComponent extends React.Component {
                 <img
                   className="d-block w-100 rounded heightcustom"
                   onClick={this.scrollToBottom}
-                  src="https://static.open.online/wp-content/uploads/2024/04/roma-stadio-olimpico.jpg"
+                  src="https://www.asromalive.it/wp-content/uploads/2020/01/roma-lazio-curva-1-1280x720.jpg"
                   alt="Second slide"
                 />
                 <Carousel.Caption>

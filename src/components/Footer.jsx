@@ -23,7 +23,9 @@ function Footer() {
                 <a href="/contact">Contatti</a>
               </li>
               <li>
-                <li></li>
+                <li>
+                  <img className="mt-3" alt="logo" height="90px" src="/images/aesseromanisti.png" />
+                </li>
               </li>
             </ul>
           </Col>

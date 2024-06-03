@@ -78,12 +78,13 @@ const Classifica = () => {
       <Row>
         <Col md={{ span: 10, offset: 1 }}>
           <div>
-            <h2 className="text-center mt-2 text-white">
+            <h2 className="text-center  text-white">
               Classifica Girone <br></br>
               <img
                 src="https://upload.wikimedia.org/wikipedia/it/2/21/UEFA_Europa_League_logo_%282021%29.svg"
                 height="90px"
                 alt="SA"
+                className="mb-2"
               />
             </h2>
             <Table striped bordered hover responsive rounded>
