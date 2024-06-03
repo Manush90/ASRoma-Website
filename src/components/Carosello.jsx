@@ -6,19 +6,18 @@ import Nav from "react-bootstrap/Nav";
 class MyComponent extends React.Component {
   render() {
     return (
-      <Container className="mt-0 mb-2">
-        <hr className="d-none d-sm-block"></hr>
+      <Container className="mt-0 ">
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} xl={9}>
             <Carousel className="border rounded  height100">
               {/* Ins erisci le tue immagini qui */}
-              <Carousel.Item className="carousel-image ">
+              <Carousel.Item className="carousel-image">
                 <img
                   className="d-block w-100 rounded heightcustom "
                   src="https://media.gqitalia.it/photos/660bdc358de57cf68781c8a1/16:9/w_1920,h_1080,c_limit/adidas%20x%20AS%20roma_Origins%20Jersey_2_16x9.jpg"
                   alt="First slide"
                 />
-                <a href="/Article" className="cover_all">
+                <a href="/Articles/Article" className="cover_all">
                   <Carousel.Caption>
                     <h3>
                       Nuova Maglia Home Vintage !<br></br> disponibile dal 13/04
@@ -50,7 +49,7 @@ class MyComponent extends React.Component {
             </Carousel>
           </Col>
           <Col xs={12} sm={12} md={12} lg={12} xl={3}>
-            <div className="mt-2 text-center">
+            <div className="marginmobile text-center">
               <Card className="nohover height100 ">
                 <Card.Body className="text-white bg-dark border rounded">
                   <Card.Title className="text-center">
@@ -80,7 +79,7 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article2">
+                  <Nav.Link as={Link} to="./Articles/Article2">
                     <p className="customcolor">Ranking UEFA per club Aggiornato </p>
                     <h6 className="customFontp">
                       Scaliamo ed arriviamo al 6° posto della classifica !

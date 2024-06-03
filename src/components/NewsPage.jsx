@@ -11,7 +11,7 @@ class MyComponent extends React.Component {
           <Col xs={12} sm={12} md={12} lg={12}>
             <div className="mt-2 p-0">
               <Card className=" nohover height100 ">
-                <Card.Body className="text-white bg-dark border rounded">
+                <Card.Body className="text-white bg-dark border rounded ">
                   <Card.Title className="text-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ class MyComponent extends React.Component {
                   </Card.Title>
 
                   {/* Lista delle notizie */}
-                  <Nav.Link as={Link} to="/Article">
+                  <Nav.Link as={Link} to="Articles/Article">
                     <h6 className="m-0 p-0">16/5/24</h6>
                     <p className="customcolor">La Probabile Formazione vs il Genoa</p>
                     <h6 className="customFontp">Ancora in dubbio Dybala, ricaduta per zalewski</h6>
@@ -41,7 +41,7 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article2">
+                  <Nav.Link as={Link} to="/Articles/Article2">
                     <h6 className="m-0 p-0">14/5/24</h6>
                     <p className="customcolor">Ranking UEFA per club Aggiornato </p>
                     <h6 className="customFontp">
@@ -49,7 +49,7 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article3">
+                  <Nav.Link as={Link} to="./Articles/Article2">
                     <h6 className="m-0 p-0">13/5/24</h6>
                     <p className="customcolor">Il 6° posto può valere la Champions</p>
                     <h6 className="customFontp">

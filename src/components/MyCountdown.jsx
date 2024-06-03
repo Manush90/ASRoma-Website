@@ -38,7 +38,12 @@ const MyCountdown = ({ targetDate }) => {
 
   return (
     <>
-      <Container className="main-content ">
+      <video className="video-background fullscreen " autoPlay loop>
+        {/* classe muted per togliere l'audio */}
+        <source src="/videoroma.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <Container className="main-content marginedit  mb-2">
         <Row className="flagColor">
           <Col>
             <u>

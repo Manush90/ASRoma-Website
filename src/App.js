@@ -13,15 +13,15 @@ import MyCountdown from "./components/MyCountdown";
 import Europa from "./components/Europa";
 import Newsletter from "./components/Newsletter";
 import NewsPage from "./components/NewsPage";
-import Article from "./components/Article";
-import Article2 from "./components/Article2";
+import Article from "./components/Articles/Article";
+import Article2 from "./components/Articles/Article2";
 import Allenamenti from "./components/Allenamenti";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
 import "./App.css";
 
 function App() {
-  const targetDate = "2024-05-26T20:45:00";
+  const targetDate = "2024-07-26T20:45:00";
   const [user, setUser] = useState(null);
   const [welcomeMessage, setWelcomeMessage] = useState("");
 
@@ -59,8 +59,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<NewsPage />} />
-          <Route path="/article" element={<Article />} />
-          <Route path="/article2" element={<Article2 />} />
+          <Route path="/Articles/Article" element={<Article />} />
+          <Route path="/Articles/Article2" element={<Article2 />} />
           <Route path="/tickets" element={<Tickets />} />
           <Route path="/allenamenti" element={<Allenamenti />} />
           <Route path="/rosa" element={<Rosa giocatori={AsromaTeam} />} />

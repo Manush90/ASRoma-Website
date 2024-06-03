@@ -66,13 +66,11 @@ li a {
   border-color: brown !important;
 }
 .navBackground {
-  /* background: linear-gradient(to left, #303030, #8e001c 20%, #ff9100 50%, #303030) !important; */
   background-image: url(https://www.pagineromaniste.com/wp-content/uploads/2017/02/tifosi-roma-curva-sud.jpg);
-  background-size: cover; /* Questa proprietà fa sì che l'immagine copra l'intera area del background */
-  background-position: center; /* Centra l'immagine orizzontalmente e verticalmente */
-  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-position: center 0px;
-  /* height: 70px; */
 }
 
 .closed-nav {
@@ -218,6 +216,14 @@ button#uncontrolled-tab-example-tab-classifica.nav-link {
     object-fit: cover;
   }
 }
+
+@media screen and (min-width: 577px) {
+  .heightcustom {
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
+
 .jersey-15-regular {
   font-family: "Jersey 15", sans-serif;
   font-weight: 400;
@@ -312,15 +318,25 @@ div.m-auto.navbar-nav svg {
   color: orange;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 577px) {
   .navBackground {
-    background: linear-gradient(to left, #303030, #8e001c 20%, #ff9100 50%, #303030) !important;
+    background-image: url(https://www.pagineromaniste.com/wp-content/uploads/2017/02/tifosi-roma-curva-sud.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .opacityColor {
+    background-color: rgba(85, 0, 0, 0.603) !important;
   }
 }
 
 @media screen and (min-width: 576px) {
   div.m-auto.navbar-nav svg {
-    color: rgb(0, 0, 0);
+    color: orange;
   }
 }
 
@@ -419,5 +435,20 @@ h1 {
 @media screen and (min-width: 576px) {
   .dropstart .dropdown-toggle::before {
     justify-content: center;
+  }
+}
+
+.fullscreen {
+  width: 100% !important;
+  margin-top: 115px;
+}
+
+.marginedit {
+  margin-top: -20px !important;
+}
+
+@media (max-width: 576px) {
+  .marginmobile {
+    margin-top: 8px;
   }
 }
