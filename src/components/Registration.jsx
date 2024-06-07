@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Alert } from "react-bootstrap";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
-import { useNavigate } from "react-router-dom"; // Aggiornato per usare useNavigate
+import { doc, setDoc } from "firebase/firestore";
+import { auth, firestore } from "../firebase";
+import { useNavigate } from "react-router-dom";
 
 const Registration = ({ onRegister }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [welcomeMessage, setWelcomeMessage] = useState(false); // Stato per il messaggio di benvenuto
-  const navigate = useNavigate(); // Inizializza useNavigate
+  const [welcomeMessage, setWelcomeMessage] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,10 +19,18 @@ const Registration = ({ onRegister }) => {
 
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      setWelcomeMessage(true); // Mostra il messaggio di benvenuto
-      onRegister(userCredential.user);
+      const user = userCredential.user;
+
+      // Salva il ruolo dell'utente nel database
+      await setDoc(doc(firestore, "users", user.uid), {
+        email: user.email,
+        role: "user", // Imposta il ruolo dell'utente come "user" per impostazione predefinita
+      });
+
+      setWelcomeMessage(true);
+      onRegister(user);
       setTimeout(() => {
-        navigate("/login"); // Reindirizza alla pagina di login dopo 3 secondi
+        navigate("/login");
       }, 3000);
     } catch (err) {
       setError(err.message);

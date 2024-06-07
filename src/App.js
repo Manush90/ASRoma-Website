@@ -18,7 +18,11 @@ import Article2 from "./components/Articles/Article2";
 import Allenamenti from "./components/Allenamenti";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
+import AdminPage from "./components/AdminPage"; // Importa la pagina amministratore
+import PrivateRoute from "./components/PrivateRoute"; // Importa il componente PrivateRoute
 import "./App.css";
+import InserimentoRisultati from "./components/InserimentoRisultati";
+import Profile from "./components/Profile";
 
 function App() {
   const targetDate = "2024-07-26T20:45:00";
@@ -48,13 +52,14 @@ function App() {
     setUser(null);
     setWelcomeMessage("");
     localStorage.removeItem("user");
+    localStorage.removeItem("welcomeMessage");
   };
 
   return (
     <Router>
       <div>
         <Alerts />
-        <MyNav welcomeMessage={welcomeMessage} onLogout={handleLogout} />
+        <MyNav welcomeMessage={welcomeMessage} user={user} onLogout={handleLogout} />
         <MyCountdown targetDate={targetDate} />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -69,6 +74,30 @@ function App() {
           <Route path="/highlights" element={<VideoHighlights />} />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/register" element={<Registration onRegister={handleRegistration} />} />
+          <Route
+            path="/adminPage"
+            element={
+              <PrivateRoute user={user} requiredRole="admin">
+                <AdminPage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/InserimentoRisultati"
+            element={
+              <PrivateRoute user={user} requiredRole="admin">
+                <InserimentoRisultati />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/Profile"
+            element={
+              <PrivateRoute user={user}>
+                <Profile user={user} />
+              </PrivateRoute>
+            }
+          />
         </Routes>
         <Newsletter />
         <Footer />

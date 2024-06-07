@@ -79,39 +79,5 @@
     "SquadraTrasferta": "Sassuolo",
     "GolCasa": "5",
     "GolTrasferta": "1"
-  },
-  {
-    "Giornata": 2,
-    "Incontro": 1,
-    "SquadraCasa": "Salernitana",
-    "SquadraTrasferta": "Sassuolo",
-    "GolCasa": "2",
-    "GolTrasferta": "3"
-  },
-  {
-    "Giornata": 2,
-    "Incontro": 2,
-    "SquadraCasa": "Roma",
-    "SquadraTrasferta": "Inter",
-    "GolCasa": "4",
-    "GolTrasferta": "1",
-    "Marcatori": "Totti 11',24', 88' (R),90'+"
-  },
-  {
-    "Giornata": 2,
-    "Incontro": 3,
-    "SquadraCasa": "Napoli",
-    "SquadraTrasferta": "Lazio",
-    "GolCasa": "4",
-    "GolTrasferta": "1"
-  },
-  {
-    "Giornata": 3,
-    "Incontro": 1,
-    "SquadraCasa": "Roma",
-    "SquadraTrasferta": "Sassuolo",
-    "GolCasa": "5",
-    "GolTrasferta": "0",
-    "Marcatori": "Dybala 3', 45, 66, 90'+, Mancini 76'"
   }
 ]

@@ -345,17 +345,11 @@ div.m-auto.navbar-nav svg {
 
 @media screen and (min-width: 577px) {
   .navBackground {
-    background-image: url(https://www.pagineromaniste.com/wp-content/uploads/2017/02/tifosi-roma-curva-sud.jpg);
+    background-image: url(/public/navback.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-position: center 0px;
-  }
-}
-
-@media screen and (min-width: 577px) {
-  .opacityColor {
-    background-color: rgba(85, 0, 0, 0.603) !important;
+    /* background-position: center 0px; */
   }
 }
 
@@ -363,6 +357,11 @@ div.m-auto.navbar-nav svg {
   div.m-auto.navbar-nav svg {
     color: orange;
   }
+}
+
+.navbar,
+.container-fluid {
+  width: 100%;
 }
 
 a.navbar-brand {
@@ -465,11 +464,18 @@ h1 {
 
 .fullscreen {
   width: 100% !important;
-  margin-top: 115px;
+  margin-top: 0px;
+  box-shadow: 10px;
 }
 
 .marginedit {
-  margin-top: -20px !important;
+  margin-top: 135px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .marginedit {
+    margin-top: 111px !important;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -490,4 +496,24 @@ h1 {
 .backgroundseriea {
   background: linear-gradient(to right, cyan, blue);
   border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.right-align {
+  text-align: center;
+  margin-left: auto; /* Allinea a destra rispetto al contenitore padre */
+}
+
+.customcolor2 {
+  color: rgb(43, 117, 253);
+}
+
+svg.bi.bi-clock-history {
+  color: white !important;
 }

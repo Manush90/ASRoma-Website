@@ -10,6 +10,11 @@ class MyComponent extends React.Component {
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
             <div className="mt-2 p-0">
+              <img
+                className="d-block w-100 rounded heightcustom mb-2"
+                src="/ragazzo_sciarpa_roma.png"
+                alt="First slide"
+              />
               <Card className=" nohover height100 ">
                 <Card.Body className="text-white bg-dark border rounded ">
                   <Card.Title className="text-center">

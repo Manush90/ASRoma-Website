@@ -1,54 +1,72 @@
 import React, { useState, useEffect } from "react";
 import { Container, Table, Row, Col } from "react-bootstrap";
-import partite from "../data/Calendario.json";
+import { firestore } from "../firebase";
+import { doc, onSnapshot } from "firebase/firestore";
 
-const Classifica = () => {
+const SerieA = () => {
   const [classifica, setClassifica] = useState([]);
-  const aggiornaClassifica = () => {
+
+  useEffect(() => {
+    const docRef = doc(firestore, "CalendarioSerieA", "SerieA");
+
+    const unsubscribe = onSnapshot(docRef, (docSnapshot) => {
+      if (docSnapshot.exists()) {
+        const partite = docSnapshot.data().partite || [];
+        aggiornaClassifica(partite);
+      } else {
+        console.error("Documento non trovato");
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const aggiornaClassifica = (partite) => {
     const nuovaClassifica = {};
 
     partite.forEach((partita) => {
-      partita.Giornata = parseInt(partita.Giornata);
-      partita.Incontro = parseInt(partita.Incontro);
-      partita.GolCasa = parseInt(partita.GolCasa ? partita.GolCasa : 0);
-      partita.GolTrasferta = parseInt(partita.GolTrasferta ? partita.GolTrasferta : 0);
+      const golCasa = parseInt(partita.GolCasa, 10);
+      const golTrasferta = parseInt(partita.GolTrasferta, 10);
 
-      nuovaClassifica[partita.SquadraCasa] = nuovaClassifica[partita.SquadraCasa] || {
-        vinte: 0,
-        pareggiate: 0,
-        perse: 0,
-        golFatti: 0,
-        golSubiti: 0,
-        punti: 0,
-      };
-      nuovaClassifica[partita.SquadraCasa].golFatti += partita.GolCasa;
-      nuovaClassifica[partita.SquadraCasa].golSubiti += partita.GolTrasferta;
-      if (partita.GolCasa > partita.GolTrasferta) {
+      if (!nuovaClassifica[partita.SquadraCasa]) {
+        nuovaClassifica[partita.SquadraCasa] = {
+          vinte: 0,
+          pareggiate: 0,
+          perse: 0,
+          golFatti: 0,
+          golSubiti: 0,
+          punti: 0,
+        };
+      }
+
+      if (!nuovaClassifica[partita.SquadraTrasferta]) {
+        nuovaClassifica[partita.SquadraTrasferta] = {
+          vinte: 0,
+          pareggiate: 0,
+          perse: 0,
+          golFatti: 0,
+          golSubiti: 0,
+          punti: 0,
+        };
+      }
+
+      nuovaClassifica[partita.SquadraCasa].golFatti += golCasa;
+      nuovaClassifica[partita.SquadraCasa].golSubiti += golTrasferta;
+
+      nuovaClassifica[partita.SquadraTrasferta].golFatti += golTrasferta;
+      nuovaClassifica[partita.SquadraTrasferta].golSubiti += golCasa;
+
+      if (golCasa > golTrasferta) {
         nuovaClassifica[partita.SquadraCasa].vinte++;
         nuovaClassifica[partita.SquadraCasa].punti += 3;
-      } else if (partita.GolCasa < partita.GolTrasferta) {
+        nuovaClassifica[partita.SquadraTrasferta].perse++;
+      } else if (golCasa < golTrasferta) {
+        nuovaClassifica[partita.SquadraTrasferta].vinte++;
+        nuovaClassifica[partita.SquadraTrasferta].punti += 3;
         nuovaClassifica[partita.SquadraCasa].perse++;
       } else {
         nuovaClassifica[partita.SquadraCasa].pareggiate++;
         nuovaClassifica[partita.SquadraCasa].punti += 1;
-      }
-
-      nuovaClassifica[partita.SquadraTrasferta] = nuovaClassifica[partita.SquadraTrasferta] || {
-        vinte: 0,
-        pareggiate: 0,
-        perse: 0,
-        golFatti: 0,
-        golSubiti: 0,
-        punti: 0,
-      };
-      nuovaClassifica[partita.SquadraTrasferta].golFatti += partita.GolTrasferta;
-      nuovaClassifica[partita.SquadraTrasferta].golSubiti += partita.GolCasa;
-      if (partita.GolCasa < partita.GolTrasferta) {
-        nuovaClassifica[partita.SquadraTrasferta].vinte++;
-        nuovaClassifica[partita.SquadraTrasferta].punti += 3;
-      } else if (partita.GolCasa > partita.GolTrasferta) {
-        nuovaClassifica[partita.SquadraTrasferta].perse++;
-      } else {
         nuovaClassifica[partita.SquadraTrasferta].pareggiate++;
         nuovaClassifica[partita.SquadraTrasferta].punti += 1;
       }
@@ -64,14 +82,10 @@ const Classifica = () => {
           nuovaClassifica[nome].pareggiate +
           nuovaClassifica[nome].perse,
       }))
-      .sort((a, b) => b.punti - a.punti);
+      .sort((a, b) => b.punti - a.punti || b.differenzaReti - a.differenzaReti);
 
     setClassifica(classificaArray);
   };
-
-  useEffect(() => {
-    aggiornaClassifica();
-  }, []);
 
   return (
     <Container fluid className="sfondo">
@@ -79,7 +93,7 @@ const Classifica = () => {
         <Col md={{ span: 10, offset: 1 }}>
           <div className="justify-content-center">
             <h2 className="text-center backgroundseriea text-white">
-              Classifica Serie A <br></br>
+              Classifica Serie A <br />
               <img
                 src="https://upload.wikimedia.org/wikipedia/it/thumb/c/c5/Logo_Serie_A_TIM_2021.svg/1200px-Logo_Serie_A_TIM_2021.svg.png"
                 height="90px"
@@ -133,7 +147,6 @@ const Classifica = () => {
                         <img className="ms-4" src="/UCL.png" height="30px" alt="UCL" />
                       ) : null}
                     </td>
-
                     <td>{squadra.nome}</td>
                     <td className="text-center">{squadra.punti}</td>
                     <td className="text-center d-none d-sm-table-cell">{squadra.vinte}</td>
@@ -154,4 +167,4 @@ const Classifica = () => {
   );
 };
 
-export default Classifica;
+export default SerieA;

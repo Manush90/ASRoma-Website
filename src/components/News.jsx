@@ -35,7 +35,7 @@ function BasicExample() {
             <Card.Body className="d-flex flex-column justify-content-center shadow">
               <Card.Title className="display-6 text-center">Allenamenti</Card.Title>
               <Card.Text className="h5 text-center">
-                Le ultime news, aggiornamenti dal campo Agostino di Bartolomei!
+                Le ultime news e updates aggiornamenti dal campo Agostino di Bartolomei!
               </Card.Text>
               <Link to="/Allenamenti" className="mx-auto buttonColor shadow btn btn-primary">
                 Guarda Gallery
@@ -71,7 +71,7 @@ function BasicExample() {
             <Card.Body className="d-flex flex-column justify-content-center shadow">
               <Card.Title className="display-6 text-center">Coppa Italia</Card.Title>
               <Card.Text className="h5 text-center">
-                Acquistai biglietti per la stracittadina di Venerdi 26 Maggio!
+                Acquista i biglietti per la stracittadina di Venerdi 26 Maggio!
               </Card.Text>
               <Link to="/CoppaItalia" className="mx-auto buttonColor shadow btn btn-primary">
                 Acquista Ora

@@ -6,6 +6,7 @@ function Tickets() {
   return (
     <>
       <Container fluid className="mt-3 ">
+        <img className="d-block w-100 rounded  " src="/stadio_olimpico1.png" alt="First slide" />
         <h1 className="text-center mt-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +22,9 @@ function Tickets() {
           <br />
           Campagna Abbonamenti
         </h1>
+
         <h3 className="text-center mt-2">Stagione 2024/2025</h3>
+
         <Row xs={1} sm={3} md={3} lg={3} className="p-2 g-4 d-flex justify-content-center">
           <Col>
             <Card className="player-card static">

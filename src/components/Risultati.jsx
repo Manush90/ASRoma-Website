@@ -1,10 +1,26 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { firestore } from "../firebase";
+import { doc, onSnapshot } from "firebase/firestore";
 
-const Risultati = ({ partite }) => {
+const Risultati = () => {
+  const [partite, setPartite] = useState([]);
+
+  useEffect(() => {
+    const docRef = doc(firestore, "CalendarioSerieA", "SerieA");
+
+    const unsubscribe = onSnapshot(docRef, (docSnapshot) => {
+      if (docSnapshot.exists()) {
+        const partiteData = docSnapshot.data().partite || [];
+        setPartite(partiteData);
+      } else {
+        console.error("Documento non trovato");
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   // Filtra le partite per quelle della Roma
   const partiteRoma = partite.filter(
     (partita) => partita.SquadraCasa === "Roma" || partita.SquadraTrasferta === "Roma"

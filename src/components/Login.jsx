@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth, firestore } from "../firebase";
+import { doc, getDoc } from "firebase/firestore";
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState("");
@@ -19,11 +20,20 @@ const Login = ({ onLogin }) => {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
-      // Salva i dati utente nel local storage
-      localStorage.setItem("user", JSON.stringify(user));
+      // Recupera il ruolo dell'utente da Firestore
+      const userDoc = await getDoc(doc(firestore, "users", user.uid));
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        user.role = userData.role; // Aggiungi il ruolo all'oggetto utente
 
-      onLogin(user);
-      setWelcomeMessage(`Bentornato! ${user.displayName || user.email}!`);
+        // Salva i dati utente nel local storage
+        localStorage.setItem("user", JSON.stringify(user));
+
+        onLogin(user);
+        setWelcomeMessage(`Bentornato! ${user.displayName || user.email}!`);
+      } else {
+        throw new Error("User data not found");
+      }
     } catch (err) {
       setError(err.message);
     }
