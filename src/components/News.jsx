@@ -35,7 +35,7 @@ function BasicExample() {
             <Card.Body className="d-flex flex-column justify-content-center shadow">
               <Card.Title className="display-6 text-center">Allenamenti</Card.Title>
               <Card.Text className="h5 text-center">
-                Le ultime news e updates aggiornamenti dal campo Agostino di Bartolomei!
+                Le ultime news e updates dal campo Agostino di Bartolomei!
               </Card.Text>
               <Link to="/Allenamenti" className="mx-auto buttonColor shadow btn btn-primary">
                 Guarda Gallery
