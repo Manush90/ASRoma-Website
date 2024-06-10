@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Stadium from "./Stadium";
 
 function Tickets() {
   return (
@@ -25,7 +26,7 @@ function Tickets() {
 
         <h3 className="text-center mt-2">Stagione 2024/2025</h3>
 
-        <Row xs={1} sm={3} md={3} lg={3} className="p-2 g-4 d-flex justify-content-center">
+        <Row xs={1} sm={3} md={3} lg={2} className="p-2 g-4 d-flex justify-content-center">
           <Col>
             <Card className="player-card static">
               <Card.Img variant="top" src="/Abbonamento.png" />
@@ -64,9 +65,9 @@ function Tickets() {
           </Col>
         </Row>
       </Container>
-
+      <Stadium></Stadium>
       <Container fluid className="mt-3">
-        <h1 className="text-center mt-2">Biglietti Disponibili</h1>
+        <h1 className="text-center customcolor mt-2">Biglietti Disponibili</h1>
         <h3 className="text-center mt-2">(Il link reindirizza al sito ufficiale della A.S.Roma)</h3>
         <Row xs={2} sm={3} md={3} lg={3} className="p-2 g-4 d-flex justify-content-center">
           <Col>
@@ -130,29 +131,6 @@ function Tickets() {
                   <Link
                     to="https://www.asroma.com/it/biglietti/"
                     className="mt-0 mb-3 ticketbutton playerbutton btn btn-primary"
-                  >
-                    Compra Ora
-                  </Link>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card className="player-card static">
-              <Card.Img variant="top" src="/ticket_empty.png" />
-              <Card.Body>
-                <Card.Title className="text-center titlesizecardticket">"// - //"</Card.Title>
-                <Card.Text className="text-center textsizecardticket">
-                  Serie A // giornata <br /> Stadio Olimpico di Roma
-                  <br />
-                  --/--/----
-                  <br />
-                  ore --:--
-                  <hr></hr>
-                  <Link
-                    to="https://www.asroma.com/it/biglietti/"
-                    className="mt-0 mb-3 ticketbutton playerbutton btn btn-primary "
                   >
                     Compra Ora
                   </Link>

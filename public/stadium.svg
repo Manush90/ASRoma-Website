@@ -1,0 +1,57 @@
+<svg viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg">
+  <!-- Parte Alta -->
+  <rect x="240" y="60" width="480" height="120" fill="#A52A2A" id="tribuna-tevere"/>
+  <text x="480" y="120" text-anchor="middle" fill="white" font-size="48">Tribuna Tevere</text>
+
+  <rect x="120" y="60" width="120" height="120" fill="#FFA500" id="distinti-nord-1"/>
+  <text x="180" y="120" text-anchor="middle" fill="white" font-size="36">Distinti Nord</text>
+
+  <rect x="720" y="60" width="120" height="120" fill="#FFA500" id="distinti-sud-1"/>
+  <text x="780" y="120" text-anchor="middle" fill="white" font-size="36">Distinti Sud</text>
+
+  <!-- Parte Centrale -->
+  <rect x="120" y="180" width="120" height="240" fill="#A52A2A" id="curva-nord"/>
+  <text x="180" y="300" text-anchor="middle" fill="white" font-size="36" transform="rotate(-90 180,300)">Curva Nord</text>
+
+  <!-- Campo da gioco -->
+  <rect x="240" y="180" width="480" height="240" fill="#32CD32" id="campo"/>
+  <!-- Linee del campo -->
+  <line x1="480" y1="180" x2="480" y2="420" stroke="white" stroke-width="2"/>
+  <circle cx="480" cy="300" r="48" stroke="white" stroke-width="2" fill="none"/>
+  <rect x="240" y="228" width="48" height="144" stroke="white" stroke-width="2" fill="none"/>
+  <rect x="672" y="228" width="48" height="144" stroke="white" stroke-width="2" fill="none"/>
+  
+  <rect x="720" y="180" width="120" height="240" fill="#A52A2A" id="curva-sud"/>
+  <text x="780" y="300" text-anchor="middle" fill="white" font-size="36" transform="rotate(90 780,300)">Curva Sud</text>
+
+  <!-- Parte Bassa -->
+  <rect x="240" y="420" width="480" height="120" fill="#A52A2A" id="monte-mario"/>
+  <text x="480" y="480" text-anchor="middle" fill="white" font-size="48">Monte Mario</text>
+
+  <rect x="120" y="420" width="120" height="120" fill="#FFA500" id="distinti-nord-2"/>
+  <text x="180" y="480" text-anchor="middle" fill="white" font-size="36">Distinti Nord</text>
+
+  <rect x="720" y="420" width="120" height="120" fill="#FFA500" id="distinti-sud-2"/>
+  <text x="780" y="480" text-anchor="middle" fill="white" font-size="36">Distinti Sud</text>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

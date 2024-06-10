@@ -517,3 +517,46 @@ h1 {
 svg.bi.bi-clock-history {
   color: white !important;
 }
+/* ------------------------stadio------------------------------------------ */
+/* Stadium.css */
+
+.sector-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sector-list li {
+  cursor: pointer;
+  padding: 5px 0;
+  background-color: transparent;
+}
+
+.sector-list li.highlight {
+  background-color: transparent;
+}
+
+.stadium-svg {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.stadium-svg svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlight {
+  fill: #0011ff !important; /* Cambia colore quando evidenziato */
+  color: orange;
+}
+
+@media (max-width: 576px) {
+  .flex-column {
+    flex-direction: column !important;
+  }
+
+  .stadium-svg {
+    margin-top: 20px;
+  }
+}

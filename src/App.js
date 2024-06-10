@@ -23,6 +23,7 @@ import PrivateRoute from "./components/PrivateRoute"; // Importa il componente P
 import "./App.css";
 import InserimentoRisultati from "./components/InserimentoRisultati";
 import Profile from "./components/Profile";
+import Stadium from "./components/Stadium";
 
 function App() {
   const targetDate = "2024-07-26T20:45:00";
@@ -67,6 +68,7 @@ function App() {
           <Route path="/Articles/Article" element={<Article />} />
           <Route path="/Articles/Article2" element={<Article2 />} />
           <Route path="/tickets" element={<Tickets />} />
+          <Route path="/Stadium" element={<Stadium />} />
           <Route path="/allenamenti" element={<Allenamenti />} />
           <Route path="/rosa" element={<Rosa giocatori={AsromaTeam} />} />
           <Route path="/TabsSerieA" element={<TabsSerieA />} />
