@@ -560,3 +560,7 @@ svg.bi.bi-clock-history {
     margin-top: 20px;
   }
 }
+
+.successmessage {
+  color: rgb(24, 192, 24);
+}

@@ -36,7 +36,12 @@ const AdminPage = () => {
 
   return (
     <Container>
-      <h1 className="text-center mt-2">Home Amministratore</h1>
+      <h1 className="text-center customcolor mt-2 ">Home Amministratore</h1>
+      <h3 className="text-center  mb-2">Questa è la lista completa degli utenti del sito</h3>
+      <h5 className="text-center  mb-2">
+        *Solo un Admin può scegliere se promuovere o declassare un utente oltre ad aggiungere e
+        rimuovere i risultati delle partite (di Europa League o Serie A).
+      </h5>
       {error && <Alert variant="danger">{error}</Alert>}
       {success && <Alert variant="success">{success}</Alert>}
       <Table striped bordered hover>

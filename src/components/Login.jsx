@@ -19,23 +19,28 @@ const Login = ({ onLogin }) => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
+      console.log("User authenticated:", user);
 
       // Recupera il ruolo dell'utente da Firestore
       const userDoc = await getDoc(doc(firestore, "users", user.uid));
       if (userDoc.exists()) {
         const userData = userDoc.data();
-        user.role = userData.role; // Aggiungi il ruolo all'oggetto utente
+        console.log("User data from Firestore:", userData);
+        user.role = userData.role; // Aggiungi il campo role all'oggetto utente
 
         // Salva i dati utente nel local storage
-        localStorage.setItem("user", JSON.stringify(user));
+        const userWithRole = { ...user, role: user.role };
+        localStorage.setItem("user", JSON.stringify(userWithRole));
+        console.log("User saved in localStorage:", userWithRole);
 
-        onLogin(user);
+        onLogin(userWithRole);
         setWelcomeMessage(`Bentornato! ${user.displayName || user.email}!`);
       } else {
         throw new Error("User data not found");
       }
     } catch (err) {
       setError(err.message);
+      console.error("Login error:", err);
     }
   };
 
@@ -60,7 +65,7 @@ const Login = ({ onLogin }) => {
           {error && <Alert variant="danger">{error}</Alert>}
           {welcomeMessage && <Alert variant="success">{welcomeMessage}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formBasicEmail">
+            <Form.Group controlId="formBasicEmailLogin">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"

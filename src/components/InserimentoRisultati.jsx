@@ -4,7 +4,7 @@ import { firestore } from "../firebase";
 import { doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
 
 // Funzione per aggiungere un nuovo risultato di partita a Firestore
-const aggiungiRisultatoPartita = async (nuovoRisultato, competizione) => {
+const aggiungiRisultatoPartita = async (nuovoRisultato, competizione, setMessaggio) => {
   try {
     const documento = competizione === "SerieA" ? "SerieA" : "EuropaLeague";
     const docRef = doc(firestore, "CalendarioSerieA", documento);
@@ -26,8 +26,9 @@ const aggiungiRisultatoPartita = async (nuovoRisultato, competizione) => {
       console.log("Nuovo documento creato con partite:", { partite: [nuovoRisultato] }); // Debugging
     }
 
-    console.log("Risultato della partita aggiunto con successo a Firestore!");
+    setMessaggio("Partita inserita con successo!");
   } catch (error) {
+    setMessaggio("Problema con l'inserimento della partita: " + error.message);
     console.error("Errore durante l'aggiunta del risultato della partita a Firestore:", error);
   }
 };
@@ -43,10 +44,11 @@ const InserimentoRisultati = () => {
     Marcatori: "",
   });
   const [competizione, setCompetizione] = useState("SerieA");
+  const [messaggio, setMessaggio] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    aggiungiRisultatoPartita(nuovoRisultato, competizione);
+    aggiungiRisultatoPartita(nuovoRisultato, competizione, setMessaggio);
     setNuovoRisultato({
       Giornata: 1,
       Incontro: 1,
@@ -142,6 +144,7 @@ const InserimentoRisultati = () => {
           />
         </label>
         <button type="submit">Aggiungi Risultato</button>
+        {messaggio && <p className="mt-3 successmessage">{messaggio}</p>}
       </form>
     </Container>
   );

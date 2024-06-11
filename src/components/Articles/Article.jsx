@@ -6,16 +6,12 @@ const ArticoloSportivo = () => {
     <Container>
       <Row>
         <Col className="d-flex column">
-          <Image
-            src="https://media.asroma.com/prod/images/landscape_medium_fill/fe928137c26f-download-2.png"
-            fluid
-            className="mt-3 "
-          />
+          <Image src="/PresentazioneMaglia.png" fluid className="mt-3 " />
         </Col>
       </Row>
       <Row className="mt-4">
         <Col>
-          <h1 className="text-center">Disponibili i kit Home Adidas 24/25</h1>
+          <h1 className="text-center">presentazione Home Kit ai Fori imperiali</h1>
           <h5 className="customcolor">di Manuel Dell'Oste</h5>
           <h6 className="customcolor">del 16/05/2024</h6>
           <hr></hr>

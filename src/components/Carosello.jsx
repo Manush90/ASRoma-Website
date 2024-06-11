@@ -20,7 +20,7 @@ class MyComponent extends React.Component {
                 <a href="/Articles/Article" className="cover_all">
                   <Carousel.Caption>
                     <h3>
-                      Nuova Maglia Home Vintage !<br></br> disponibile dal 13/04
+                      Nuova Maglia Home Vintage !<br></br> disponibile dal 13/07
                     </h3>
                   </Carousel.Caption>
                 </a>
@@ -32,6 +32,7 @@ class MyComponent extends React.Component {
                   src="/Abbonamento.png"
                   alt="Second slide"
                 />
+                <a href="/Tickets" className="cover_all"></a>
                 <Carousel.Caption>
                   <h3>Date e orari per la nuova campagna abbonamenti</h3>
                 </Carousel.Caption>
@@ -67,12 +68,12 @@ class MyComponent extends React.Component {
                   </Card.Title>
 
                   {/* Lista delle notizie */}
-                  <Nav.Link as={Link} to="/Article">
+                  <Nav.Link as={Link} to="/Articles/Article">
                     <p className="customcolor">La Probabile Formazione vs il Genoa</p>
                     <h6 className="customFontp">Ancora in dubbio Dybala, ricaduta per zalewski</h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article1">
+                  <Nav.Link as={Link} to="/Articles/Article_1">
                     <p className="customcolor">Contattato L'entourage di Icardi</p>
                     <h6 className="customFontp">
                       Wanda Nara: "trattative avanzate" ma serve tempo
@@ -86,14 +87,14 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article3">
+                  <Nav.Link as={Link} to="/Articles/Article_3">
                     <p className="customcolor">Il 6° posto può valere la Champions</p>
                     <h6 className="customFontp">
                       Se l'Atalanta vince la coppa ed arriva 5a ci sarebbe...
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article4">
+                  <Nav.Link as={Link} to="/Articles/Article_4">
                     <p className="customcolor">Situazione Finanziaria Migliorata</p>
                     <h6 className="customFontp">
                       Sembra ci sia stato un miglioramento delle entrate...
