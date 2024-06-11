@@ -644,3 +644,7 @@ svg.bi.bi-clock-history {
     height: 40vh;
   }
 }
+
+.nowrappp {
+  flex-wrap: nowrap !important;
+}

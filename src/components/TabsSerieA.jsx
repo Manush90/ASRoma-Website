@@ -11,7 +11,7 @@ function UncontrolledExample() {
     <Tabs
       defaultActiveKey="classifica"
       id="uncontrolled-tab-example"
-      className="justify-content-center mb-3 mt-2"
+      className="justify-content-center mb-3 mt-2 nowrappp"
     >
       <Tab eventKey="classifica" title="Classifica">
         {<SerieA />}
@@ -22,7 +22,7 @@ function UncontrolledExample() {
       <Tab eventKey="incontri" title="Incontri">
         <Risultati partite={Calendario} />
       </Tab>
-      <Tab eventKey="Risultati Serie A" title="Serie A">
+      <Tab eventKey="Risultati Serie A" title="SerieA">
         <RisultatiSerieA />
       </Tab>
     </Tabs>
