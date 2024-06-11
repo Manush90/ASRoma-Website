@@ -6,52 +6,46 @@ import Nav from "react-bootstrap/Nav";
 class MyComponent extends React.Component {
   render() {
     return (
-      <Container className="mt-0 ">
+      <Container className="mt-0 carousel-container">
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} xl={9}>
-            <Carousel className="border rounded  height100">
-              {/* Ins erisci le tue immagini qui */}
-              <Carousel.Item className="carousel-image">
-                <img
-                  className="d-block w-100 rounded heightcustom "
-                  src="PresentazioneMaglia.png"
-                  alt="First slide"
-                />
-                <a href="/Articles/Article" className="cover_all">
-                  <Carousel.Caption>
-                    <h3>
-                      Nuova Maglia Home Vintage !<br></br> disponibile dal 13/07
-                    </h3>
-                  </Carousel.Caption>
-                </a>
-              </Carousel.Item>
-              <Carousel.Item className="carousel-image">
-                <img
-                  className="d-block w-100 rounded heightcustom"
-                  onClick={this.scrollToBottom}
-                  src="/Abbonamento.png"
-                  alt="Second slide"
-                />
-                <a href="/Tickets" className="cover_all"></a>
-                <Carousel.Caption>
-                  <h3>Date e orari per la nuova campagna abbonamenti</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item className="carousel-image">
-                <img
-                  className="d-block w-100 rounded heightcustom"
-                  src="/Esultanza.png"
-                  alt="Third slide"
-                />
-                <Carousel.Caption>
-                  <h3>Lukaku regala il 6° posto matematico alla Roma, Ultimo gol all'olimpico</h3>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
+            <div className="carousel-container ">
+              <Carousel>
+                <Carousel.Item className="carousel-item">
+                  <Link to="/Articles/Article" className="carousel-item-link">
+                    <img src="PresentazioneMaglia.png" alt="First slide" />
+                    <Carousel.Caption className="carousel-caption">
+                      <h4>
+                        Nuova Maglia Home Vintage!
+                        <br /> disponibile dal 13/07
+                      </h4>
+                    </Carousel.Caption>
+                  </Link>
+                </Carousel.Item>
+                <Carousel.Item className="carousel-item">
+                  <Link to="/Tickets" className="carousel-item-link">
+                    <img src="/Abbonamento.png" alt="Second slide" />
+                    <Carousel.Caption className="carousel-caption">
+                      <h4>Date e orari per la nuova campagna abbonamenti</h4>
+                    </Carousel.Caption>
+                  </Link>
+                </Carousel.Item>
+                <Carousel.Item className="carousel-item">
+                  <Link to="/Articles/Article3" className="carousel-item-link">
+                    <img src="/Esultanza.png" alt="Third slide" />
+                    <Carousel.Caption className="carousel-caption">
+                      <h4>
+                        Lukaku regala il 6° posto matematico alla Roma, Ultimo gol all'olimpico
+                      </h4>
+                    </Carousel.Caption>
+                  </Link>
+                </Carousel.Item>
+              </Carousel>
+            </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={12} xl={3}>
             <div className="marginmobile text-center">
-              <Card className="nohover height100 ">
+              <Card className="nohover height100">
                 <Card.Body className="text-white bg-dark border rounded">
                   <Card.Title className="text-center">
                     <svg
@@ -72,28 +66,28 @@ class MyComponent extends React.Component {
                     <p className="customcolor">La Probabile Formazione vs il Genoa</p>
                     <h6 className="customFontp">Ancora in dubbio Dybala, ricaduta per zalewski</h6>
                   </Nav.Link>
-                  <hr></hr>
+                  <hr />
                   <Nav.Link as={Link} to="/Articles/Article1">
                     <p className="customcolor">Contattato L'entourage di Icardi</p>
                     <h6 className="customFontp">
                       Wanda Nara: "trattative avanzate" ma serve tempo
                     </h6>
                   </Nav.Link>
-                  <hr></hr>
+                  <hr />
                   <Nav.Link as={Link} to="./Articles/Article2">
-                    <p className="customcolor">Ranking UEFA per club Aggiornato </p>
+                    <p className="customcolor">Ranking UEFA per club Aggiornato</p>
                     <h6 className="customFontp">
-                      Scaliamo ed arriviamo al 6° posto della classifica !
+                      Scaliamo ed arriviamo al 6° posto della classifica!
                     </h6>
                   </Nav.Link>
-                  <hr></hr>
+                  <hr />
                   <Nav.Link as={Link} to="/Articles/Article3">
                     <p className="customcolor">Il 6° posto può valere la Champions</p>
                     <h6 className="customFontp">
                       Se l'Atalanta vince la coppa ed arriva 5a ci sarebbe...
                     </h6>
                   </Nav.Link>
-                  <hr></hr>
+                  <hr />
                   <Nav.Link as={Link} to="/Articles/Article4">
                     <p className="customcolor">Situazione Finanziaria Migliorata</p>
                     <h6 className="customFontp">
@@ -105,7 +99,7 @@ class MyComponent extends React.Component {
             </div>
           </Col>
         </Row>
-        <hr></hr>
+        <hr />
       </Container>
     );
   }
