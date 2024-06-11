@@ -564,3 +564,25 @@ svg.bi.bi-clock-history {
 .successmessage {
   color: rgb(24, 192, 24);
 }
+
+@keyframes move {
+  0% {
+    transform: rotate(-10deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.animated-image {
+  animation: move 10s infinite;
+}

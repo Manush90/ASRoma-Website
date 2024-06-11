@@ -32,13 +32,13 @@ class MyComponent extends React.Component {
                   </Card.Title>
 
                   {/* Lista delle notizie */}
-                  <Nav.Link as={Link} to="Articles/Article">
+                  <Nav.Link as={Link} to="/Articles/Article">
                     <h6 className="m-0 p-0">16/5/24</h6>
                     <p className="customcolor">La Probabile Formazione vs il Genoa</p>
                     <h6 className="customFontp">Ancora in dubbio Dybala, ricaduta per zalewski</h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article1">
+                  <Nav.Link as={Link} to="/Articles/Article1">
                     <h6 className="m-0 p-0">15/5/24</h6>
                     <p className="customcolor">Contattato L'entourage di Icardi</p>
                     <h6 className="customFontp">
@@ -54,7 +54,7 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="./Articles/Article2">
+                  <Nav.Link as={Link} to="/Articles/Article3">
                     <h6 className="m-0 p-0">13/5/24</h6>
                     <p className="customcolor">Il 6° posto può valere la Champions</p>
                     <h6 className="customFontp">
@@ -62,7 +62,7 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Article4">
+                  <Nav.Link as={Link} to="/Articles/Article4">
                     <h6 className="m-0 p-0">12/5/24</h6>
                     <p className="customcolor">Situazione Finanziaria Migliorata</p>
                     <h6 className="customFontp">

@@ -24,15 +24,16 @@ const ArticoloSportivo = () => {
           <h6 className="customcolor">del 16/05/2024</h6>
           <hr></hr>
           <br></br>
+        </Col>
+      </Row>
+      <Row className="mt-1">
+        <Col md={6} className="column">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi ut dolor mollis
             finibus. Cras tristique, nunc id molestie vehicula, ligula neque faucibus elit, non
             maximus nisi purus ac ex. Morbi dapibus arcu a erat commodo, a varius lorem eleifend.
           </p>
-          <Col className="d-flex column justify-content-center">
-            <Image src="/rankingUEFA.png" fluid className="mt-3 " />
-          </Col>
-          <p className="mt-2">
+          <p>
             In this article, we will discuss the recent match between Team A and Team B in the
             Champions League. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
             nisi ut dolor mollis finibus. Cras tristique, nunc id molestie vehicula, ligula neque
@@ -41,10 +42,29 @@ const ArticoloSportivo = () => {
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi ut dolor mollis
-            finibus. Cras tristique, nunc id molestie vehicula, ligula neque faucibus elit, non
-            maximus nisi purus ac ex. Morbi dapibus arcu a erat commodo, a varius lorem eleifend.
+            finibus. Cras tristique, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            in nisi ut dolor mollis finibus. Cras tristique, nunc id molestie vehicula, ligula neque
+            faucibus elit, non maximus nisi purus ac ex. Morbi dapibus arcu nunc id molestie
+            vehicula, ligula neque faucibus elit, non maximus nisi purus ac ex. Morbi dapibus arcu a
+            erat commodo, a varius lorem eleifend.
           </p>
         </Col>
+        <Col md={6} className="d-flex column justify-content-center">
+          <Image src="/rankingUEFA.png" fluid />
+        </Col>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi ut dolor mollis
+          finibus. Cras tristique, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          in nisi ut dolor mollis finibus. Cras tristique, nunc id molestie vehicula, ligula neque
+          faucibus elit, non maximus nisi purus ac ex. Morbi dapibus arcu nunc id molestie vehicula,
+          ligula neque faucibus elit, non maximus nisi purus ac ex. Morbi dapibus arcu a erat
+          commodo, a varius lorem eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam in nisi ut dolor mollis finibus. Cras tristique, Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nullam in nisi ut dolor mollis finibus. Cras tristique, nunc
+          id molestie vehicula, ligula neque faucibus elit, non maximus nisi purus ac ex. Morbi
+          dapibus arcu nunc id molestie vehicula, ligula neque faucibus elit, non maximus nisi purus
+          ac ex. Morbi dapibus arcu a erat commodo, a varius lorem eleifend.
+        </p>
       </Row>
     </Container>
   );

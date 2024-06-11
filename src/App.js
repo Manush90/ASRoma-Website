@@ -15,6 +15,9 @@ import Newsletter from "./components/Newsletter";
 import NewsPage from "./components/NewsPage";
 import Article from "./components/Articles/Article";
 import Article2 from "./components/Articles/Article2";
+import Article3 from "./components/Articles/Article3";
+import Article1 from "./components/Articles/Article1";
+import Article4 from "./components/Articles/Article4";
 import Allenamenti from "./components/Allenamenti";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
@@ -67,6 +70,9 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/Articles/Article" element={<Article />} />
           <Route path="/Articles/Article2" element={<Article2 />} />
+          <Route path="/Articles/Article3" element={<Article3 />} />
+          <Route path="/Articles/Article4" element={<Article4 />} />
+          <Route path="/Articles/Article1" element={<Article1 />} />
           <Route path="/tickets" element={<Tickets />} />
           <Route path="/Stadium" element={<Stadium />} />
           <Route path="/allenamenti" element={<Allenamenti />} />

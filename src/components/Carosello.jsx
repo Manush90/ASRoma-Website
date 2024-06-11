@@ -73,7 +73,7 @@ class MyComponent extends React.Component {
                     <h6 className="customFontp">Ancora in dubbio Dybala, ricaduta per zalewski</h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Articles/Article_1">
+                  <Nav.Link as={Link} to="/Articles/Article1">
                     <p className="customcolor">Contattato L'entourage di Icardi</p>
                     <h6 className="customFontp">
                       Wanda Nara: "trattative avanzate" ma serve tempo
@@ -87,14 +87,14 @@ class MyComponent extends React.Component {
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Articles/Article_3">
+                  <Nav.Link as={Link} to="/Articles/Article3">
                     <p className="customcolor">Il 6° posto può valere la Champions</p>
                     <h6 className="customFontp">
                       Se l'Atalanta vince la coppa ed arriva 5a ci sarebbe...
                     </h6>
                   </Nav.Link>
                   <hr></hr>
-                  <Nav.Link as={Link} to="/Articles/Article_4">
+                  <Nav.Link as={Link} to="/Articles/Article4">
                     <p className="customcolor">Situazione Finanziaria Migliorata</p>
                     <h6 className="customFontp">
                       Sembra ci sia stato un miglioramento delle entrate...
