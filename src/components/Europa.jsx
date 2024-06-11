@@ -4,6 +4,7 @@ import EuropaClassifica from "./EuropaClassifica";
 import MarcatoriEuropa from "./MarcatoriEuropa";
 import RisultatiEuropa from "./RisultatiEuropa";
 import CalendarioEuropa from "../data/CalendarioEuropa.json";
+import RisultatiEL from "./RisultatiEL";
 
 function UncontrolledExample() {
   return (
@@ -21,6 +22,10 @@ function UncontrolledExample() {
 
       <Tab eventKey="incontri" title="Incontri">
         <RisultatiEuropa partite={CalendarioEuropa} />
+      </Tab>
+
+      <Tab eventKey="RisultatiEuropaLeague" title="Risultati EL" tabClassName="customcolor">
+        <RisultatiEL />
       </Tab>
     </Tabs>
   );

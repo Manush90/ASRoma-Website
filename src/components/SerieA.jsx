@@ -98,7 +98,7 @@ const SerieA = () => {
                 src="https://upload.wikimedia.org/wikipedia/it/thumb/c/c5/Logo_Serie_A_TIM_2021.svg/1200px-Logo_Serie_A_TIM_2021.svg.png"
                 height="90px"
                 alt="SA"
-                className="mb-2"
+                className="mb-2 "
               />
             </h2>
 
@@ -163,6 +163,7 @@ const SerieA = () => {
           </div>
         </Col>
       </Row>
+      <hr></hr>
     </Container>
   );
 };

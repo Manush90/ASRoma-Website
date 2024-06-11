@@ -4,6 +4,7 @@ import SerieA from "./SerieA";
 import Marcatori from "./Marcatori";
 import Risultati from "./Risultati";
 import Calendario from "../data/Calendario.json";
+import RisultatiSerieA from "./RisultatiSerieA";
 
 function UncontrolledExample() {
   return (
@@ -20,6 +21,9 @@ function UncontrolledExample() {
       </Tab>
       <Tab eventKey="incontri" title="Incontri">
         <Risultati partite={Calendario} />
+      </Tab>
+      <Tab eventKey="Risultati Serie A" title="Serie A">
+        <RisultatiSerieA />
       </Tab>
     </Tabs>
   );
