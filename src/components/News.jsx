@@ -8,7 +8,7 @@ function BasicExample() {
     <Container className="mt-3">
       <h2> ASR Info </h2>
       <Row className="mb-3">
-        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 col-custom-xxs">
+        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 ">
           <Card className="fixed-height-card shadow">
             <Card.Img
               className=" card-img-top"
@@ -26,7 +26,7 @@ function BasicExample() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 col-custom-xxs">
+        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 ">
           <Card className="fixed-height-card shadow">
             <Card.Img
               variant="top"
@@ -44,7 +44,7 @@ function BasicExample() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 col-custom-xxs">
+        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 ">
           <Card className="fixed-height-card shadow">
             <Card.Img
               variant="top"
@@ -62,7 +62,7 @@ function BasicExample() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 col-custom-xxs">
+        <Col xs={6} sm={6} md={6} lg={3} className="mb-3 ">
           <Card className="fixed-height-card shadow">
             <Card.Img
               variant="top"

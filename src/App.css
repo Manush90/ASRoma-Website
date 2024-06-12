@@ -649,13 +649,6 @@ svg.bi.bi-clock-history {
   flex-wrap: nowrap !important;
 }
 
-@media (max-width: 447px) {
-  .col-custom-xxs {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-  }
-}
-
 .truncate {
   white-space: nowrap;
   overflow: hidden;
