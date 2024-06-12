@@ -648,3 +648,54 @@ svg.bi.bi-clock-history {
 .nowrappp {
   flex-wrap: nowrap !important;
 }
+
+@media (max-width: 447px) {
+  .col-custom-xxs {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate-multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Mostra solo due righe */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 576px) {
+  .truncate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Mostra solo due righe */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.fixed-height-card {
+  height: 350px !important; /* Imposta l'altezza fissa desiderata */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fixed-height-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; /* Assicura che il corpo della card cresca per riempire lo spazio */
+}
+
+.fixed-height-card .card-img-top {
+  height: 150px !important; /* Imposta un'altezza fissa per l'immagine */
+  object-fit: cover !important; /* Assicura che l'immagine riempia il contenitore */
+  width: 100% !important; /* Assicura che l'immagine riempia la larghezza del contenitore */
+}

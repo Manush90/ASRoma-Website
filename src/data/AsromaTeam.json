@@ -52,20 +52,20 @@
   },
 
   {
-    "Nome": "Dean Huijsen",
-    "img": "https://media.asroma.com/prod/images/square_medium_fill/aef74ac7c597-huijsen-dean.png",
+    "Nome": "Diego Llorente",
+    "img": "https://media.asroma.com/prod/images/square_large_fill/6588f4da5f25-llorente-copia.png",
     "Presenze": 5,
     "Goal": 1,
-    "Numero": 3,
+    "Numero": 14,
     "Ruolo": "Difensore"
   },
 
   {
-    "Nome": "Rasmus Kristiansen",
-    "img": "https://media.asroma.com/prod/images/square_medium_fill/de6a5092c0b5-kristensen-copia.png",
+    "Nome": "Gianluca Mancini",
+    "img": "https://media.asroma.com/prod/images/square_large_fill/32fd4b3b9ea2-mancini-copia.png",
     "Presenze": 13,
     "Goal": 1,
-    "Numero": 43,
+    "Numero": 23,
     "Ruolo": "Difensore"
   },
 
@@ -79,19 +79,116 @@
   },
 
   {
-    "Nome": "Lorenzo Pellegrini (c)",
+    "Nome": "Leo Spinazzola",
+    "img": "https://media.asroma.com/prod/images/square_large_fill/31ba6c3b0a9f-spinazzola-copia.png",
+    "Presenze": 8,
+    "Goal": 0,
+    "Numero": 37,
+    "Ruolo": "Difensore"
+  },
+
+  {
+    "Nome": "Zeki Celik",
+    "img": "https://media.asroma.com/prod/images/square_large_fill/4c0edad9507f-celik-copia.png",
+    "Presenze": 8,
+    "Goal": 0,
+    "Numero": 19,
+    "Ruolo": "Difensore"
+  },
+
+  {
+    "Nome": "L. Pellegrini (c)",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/f7945170b758-pellegrini-copia.png",
     "Presenze": 33,
     "Goal": 9,
     "Numero": 7,
     "Ruolo": "Centrocampista"
   },
+
+  {
+    "Nome": "Leandro Paredes",
+    "img": "https://media.asroma.com/prod/images/square_large_fill/7c20c5ec8d59-paredes-copia.png",
+    "Presenze": 33,
+    "Goal": 9,
+    "Numero": 16,
+    "Ruolo": "Centrocampista"
+  },
+
+  {
+    "Nome": "Bryan Cristante",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/4cd882305837-cristante-copia.png",
+    "Presenze": 33,
+    "Goal": 9,
+    "Numero": 4,
+    "Ruolo": "Centrocampista"
+  },
+
+  {
+    "Nome": "Nicola Zalewski",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/90a7c7e714e3-zalewski-copia.png",
+    "Presenze": 33,
+    "Goal": 9,
+    "Numero": 59,
+    "Ruolo": "Centrocampista"
+  },
+
+  {
+    "Nome": "Houssem Aouar",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/e30da728aa9f-aouar-copia.png",
+    "Presenze": 33,
+    "Goal": 9,
+    "Numero": 22,
+    "Ruolo": "Centrocampista"
+  },
+
+  {
+    "Nome": "Edoardo Bove",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/f4ed3da8176a-bove-copia.png",
+    "Presenze": 33,
+    "Goal": 9,
+    "Numero": 52,
+    "Ruolo": "Centrocampista"
+  },
+
   {
     "Nome": "Romelu Lukaku",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/c431a82a89dd-5be9a56f0985-lukaku-copia.png",
     "Presenze": 33,
     "Goal": 19,
     "Numero": 90,
+    "Ruolo": "Attaccante"
+  },
+
+  {
+    "Nome": "Paulo Dybala",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/4254b1223bdb-dybala21-copia.png",
+    "Presenze": 29,
+    "Goal": 12,
+    "Numero": 21,
+    "Ruolo": "Attaccante"
+  },
+  {
+    "Nome": "Tommaso Baldanzi",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/b4345c326bd8-baldazani-tomasso.png",
+    "Presenze": 29,
+    "Goal": 12,
+    "Numero": 35,
+    "Ruolo": "Attaccante"
+  },
+  {
+    "Nome": "Tammy Abraham",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/7106aa0db1b8-abraham-copia.png",
+    "Presenze": 13,
+    "Goal": 1,
+    "Numero": 9,
+    "Ruolo": "Attaccante"
+  },
+  {
+    "Nome": "El Shaarawy",
+    "img": "https://media.asroma.com/prod/images/square_medium_fill/52557da343b9-el-shaarawy-copia.png",
+    "Presenze": 13,
+    "Goal": 1,
+    "Numero": 9,
     "Ruolo": "Attaccante"
   }
 ]

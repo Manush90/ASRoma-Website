@@ -27,6 +27,7 @@ import "./App.css";
 import InserimentoRisultati from "./components/InserimentoRisultati";
 import Profile from "./components/Profile";
 import Stadium from "./components/Stadium";
+import Staff from "./components/Staff.jsx";
 
 function App() {
   const targetDate = "2024-07-26T20:45:00";
@@ -77,6 +78,7 @@ function App() {
           <Route path="/Stadium" element={<Stadium />} />
           <Route path="/allenamenti" element={<Allenamenti />} />
           <Route path="/rosa" element={<Rosa giocatori={AsromaTeam} />} />
+          <Route path="/Allenatore" element={<Staff giocatori={Staff} />} />
           <Route path="/TabsSerieA" element={<TabsSerieA />} />
           <Route path="/EuropaLeague" element={<Europa />} />
           <Route path="/highlights" element={<VideoHighlights />} />

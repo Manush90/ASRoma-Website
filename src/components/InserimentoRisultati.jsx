@@ -74,14 +74,14 @@ const InserimentoRisultati = () => {
       <form onSubmit={handleSubmit} className="form-container mt-4">
         <h1>Inserimento risultati</h1>
         <label className="customcolor">
-          Competizione:
+          Competizione
           <select name="competizione" value={competizione} onChange={handleCompetizioneChange}>
             <option value="SerieA">Serie A</option>
             <option value="EuropaLeague">Europa League</option>
           </select>
         </label>
         <label className="customcolor">
-          Giornata:
+          Giornata
           <input
             type="number"
             name="Giornata"
@@ -90,7 +90,7 @@ const InserimentoRisultati = () => {
           />
         </label>
         <label className="customcolor">
-          Incontro:
+          Incontro
           <input
             type="number"
             name="Incontro"
@@ -99,7 +99,7 @@ const InserimentoRisultati = () => {
           />
         </label>
         <label className="customcolor">
-          Squadra Casa:
+          Team Casa
           <input
             type="text"
             name="SquadraCasa"
@@ -108,7 +108,7 @@ const InserimentoRisultati = () => {
           />
         </label>
         <label className="customcolor">
-          Squadra Trasferta:
+          Team Ospite
           <input
             type="text"
             name="SquadraTrasferta"
@@ -117,7 +117,7 @@ const InserimentoRisultati = () => {
           />
         </label>
         <label className="customcolor">
-          Gol Casa:
+          Gol Casa
           <input
             type="number"
             name="GolCasa"
@@ -126,7 +126,7 @@ const InserimentoRisultati = () => {
           />
         </label>
         <label className="customcolor">
-          Gol Trasferta:
+          Gol Ospiti
           <input
             type="number"
             name="GolTrasferta"
@@ -135,7 +135,7 @@ const InserimentoRisultati = () => {
           />
         </label>
         <label className="customcolor">
-          Marcatori:
+          Marcatori
           <input
             type="text"
             name="Marcatori"
