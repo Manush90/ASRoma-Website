@@ -16,8 +16,8 @@ const Stadium = () => {
   return (
     <Container>
       <hr />
+      <h1 className="text-center mx-3 customcolor">Prezzi e settori</h1>
 
-      <h1 className="text-center customcolor">Prezzi e settori</h1>
       <Col className="d-flex justify-content-center" xs="auto">
         <img className="animated-image" src="/Abbon.png" alt="abbonam" width="auto" height="200" />
       </Col>
@@ -31,6 +31,7 @@ const Stadium = () => {
         *In base alle disponibilità e alla riconferma del posto da parte degli abbonati
       </h5>
       <hr></hr>
+
       <Row className="d-lg-none flex-column">
         <Col>
           <ul className="sector-list text-center">

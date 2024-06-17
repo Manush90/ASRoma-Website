@@ -6,8 +6,8 @@ import Stadium from "./Stadium";
 function Tickets() {
   return (
     <>
+      <img className="d-block w-100 rounded  " src="/stadio_olimpico1.png" alt="First slide" />
       <Container fluid className="mt-3 ">
-        <img className="d-block w-100 rounded  " src="/stadio_olimpico1.png" alt="First slide" />
         <h1 className="text-center mt-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ function Tickets() {
 
         <h3 className="text-center mt-2">Stagione 2024/2025</h3>
 
-        <Row xs={1} sm={3} md={3} lg={2} className="p-2 g-4 d-flex justify-content-center">
+        <Row xs={1} sm={2} md={2} lg={2} className="p-2 g-4 d-flex justify-content-center">
           <Col>
             <Card className="player-card static">
               <Card.Img variant="top" src="/Abbonamento.png" />
@@ -35,16 +35,16 @@ function Tickets() {
                   Abbonamento Stagione 24/25
                 </Card.Title>
                 <Card.Text className="text-center textsizecardticket">
-                  Campagna Abbonamenti <br /> Fase 1 Abbonati
-                  <br />
+                  Campagna Abbonamenti <br /> Fase 1 "Vecchi Abbonati"
+                  <hr></hr>
                   20/05/24 - 15/06/24
                   <br />
                   ore 20:45
                   <br />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
+                    width="46"
+                    height="46"
                     fill="currentColor"
                     class="bi bi-ticket-perforated"
                     viewBox="0 0 16 16"
@@ -104,6 +104,29 @@ function Tickets() {
                   --/--/----
                   <br />
                   ore --:--
+                  <hr></hr>
+                  <Link
+                    to="https://www.asroma.com/it/biglietti/"
+                    className="mt-0 mb-3 ticketbutton playerbutton btn btn-primary"
+                  >
+                    Compra Ora
+                  </Link>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card className="player-card static">
+              <Card.Img variant="top" src="/ticket_empty.png" />
+              <Card.Body>
+                <Card.Title className="text-center titlesizecardticket">"// - //"</Card.Title>
+                <Card.Text className="text-center textsizecardticket">
+                  Serie A // giornata <br /> Stadio Olimpico di Roma
+                  <br />
+                  19/05/2024
+                  <br />
+                  ore 20:45
                   <hr></hr>
                   <Link
                     to="https://www.asroma.com/it/biglietti/"

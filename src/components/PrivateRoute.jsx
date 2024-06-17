@@ -1,12 +1,15 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
+import { useAuth } from "../AuthProvider"; // Assicurati che il percorso sia corretto
 
-const PrivateRoute = ({ children, user, requiredRole }) => {
-  if (!user) {
+const PrivateRoute = ({ children, requiredRole }) => {
+  const { currentUser, isAdmin } = useAuth();
+
+  if (!currentUser) {
     return <Navigate to="/login" />;
   }
 
-  if (requiredRole && user.role !== requiredRole) {
+  if (requiredRole === "admin" && !isAdmin) {
     return <Navigate to="/" />;
   }
 
