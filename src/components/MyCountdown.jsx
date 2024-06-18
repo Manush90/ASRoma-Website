@@ -83,7 +83,7 @@ const MyCountdown = () => {
                 height="90px"
                 src={matchData.LogoCasa || ""}
               />
-              <p className="txtshadow">{matchData.Squadre || "Squadre"}</p>
+              <p className="txtshadow ">{matchData.Squadre || "Squadre"}</p>
               <img
                 className="mx-3"
                 alt="logoaway"

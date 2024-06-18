@@ -60,7 +60,10 @@ const InserimentoNextMatch = () => {
 
   return (
     <Container>
-      <h2>Gestione Prossimo Incontro</h2>
+      <h1 className="text-center customcolor">Gestione Prossimo Incontro</h1>
+      <h3 className="text-center mb-5">
+        Qui è possibile modificare la gestione del riquadro prossimo incontro
+      </h3>
       {error && <Alert variant="danger">{error}</Alert>}
       {success && <Alert variant="success">{success}</Alert>}
       <Form onSubmit={handleSubmit}>

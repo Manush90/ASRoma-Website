@@ -701,7 +701,7 @@ svg.bi.bi-clock-history {
 .matchhome {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateY(-15px);
+  transform: translateX(-50%) translateY(-30px);
 }
 
 .teamspos {

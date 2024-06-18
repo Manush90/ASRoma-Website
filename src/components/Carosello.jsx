@@ -3,20 +3,32 @@ import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import { firestore } from "../firebase";
-import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
+import { collection, getDocs, doc, getDoc } from "firebase/firestore";
 
 const Carosello = () => {
   const [news, setNews] = useState([]);
+  const [carouselData, setCarouselData] = useState({});
 
   useEffect(() => {
     const fetchNews = async () => {
       const newsCollection = collection(firestore, "Notizie");
-      const newsQuery = query(newsCollection, orderBy("date", "desc"), limit(5));
-      const newsSnapshot = await getDocs(newsQuery);
+      const newsSnapshot = await getDocs(newsCollection);
       const newsList = newsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
       setNews(newsList);
     };
+
+    const fetchCarouselData = async () => {
+      const docRef = doc(firestore, "Carosello", "Slides");
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        setCarouselData(docSnap.data());
+      } else {
+        console.error("No such document!");
+      }
+    };
+
     fetchNews();
+    fetchCarouselData();
   }, []);
 
   return (
@@ -26,33 +38,26 @@ const Carosello = () => {
           <div className="carousel-container ">
             <Carousel>
               <Carousel.Item className="carousel-item">
-                <Link to="/Articles/Article" className="carousel-item-link">
-                  <img src="PresentazioneMaglia.png" alt="First slide" />
+                <Link to={carouselData.Slide1Link} className="carousel-item-link">
+                  <img src={carouselData.Slide1} alt="First slide" />
                   <Carousel.Caption className="carousel-caption">
-                    <h4 className="textcarouselimage">
-                      Nuova Maglia Home Vintage!
-                      <br /> disponibile dal 13/07
-                    </h4>
+                    <h4 className="textcarouselimage">{carouselData.Slide1txt}</h4>
                   </Carousel.Caption>
                 </Link>
               </Carousel.Item>
               <Carousel.Item className="carousel-item">
-                <Link to="/Tickets" className="carousel-item-link">
-                  <img src="/Abbonamento.png" alt="Second slide" />
+                <Link to={carouselData.Slide2Link} className="carousel-item-link">
+                  <img src={carouselData.Slide2} alt="Second slide" />
                   <Carousel.Caption className="carousel-caption">
-                    <h4 className="textcarouselimage">
-                      Date e orari per la nuova <br /> campagna abbonamenti
-                    </h4>
+                    <h4 className="textcarouselimage">{carouselData.Slide2txt}</h4>
                   </Carousel.Caption>
                 </Link>
               </Carousel.Item>
               <Carousel.Item className="carousel-item">
-                <Link to="/Articles/Article3" className="carousel-item-link">
-                  <img src="/Esultanza.png" alt="Third slide" />
+                <Link to={carouselData.Slide3Link} className="carousel-item-link">
+                  <img src={carouselData.Slide3} alt="Third slide" />
                   <Carousel.Caption className="carousel-caption">
-                    <h4 className="textcarouselimage">
-                      Lukaku regala il 6° posto <br /> matematico alla Roma
-                    </h4>
+                    <h4 className="textcarouselimage">{carouselData.Slide3txt}</h4>
                   </Carousel.Caption>
                 </Link>
               </Carousel.Item>
@@ -77,7 +82,6 @@ const Carosello = () => {
                   Ultime Notizie
                 </Card.Title>
 
-                {/* Lista delle notizie */}
                 {news.map((article) => (
                   <React.Fragment key={article.id}>
                     <Nav.Link as={Link} to={`/Article/${article.id}`}>

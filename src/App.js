@@ -28,6 +28,7 @@ import InserimentoNextMatch from "./components/InserimentoNextMatch";
 import { AuthProvider } from "./AuthProvider";
 import AlertFix from "./components/AlertFix";
 import "./App.css";
+import GestioneCarosello from "./components/GestioneCarosello.jsx";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -125,6 +126,15 @@ function App() {
               element={
                 <PrivateRoute requiredRole="admin">
                   <AlertFix />
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              path="/GestioneCarosello"
+              element={
+                <PrivateRoute requiredRole="admin">
+                  <GestioneCarosello />
                 </PrivateRoute>
               }
             />

@@ -75,12 +75,12 @@ const AlertFix = () => {
 
   return (
     <Container>
-      <h2>Gestione Messaggio di Alert e Data del Prossimo Match</h2>
+      <h1 className="text-center customcolor">Gestione Ticker e Countdown</h1>
       {error && <BootstrapAlert variant="danger">{error}</BootstrapAlert>}
       {success && <BootstrapAlert variant="success">{success}</BootstrapAlert>}
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formAlertMsg">
-          <Form.Label>Messaggio di Alert</Form.Label>
+          <Form.Label>Ticker</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -90,7 +90,7 @@ const AlertFix = () => {
           />
         </Form.Group>
         <Form.Group controlId="formTargetDate">
-          <Form.Label>Data e Ora del Prossimo Match</Form.Label>
+          <Form.Label className="mt-3">CountDown prossimo match</Form.Label>
           <Form.Control
             type="datetime-local"
             value={targetDate}

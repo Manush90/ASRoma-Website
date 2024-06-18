@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { firestore } from "./firebase"; // Assicurati che il percorso sia corretto
+import { firestore } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
 
 const AuthContext = createContext();
@@ -14,7 +14,6 @@ export const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
       if (user) {
-        // Verifica il ruolo dell'utente dal database Firestore
         const userDocRef = doc(firestore, "users", user.uid);
         const userDoc = await getDoc(userDocRef);
         if (userDoc.exists()) {
