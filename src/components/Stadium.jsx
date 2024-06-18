@@ -60,7 +60,7 @@ const Stadium = () => {
                 id="tribuna-tevere"
                 className={highlighted === "tribuna-tevere" ? "highlight" : ""}
               />
-              <text x="480" y="120" text-anchor="middle" fill="white" font-size="48">
+              <text x="480" y="120" textAnchor="middle" fill="white" font-size="48">
                 Tribuna Tevere
               </text>
 
@@ -73,7 +73,7 @@ const Stadium = () => {
                 id="distinti-nord-1"
                 className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="120" text-anchor="middle" fill="white" font-size="36">
+              <text x="180" y="120" textAnchor="middle" fill="white" font-size="36">
                 Dist. Nord
               </text>
 
@@ -86,7 +86,7 @@ const Stadium = () => {
                 id="distinti-sud-1"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="120" text-anchor="middle" fill="white" font-size="36">
+              <text x="780" y="120" textAnchor="middle" fill="white" font-size="36">
                 Dist. Sud
               </text>
 
@@ -103,7 +103,7 @@ const Stadium = () => {
               <text
                 x="180"
                 y="300"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="white"
                 font-size="36"
                 transform="rotate(-90 180,300)"
@@ -147,7 +147,7 @@ const Stadium = () => {
               <text
                 x="780"
                 y="300"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="white"
                 font-size="36"
                 transform="rotate(90 780,300)"
@@ -165,7 +165,7 @@ const Stadium = () => {
                 id="monte-mario"
                 className={highlighted === "monte-mario" ? "highlight" : ""}
               />
-              <text x="480" y="480" text-anchor="middle" fill="white" font-size="48">
+              <text x="480" y="480" textAnchor="middle" fill="white" font-size="48">
                 Monte Mario
               </text>
 
@@ -178,7 +178,7 @@ const Stadium = () => {
                 id="distinti-nord-2"
                 className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="480" text-anchor="middle" fill="white" font-size="36">
+              <text x="180" y="480" textAnchor="middle" fill="white" font-size="36">
                 Dist. Nord
               </text>
 
@@ -191,7 +191,7 @@ const Stadium = () => {
                 id="distinti-sud-2"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="480" text-anchor="middle" fill="white" font-size="36">
+              <text x="780" y="480" textAnchor="middle" fill="white" font-size="36">
                 Dist. Sud
               </text>
             </svg>
@@ -226,7 +226,7 @@ const Stadium = () => {
                 id="tribuna-tevere"
                 className={highlighted === "tribuna-tevere" ? "highlight" : ""}
               />
-              <text x="480" y="120" text-anchor="middle" fill="white" font-size="48">
+              <text x="480" y="120" textAnchor="middle" fill="white" font-size="48">
                 Tribuna Tevere
               </text>
 
@@ -239,7 +239,7 @@ const Stadium = () => {
                 id="distinti-nord-1"
                 className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="120" text-anchor="middle" fill="white" font-size="36">
+              <text x="180" y="120" textAnchor="middle" fill="white" font-size="36">
                 Dist. Nord
               </text>
 
@@ -252,7 +252,7 @@ const Stadium = () => {
                 id="distinti-sud-1"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="120" text-anchor="middle" fill="white" font-size="36">
+              <text x="780" y="120" textAnchor="middle" fill="white" font-size="36">
                 Dist. Sud
               </text>
 
@@ -269,7 +269,7 @@ const Stadium = () => {
               <text
                 x="180"
                 y="300"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="white"
                 font-size="36"
                 transform="rotate(-90 180,300)"
@@ -313,7 +313,7 @@ const Stadium = () => {
               <text
                 x="780"
                 y="300"
-                text-anchor="middle"
+                textAnchor="middle"
                 fill="white"
                 font-size="36"
                 transform="rotate(90 780,300)"
@@ -331,7 +331,7 @@ const Stadium = () => {
                 id="monte-mario"
                 className={highlighted === "monte-mario" ? "highlight" : ""}
               />
-              <text x="480" y="480" text-anchor="middle" fill="white" font-size="48">
+              <text x="480" y="480" textAnchor="middle" fill="white" font-size="48">
                 Monte Mario
               </text>
 
@@ -344,7 +344,7 @@ const Stadium = () => {
                 id="distinti-nord-2"
                 // className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="480" text-anchor="middle" fill="white" font-size="36">
+              <text x="180" y="480" textAnchor="middle" fill="white" font-size="36">
                 Ospiti
               </text>
 
@@ -357,7 +357,7 @@ const Stadium = () => {
                 id="distinti-sud-2"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="480" text-anchor="middle" fill="white" font-size="36">
+              <text x="780" y="480" textAnchor="middle" fill="white" font-size="36">
                 Dist. Sud
               </text>
             </svg>

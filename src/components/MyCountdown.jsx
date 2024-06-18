@@ -91,10 +91,10 @@ const MyCountdown = () => {
                 src={matchData.LogoTrasferta || ""}
               />
             </div>
-            <h5 className="text-center txtshadow matchhome">
-              {matchData.CompetizioneDataOra || "Data Ora"}
-            </h5>
           </h2>
+          <h5 className="text-center txtshadow matchhome">
+            {matchData.CompetizioneDataOra || "Data Ora"}
+          </h5>
           <Container className="d-flex justify-content-center customcolor">
             <img
               src={`${process.env.PUBLIC_URL}/stadiumstyle.svg`}

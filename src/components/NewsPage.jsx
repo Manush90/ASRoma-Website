@@ -35,7 +35,7 @@ const NewsPage = () => {
           <div className="mt-2 p-0">
             <img
               className="d-block w-100 rounded heightcustom mb-2"
-              src="/ragazzo_sciarpa_roma.png"
+              src="/ragazzo_sciarpa_roma.jpg"
               alt="First slide"
             />
             <Card className="nohover height100">

@@ -65,7 +65,7 @@ const RisultatiEuropa = () => {
         {partiteRoma.map((partita, index) => (
           <Col key={index} md={4} className="mb-3">
             <Card>
-              <Card.Img variant="top" src="/1giornata.jpg" />
+              <Card.Img variant="top" src="/asa.png" />
               <Card.Body>
                 <Card.Title className="text-center newfont">
                   <strong>{`${partita.SquadraCasa} ${partita.GolCasa} - ${partita.GolTrasferta} ${partita.SquadraTrasferta}`}</strong>

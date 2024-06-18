@@ -13,10 +13,10 @@ function Video() {
               height="315"
               src="https://www.youtube.com/embed/BrdMgDhl0zc?si=VorvZyhjuzfUUnHp"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </Col>
           <Col xs={12} sm={6} md={6} lg={6}>
@@ -25,10 +25,10 @@ function Video() {
               height="315"
               src="https://www.youtube.com/embed/oE3xaHof3hQ?si=_0OTrwPkymAT3yoF"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </Col>
           <hr></hr>

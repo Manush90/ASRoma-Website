@@ -14,7 +14,7 @@ function Tickets() {
             width="50"
             height="50"
             fill="currentColor"
-            class="bi bi-ticket-detailed customcolor"
+            className="bi bi-ticket-detailed customcolor"
             viewBox="0 0 16 16"
           >
             <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" />
@@ -46,7 +46,7 @@ function Tickets() {
                     width="46"
                     height="46"
                     fill="currentColor"
-                    class="bi bi-ticket-perforated"
+                    className="bi bi-ticket-perforated"
                     viewBox="0 0 16 16"
                   >
                     <path d="M4 4.85v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9z" />
