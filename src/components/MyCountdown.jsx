@@ -76,26 +76,26 @@ const MyCountdown = () => {
             <h6 className="text-center mt-3 txtshadow mb-0">Prossimo Incontro</h6>
           </u>
           <h2 className="text-center">
-            <div className="d-flex teamspos">
+            <div className="d-flex teamspos ">
               <img
-                className="mx-3 txtshadow"
+                className="me-3 txtshadow "
                 alt="logohome"
                 height="90px"
                 src={matchData.LogoCasa || ""}
               />
-              <p className="txtshadow ">{matchData.Squadre || "Squadre"}</p>
+              <h4 className="txtshadow m-0 ">{matchData.Squadre || "Squadre"}</h4>
               <img
-                className="mx-3"
+                className="ms-3"
                 alt="logoaway"
                 height="90px"
                 src={matchData.LogoTrasferta || ""}
               />
             </div>
           </h2>
-          <h5 className="text-center txtshadow matchhome">
+          <h6 className="text-center txtshadow matchhome">
             {matchData.CompetizioneDataOra || "Data Ora"}
-          </h5>
-          <Container className="d-flex justify-content-center customcolor">
+          </h6>
+          <Container className="d-flex justify-content-center customcolor mt-2">
             <img
               src={`${process.env.PUBLIC_URL}/stadiumstyle.svg`}
               alt="Logostadio"

@@ -1,9 +1,9 @@
 [
   {
-    "Nome": "Mile Svilar",
+    "Nome": "M. Svilar",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/6b09f81f0f11-svilar-copia.png",
-    "Presenze": 35,
-    "Goal": 0,
+    "Nazionalità": "Serbia",
+    "Stipendio": 1,
     "Numero": 99,
     "Ruolo": "Portiere"
   },
@@ -11,183 +11,174 @@
   {
     "Nome": "Rui Patricio",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/143a6bf28f85-rui-patricio-copia.png",
-    "Presenze": 3,
-    "Goal": 0,
+    "Nazionalità": "Portogallo",
+    "Stipendio": 3,
     "Numero": 1,
     "Ruolo": "Portiere"
   },
 
   {
-    "Nome": "Pietro Boer",
+    "Nome": "P. Boer",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/0af2fb1ad511-boer-copia.png",
-    "Presenze": 0,
-    "Goal": 0,
+    "Nazionalità": "Italia",
+    "Stipendio": 0.2,
     "Numero": 63,
     "Ruolo": "Portiere"
   },
 
   {
-    "Nome": "Gianluca Mancini",
+    "Nome": "G. Mancini",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/32fd4b3b9ea2-mancini-copia.png",
-    "Presenze": 33,
-    "Goal": 5,
+    "Nazionalità": "Italia",
+    "Stipendio": 2,
     "Numero": 23,
     "Ruolo": "Difensore"
   },
   {
-    "Nome": "Evan Ndicka",
+    "Nome": "E. Ndicka",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/0722504e9111-ndicka-copia.png",
-    "Presenze": 24,
-    "Goal": 1,
+    "Nazionalità": "Costa D'avorio",
+    "Stipendio": 4,
     "Numero": 5,
     "Ruolo": "Difensore"
   },
   {
     "Nome": "Angelino",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/f1a0b4d75482-angelino.png",
-    "Presenze": 13,
-    "Goal": 0,
+    "Nazionalità": "Spagna",
+    "Stipendio": 3.2,
     "Numero": 69,
     "Ruolo": "Difensore"
   },
 
   {
-    "Nome": "Diego Llorente",
+    "Nome": "D. Llorente",
     "img": "https://media.asroma.com/prod/images/square_large_fill/6588f4da5f25-llorente-copia.png",
-    "Presenze": 5,
-    "Goal": 1,
+    "Nazionalità": "Spagna",
+    "Stipendio": 2.7,
     "Numero": 14,
     "Ruolo": "Difensore"
   },
 
   {
-    "Nome": "Gianluca Mancini",
-    "img": "https://media.asroma.com/prod/images/square_large_fill/32fd4b3b9ea2-mancini-copia.png",
-    "Presenze": 13,
-    "Goal": 1,
-    "Numero": 23,
-    "Ruolo": "Difensore"
-  },
-
-  {
-    "Nome": "Chris Smalling",
+    "Nome": "C. Smalling",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/0505b8664565-smalling-copia.png",
-    "Presenze": 8,
-    "Goal": 0,
+    "Nazionalità": "Inghilterra",
+    "Stipendio": 3.8,
     "Numero": 6,
     "Ruolo": "Difensore"
   },
 
   {
-    "Nome": "Leo Spinazzola",
+    "Nome": "L. Spinazzola",
     "img": "https://media.asroma.com/prod/images/square_large_fill/31ba6c3b0a9f-spinazzola-copia.png",
-    "Presenze": 8,
-    "Goal": 0,
+    "Nazionalità": "Italia",
+    "Stipendio": 3,
     "Numero": 37,
     "Ruolo": "Difensore"
   },
 
   {
-    "Nome": "Zeki Celik",
+    "Nome": "Z. Celik",
     "img": "https://media.asroma.com/prod/images/square_large_fill/4c0edad9507f-celik-copia.png",
-    "Presenze": 8,
-    "Goal": 0,
+    "Nazionalità": "Turchia",
+    "Stipendio": 2,
     "Numero": 19,
     "Ruolo": "Difensore"
   },
 
   {
-    "Nome": "L. Pellegrini (c)",
+    "Nome": "Pellegrini (c)",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/f7945170b758-pellegrini-copia.png",
-    "Presenze": 33,
-    "Goal": 9,
+    "Nazionalità": "Italia",
+    "Stipendio": 4,
     "Numero": 7,
     "Ruolo": "Centrocampista"
   },
 
   {
-    "Nome": "Leandro Paredes",
+    "Nome": "L. Paredes",
     "img": "https://media.asroma.com/prod/images/square_large_fill/7c20c5ec8d59-paredes-copia.png",
-    "Presenze": 33,
-    "Goal": 9,
+    "Nazionalità": "Argentina",
+    "Stipendio": 4,
     "Numero": 16,
     "Ruolo": "Centrocampista"
   },
 
   {
-    "Nome": "Bryan Cristante",
+    "Nome": "B. Cristante",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/4cd882305837-cristante-copia.png",
-    "Presenze": 33,
-    "Goal": 9,
+    "Nazionalità": "Italia",
+    "Stipendio": 1.8,
     "Numero": 4,
     "Ruolo": "Centrocampista"
   },
 
   {
-    "Nome": "Nicola Zalewski",
+    "Nome": "N. Zalewski",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/90a7c7e714e3-zalewski-copia.png",
-    "Presenze": 33,
-    "Goal": 9,
+    "Nazionalità": "Polonia",
+    "Stipendio": 0.3,
     "Numero": 59,
     "Ruolo": "Centrocampista"
   },
 
   {
-    "Nome": "Houssem Aouar",
+    "Nome": "H. Aouar",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/e30da728aa9f-aouar-copia.png",
-    "Presenze": 33,
-    "Goal": 9,
+    "Nazionalità": "Algeria",
+    "Stipendio": 9,
     "Numero": 22,
     "Ruolo": "Centrocampista"
   },
 
   {
-    "Nome": "Edoardo Bove",
+    "Nome": "E. Bove",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/f4ed3da8176a-bove-copia.png",
-    "Presenze": 33,
-    "Goal": 9,
+    "Nazionalità": "Italia",
+    "Stipendio": 1,
     "Numero": 52,
     "Ruolo": "Centrocampista"
   },
 
   {
-    "Nome": "Romelu Lukaku",
+    "Nome": "R. Lukaku",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/c431a82a89dd-5be9a56f0985-lukaku-copia.png",
-    "Presenze": 33,
-    "Goal": 19,
+    "Nazionalità": "Belgio",
+    "Stipendio": 7.5,
     "Numero": 90,
     "Ruolo": "Attaccante"
   },
 
   {
-    "Nome": "Paulo Dybala",
+    "Nome": "P. Dybala",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/4254b1223bdb-dybala21-copia.png",
-    "Presenze": 29,
-    "Goal": 12,
+    "Nazionalità": "Argentina",
+    "Stipendio": 6,
     "Numero": 21,
     "Ruolo": "Attaccante"
   },
   {
-    "Nome": "Tommaso Baldanzi",
+    "Nome": "T. Baldanzi",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/b4345c326bd8-baldazani-tomasso.png",
-    "Presenze": 29,
-    "Goal": 12,
+    "Nazionalità": "Italia",
+    "Stipendio": 1.5,
     "Numero": 35,
     "Ruolo": "Attaccante"
   },
   {
-    "Nome": "Tammy Abraham",
+    "Nome": "T. Abraham",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/7106aa0db1b8-abraham-copia.png",
-    "Presenze": 13,
-    "Goal": 1,
+    "Nazionalità": "inghilterra",
+    "Stipendio": 5,
     "Numero": 9,
     "Ruolo": "Attaccante"
   },
   {
     "Nome": "El Shaarawy",
     "img": "https://media.asroma.com/prod/images/square_medium_fill/52557da343b9-el-shaarawy-copia.png",
-    "Presenze": 13,
-    "Goal": 1,
+    "Nazionalità": "Italia",
+    "Stipendio": 2.5,
     "Numero": 9,
     "Ruolo": "Attaccante"
   }

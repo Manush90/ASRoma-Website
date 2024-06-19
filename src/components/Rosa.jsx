@@ -15,7 +15,7 @@ function Rosa({ giocatori }) {
   return (
     <Container fluid>
       <h1 className="text-center mt-4">Portieri</h1>
-      <Row xs={1} sm={2} md={2} lg={3} className="p-5 g-4">
+      <Row xs={1} sm={2} md={2} lg={4} className="p-5 g-4 justify-content-center">
         {portieri.map((giocatore, index) => (
           <Col key={index}>
             <Card className="player-card">
@@ -27,9 +27,9 @@ function Rosa({ giocatori }) {
                     {giocatore.Numero}
                   </Button>
                   <br />
-                  Presenze: {giocatore.Presenze}
+                  Nazionalità: {giocatore.Nazionalità}
                   <br />
-                  Goal: {giocatore.Goal}
+                  Stipendio: {giocatore.Stipendio} Mln
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -38,7 +38,7 @@ function Rosa({ giocatori }) {
       </Row>
       {/* -------------------------DIFENSORI--------------------------------------- */}
       <h1 className="text-center mt-4">Difensori</h1>
-      <Row xs={1} sm={2} md={2} lg={3} className="p-5 g-4">
+      <Row xs={1} sm={2} md={2} lg={4} className="p-5 g-4 justify-content-center">
         {difensori.map((giocatore, index) => (
           <Col key={index}>
             <Card className="player-card">
@@ -50,9 +50,9 @@ function Rosa({ giocatori }) {
                     {giocatore.Numero}
                   </Button>
                   <br />
-                  Presenze: {giocatore.Presenze}
+                  Nazionalità: {giocatore.Nazionalità}
                   <br />
-                  Goal: {giocatore.Goal}
+                  Stipendio: {giocatore.Stipendio} Mln
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -61,21 +61,21 @@ function Rosa({ giocatori }) {
       </Row>
       {/* ----------------------CENTROCAMPISTI-------------------------------- */}
       <h1 className="text-center mt-4">Centrocampisti</h1>
-      <Row xs={1} sm={2} md={2} lg={3} className="p-5 g-4">
+      <Row xs={1} sm={2} md={2} lg={4} className="p-5 g-4 justify-content-center">
         {centrocampisti.map((giocatore, index) => (
           <Col key={index}>
             <Card className="player-card">
               <Card.Img variant="top" src={giocatore.img} />
               <Card.Body>
-                <Card.Title className="text-center">{giocatore.Nome}</Card.Title>
+                <Card.Title className="text-center truncate-multiline">{giocatore.Nome}</Card.Title>
                 <Card.Text className="text-center">
                   <Button variant="danger" className=" mb-2 playerbutton">
                     {giocatore.Numero}
                   </Button>
                   <br />
-                  Presenze: {giocatore.Presenze}
+                  Nazionalità: {giocatore.Nazionalità}
                   <br />
-                  Goal: {giocatore.Goal}
+                  Stipendio: {giocatore.Stipendio} Mln
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -84,21 +84,21 @@ function Rosa({ giocatori }) {
       </Row>
       {/* ----------------------ATTACCANTI-------------------------------- */}
       <h1 className="text-center mt-4">Attaccanti</h1>
-      <Row xs={1} sm={2} md={2} lg={3} className="p-5 g-4">
+      <Row xs={1} sm={2} md={2} lg={4} className="p-5 g-4 justify-content-center">
         {attaccanti.map((giocatore, index) => (
           <Col key={index}>
             <Card className="player-card">
               <Card.Img variant="top" src={giocatore.img} />
               <Card.Body className="backgroundcolor">
-                <Card.Title className="text-center">{giocatore.Nome}</Card.Title>
+                <Card.Title className="text-center truncate-multiline">{giocatore.Nome}</Card.Title>
                 <Card.Text className="text-center">
                   <Button variant="danger" className=" mb-2 playerbutton">
                     {giocatore.Numero}
                   </Button>
                   <br />
-                  Presenze: {giocatore.Presenze}
+                  Nazionalità: {giocatore.Nazionalità}
                   <br />
-                  Goal: {giocatore.Goal}
+                  Stipendio: {giocatore.Stipendio} Mln
                 </Card.Text>
               </Card.Body>
             </Card>

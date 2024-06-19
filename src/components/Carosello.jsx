@@ -3,7 +3,7 @@ import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import { firestore } from "../firebase";
-import { collection, getDocs, doc, getDoc } from "firebase/firestore";
+import { collection, getDocs, query, orderBy, limit, doc, getDoc } from "firebase/firestore";
 
 const Carosello = () => {
   const [news, setNews] = useState([]);
@@ -12,7 +12,8 @@ const Carosello = () => {
   useEffect(() => {
     const fetchNews = async () => {
       const newsCollection = collection(firestore, "Notizie");
-      const newsSnapshot = await getDocs(newsCollection);
+      const newsQuery = query(newsCollection, orderBy("date", "desc"), limit(5));
+      const newsSnapshot = await getDocs(newsQuery);
       const newsList = newsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
       setNews(newsList);
     };
@@ -35,7 +36,7 @@ const Carosello = () => {
     <Container className="mt-0 carousel-container">
       <Row>
         <Col xs={12} sm={12} md={12} lg={12} xl={9}>
-          <div className="carousel-container ">
+          <div className="carousel-container">
             <Carousel>
               <Carousel.Item className="carousel-item">
                 <Link to={carouselData.Slide1Link} className="carousel-item-link">

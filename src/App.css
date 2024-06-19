@@ -630,13 +630,13 @@ svg.bi.bi-clock-history {
 /* Media query per larghezza tra 1200px e 1400px */
 @media (min-width: 1200px) and (max-width: 1400px) {
   .carousel-item img {
-    height: 81vh;
+    height: 74vh;
   }
 }
 
 @media (min-width: 1401px) {
   .carousel-item img {
-    height: 60vh;
+    height: 74vh;
   }
 }
 
@@ -689,9 +689,26 @@ svg.bi.bi-clock-history {
 }
 
 .fixed-height-card .card-img-top {
-  height: 150px !important;
+  height: 160px !important;
   object-fit: cover !important;
   width: 100% !important;
+}
+
+@media (max-width: 576px) {
+  .fixed-height-card {
+    height: 250px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .fixed-height-card .card-img-top {
+    height: 200px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+  }
 }
 
 .txtshadow {
