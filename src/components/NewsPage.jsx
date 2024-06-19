@@ -7,7 +7,7 @@ import { collection, getDocs, orderBy, query } from "firebase/firestore";
 const NewsPage = () => {
   const [news, setNews] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const newsPerPage = 5;
+  const newsPerPage = 7;
 
   useEffect(() => {
     const fetchNews = async () => {

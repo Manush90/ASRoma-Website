@@ -6,9 +6,8 @@ import Video from "./Video";
 function Home() {
   return (
     <>
-      <News />
       <Carosello />
-
+      <News />
       <Video />
     </>
   );
