@@ -406,12 +406,14 @@ a.navbar-brand {
 @media screen and (min-width: 577px) {
   .textcarouselimage {
     font-size: 3rem !important;
+    margin-top: 6rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .textcarouselimage {
-    font-size: 1.8rem !important;
+    font-size: 1.3rem !important;
+    margin-top: 0.7rem;
   }
 }
 
@@ -618,6 +620,7 @@ svg.bi.bi-clock-history {
   display: flex;
   flex-direction: column;
   height: 100% !important;
+  justify-content: center;
 }
 
 .carousel-caption {
@@ -635,7 +638,7 @@ svg.bi.bi-clock-history {
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .carousel-item img {
-    height: 55vh;
+    height: fit-content !important;
   }
 }
 
