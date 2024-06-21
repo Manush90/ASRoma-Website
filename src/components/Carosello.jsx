@@ -65,8 +65,8 @@ const Carosello = () => {
             </Carousel>
           </div>
         </Col>
-        <Col xs={12} sm={12} md={12} lg={12} xl={3}>
-          <div className="marginmobile text-center">
+        <Col xs={12} sm={12} md={12} lg={12} xl={3} className="d-flex">
+          <div className="marginmobile text-center flex-fill">
             <Card className="nohover height100">
               <Card.Body className="text-white bg-dark border rounded">
                 <Card.Title className="text-center">
