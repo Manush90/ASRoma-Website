@@ -60,7 +60,7 @@ const Stadium = () => {
                 id="tribuna-tevere"
                 className={highlighted === "tribuna-tevere" ? "highlight" : ""}
               />
-              <text x="480" y="120" textAnchor="middle" fill="white" font-size="48">
+              <text x="480" y="120" textAnchor="middle" fill="white" fontSize="48">
                 Tribuna Tevere
               </text>
 
@@ -73,7 +73,7 @@ const Stadium = () => {
                 id="distinti-nord-1"
                 className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="120" textAnchor="middle" fill="white" font-size="36">
+              <text x="180" y="120" textAnchor="middle" fill="white" fontSize="36">
                 Dist. Nord
               </text>
 
@@ -86,7 +86,7 @@ const Stadium = () => {
                 id="distinti-sud-1"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="120" textAnchor="middle" fill="white" font-size="36">
+              <text x="780" y="120" textAnchor="middle" fill="white" fontSize="36">
                 Dist. Sud
               </text>
 
@@ -105,7 +105,7 @@ const Stadium = () => {
                 y="300"
                 textAnchor="middle"
                 fill="white"
-                font-size="36"
+                fontSize="36"
                 transform="rotate(-90 180,300)"
               >
                 Curva Nord
@@ -114,15 +114,15 @@ const Stadium = () => {
               {/* Campo da gioco */}
               <rect x="240" y="180" width="480" height="240" fill="#32CD32" id="campo" />
               {/* Linee del campo */}
-              <line x1="480" y1="180" x2="480" y2="420" stroke="white" stroke-width="2" />
-              <circle cx="480" cy="300" r="48" stroke="white" stroke-width="2" fill="none" />
+              <line x1="480" y1="180" x2="480" y2="420" stroke="white" strokeWidth="2" />
+              <circle cx="480" cy="300" r="48" stroke="white" strokeWidth="2" fill="none" />
               <rect
                 x="240"
                 y="228"
                 width="48"
                 height="144"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
                 fill="none"
               />
               <rect
@@ -131,7 +131,7 @@ const Stadium = () => {
                 width="48"
                 height="144"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
                 fill="none"
               />
 
@@ -149,7 +149,7 @@ const Stadium = () => {
                 y="300"
                 textAnchor="middle"
                 fill="white"
-                font-size="36"
+                fontSize="36"
                 transform="rotate(90 780,300)"
               >
                 Curva Sud
@@ -165,7 +165,7 @@ const Stadium = () => {
                 id="monte-mario"
                 className={highlighted === "monte-mario" ? "highlight" : ""}
               />
-              <text x="480" y="480" textAnchor="middle" fill="white" font-size="48">
+              <text x="480" y="480" textAnchor="middle" fill="white" fontSize="48">
                 Monte Mario
               </text>
 
@@ -178,7 +178,7 @@ const Stadium = () => {
                 id="distinti-nord-2"
                 className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="480" textAnchor="middle" fill="white" font-size="36">
+              <text x="180" y="480" textAnchor="middle" fill="white" fontSize="36">
                 Dist. Nord
               </text>
 
@@ -191,7 +191,7 @@ const Stadium = () => {
                 id="distinti-sud-2"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="480" textAnchor="middle" fill="white" font-size="36">
+              <text x="780" y="480" textAnchor="middle" fill="white" fontSize="36">
                 Dist. Sud
               </text>
             </svg>
@@ -226,7 +226,7 @@ const Stadium = () => {
                 id="tribuna-tevere"
                 className={highlighted === "tribuna-tevere" ? "highlight" : ""}
               />
-              <text x="480" y="120" textAnchor="middle" fill="white" font-size="48">
+              <text x="480" y="120" textAnchor="middle" fill="white" fontSize="48">
                 Tribuna Tevere
               </text>
 
@@ -239,7 +239,7 @@ const Stadium = () => {
                 id="distinti-nord-1"
                 className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="120" textAnchor="middle" fill="white" font-size="36">
+              <text x="180" y="120" textAnchor="middle" fill="white" fontSize="36">
                 Dist. Nord
               </text>
 
@@ -252,7 +252,7 @@ const Stadium = () => {
                 id="distinti-sud-1"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="120" textAnchor="middle" fill="white" font-size="36">
+              <text x="780" y="120" textAnchor="middle" fill="white" fontSize="36">
                 Dist. Sud
               </text>
 
@@ -271,7 +271,7 @@ const Stadium = () => {
                 y="300"
                 textAnchor="middle"
                 fill="white"
-                font-size="36"
+                fontSize="36"
                 transform="rotate(-90 180,300)"
               >
                 Curva Nord
@@ -280,15 +280,15 @@ const Stadium = () => {
               {/* Campo da gioco */}
               <rect x="240" y="180" width="480" height="240" fill="#32CD32" id="campo" />
               {/* Linee del campo */}
-              <line x1="480" y1="180" x2="480" y2="420" stroke="white" stroke-width="2" />
-              <circle cx="480" cy="300" r="48" stroke="white" stroke-width="2" fill="none" />
+              <line x1="480" y1="180" x2="480" y2="420" stroke="white" strokeWidth="2" />
+              <circle cx="480" cy="300" r="48" stroke="white" strokeWidth="2" fill="none" />
               <rect
                 x="240"
                 y="228"
                 width="48"
                 height="144"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
                 fill="none"
               />
               <rect
@@ -297,7 +297,7 @@ const Stadium = () => {
                 width="48"
                 height="144"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
                 fill="none"
               />
 
@@ -315,7 +315,7 @@ const Stadium = () => {
                 y="300"
                 textAnchor="middle"
                 fill="white"
-                font-size="36"
+                fontSize="36"
                 transform="rotate(90 780,300)"
               >
                 Curva Sud
@@ -331,7 +331,7 @@ const Stadium = () => {
                 id="monte-mario"
                 className={highlighted === "monte-mario" ? "highlight" : ""}
               />
-              <text x="480" y="480" textAnchor="middle" fill="white" font-size="48">
+              <text x="480" y="480" textAnchor="middle" fill="white" fontSize="48">
                 Monte Mario
               </text>
 
@@ -344,7 +344,7 @@ const Stadium = () => {
                 id="distinti-nord-2"
                 // className={highlighted === "distinti-nord" ? "highlight" : ""}
               />
-              <text x="180" y="480" textAnchor="middle" fill="white" font-size="36">
+              <text x="180" y="480" textAnchor="middle" fill="white" fontSize="36">
                 Ospiti
               </text>
 
@@ -357,7 +357,7 @@ const Stadium = () => {
                 id="distinti-sud-2"
                 className={highlighted === "distinti-sud" ? "highlight" : ""}
               />
-              <text x="780" y="480" textAnchor="middle" fill="white" font-size="36">
+              <text x="780" y="480" textAnchor="middle" fill="white" fontSize="36">
                 Dist. Sud
               </text>
             </svg>

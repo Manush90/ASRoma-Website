@@ -88,8 +88,8 @@ const Carosello = () => {
                     <Nav.Link as={Link} to={`/Article/${article.id}`}>
                       <p className="customcolor">{article.title}</p>
                       <h6 className="customFontp">{article.subtitle}</h6>
+                      <hr />
                     </Nav.Link>
-                    <hr />
                   </React.Fragment>
                 ))}
               </Card.Body>

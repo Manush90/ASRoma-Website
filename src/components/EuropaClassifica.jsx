@@ -101,7 +101,7 @@ const EuropaClassifica = () => {
                 className="mb-2"
               />
             </h2>
-            <Table striped bordered hover responsive rounded>
+            <Table striped bordered hover responsive>
               <thead>
                 <tr className="text-center">
                   <th>Posizione</th>

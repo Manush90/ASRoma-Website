@@ -102,7 +102,7 @@ const SerieA = () => {
               />
             </h2>
 
-            <Table striped bordered hover responsive rounded className="table-full-width">
+            <Table striped bordered hover responsive className="table-full-width">
               <thead>
                 <tr className="text-center">
                   <th>Posizione</th>
