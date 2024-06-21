@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Form, Button, Container, Alert } from "react-bootstrap";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { firestore } from "../firebase";
-import { useAuth } from "../AuthProvider"; // Assicurati che il percorso sia corretto
+import { useAuth } from "../AuthProvider";
 
 const InserimentoNextMatch = () => {
   const { isAdmin } = useAuth();

@@ -21,14 +21,12 @@ const Login = ({ onLogin }) => {
       const user = userCredential.user;
       console.log("User authenticated:", user);
 
-      // Recupera il ruolo dell'utente da Firestore
       const userDoc = await getDoc(doc(firestore, "users", user.uid));
       if (userDoc.exists()) {
         const userData = userDoc.data();
         console.log("User data from Firestore:", userData);
-        user.role = userData.role; // Aggiungi il campo role all'oggetto utente
+        user.role = userData.role;
 
-        // Salva i dati utente nel local storage
         const userWithRole = { ...user, role: user.role };
         localStorage.setItem("user", JSON.stringify(userWithRole));
         console.log("User saved in localStorage:", userWithRole);

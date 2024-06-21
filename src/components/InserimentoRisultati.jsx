@@ -3,27 +3,26 @@ import { Container } from "react-bootstrap";
 import { firestore } from "../firebase";
 import { doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
 
-// Funzione per aggiungere un nuovo risultato di partita a Firestore
 const aggiungiRisultatoPartita = async (nuovoRisultato, competizione, setMessaggio) => {
   try {
     const documento = competizione === "SerieA" ? "SerieA" : "EuropaLeague";
     const docRef = doc(firestore, "CalendarioSerieA", documento);
-    console.log("Percorso del documento:", docRef.path); // Debugging
+    console.log("Percorso del documento:", docRef.path);
 
     const docSnapshot = await getDoc(docRef);
-    console.log("Documento esiste:", docSnapshot.exists()); // Debugging
+    console.log("Documento esiste:", docSnapshot.exists());
 
     if (docSnapshot.exists()) {
       const data = docSnapshot.data();
       const partite = data.partite || [];
       partite.push(nuovoRisultato);
-      console.log("Partite aggiornate:", partite); // Debugging
+      console.log("Partite aggiornate:", partite);
 
       await updateDoc(docRef, { partite });
-      console.log("Documento aggiornato con:", { partite }); // Debugging
+      console.log("Documento aggiornato con:", { partite });
     } else {
       await setDoc(docRef, { partite: [nuovoRisultato] });
-      console.log("Nuovo documento creato con partite:", { partite: [nuovoRisultato] }); // Debugging
+      console.log("Nuovo documento creato con partite:", { partite: [nuovoRisultato] });
     }
 
     setMessaggio("Partita inserita con successo!");

@@ -620,7 +620,7 @@ svg.bi.bi-clock-history {
   display: flex;
   flex-direction: column;
   height: 100% !important;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .carousel-caption {
@@ -743,4 +743,8 @@ svg.bi.bi-clock-history {
 span.page-link {
   background-color: #8e001c !important;
   border-color: #ff9100 !important;
+}
+
+h6.customFontp {
+  line-height: 0.9 !important;
 }
