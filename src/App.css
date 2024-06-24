@@ -704,7 +704,7 @@ svg.bi.bi-clock-history {
 
 @media (max-width: 576px) {
   .fixed-height-card {
-    height: 250px !important;
+    height: 270px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -713,7 +713,7 @@ svg.bi.bi-clock-history {
 
 @media (max-width: 576px) {
   .fixed-height-card .card-img-top {
-    height: 200px !important;
+    height: 120px !important;
     object-fit: cover !important;
     width: 100% !important;
   }
