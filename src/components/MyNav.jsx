@@ -92,7 +92,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
               </svg>
               News
             </Nav.Link>
-            <Nav.Link as={Link} to="/Tickets" onClick={() => closeNav(235, 205)}>
+            <Nav.Link as={Link} to="/Tickets" onClick={() => closeNav(250, 205)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -106,7 +106,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
               </svg>
               Ticket
             </Nav.Link>
-            <Nav.Link as={Link} to="/TabsSerieA" onClick={() => closeNav(190, 190)}>
+            <Nav.Link as={Link} to="/TabsSerieA" onClick={() => closeNav(210, 200)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -122,7 +122,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
               </svg>
               Serie A
             </Nav.Link>
-            <Nav.Link as={Link} to="/EuropaLeague" onClick={() => closeNav(190, 190)}>
+            <Nav.Link as={Link} to="/EuropaLeague" onClick={() => closeNav(210, 200)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -135,7 +135,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
               </svg>
               Europa League
             </Nav.Link>
-            <Nav.Link as={Link} to="/Highlights" onClick={() => closeNav(190, 190)}>
+            <Nav.Link as={Link} to="/Highlights" onClick={() => closeNav(210, 200)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -151,7 +151,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
             </Nav.Link>
 
             <NavDropdown title=" Stagione 23/24" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/Rosa" onClick={() => closeNav(200, 200)}>
+              <NavDropdown.Item as={Link} to="/Rosa" onClick={() => closeNav(220, 200)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -164,7 +164,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
                 </svg>
                 Rosa
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/Allenatore" onClick={() => closeNav(320, 200)}>
+              <NavDropdown.Item as={Link} to="/Allenatore" onClick={() => closeNav(220, 220)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -178,7 +178,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
                 </svg>
                 Allenatore
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/Staff" onClick={() => closeNav(520, 200)}>
+              <NavDropdown.Item as={Link} to="/Staff" onClick={() => closeNav(520, 250)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -238,7 +238,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
                   <NavDropdown.Item
                     as={Link}
                     to="/InserimentoRisultati"
-                    onClick={() => closeNav(350, 150)}
+                    onClick={() => closeNav(350, 220)}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +256,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
                   <NavDropdown.Item
                     as={Link}
                     to="/InserimentoNotizie"
-                    onClick={() => closeNav(350, 150)}
+                    onClick={() => closeNav(350, 210)}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +275,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
                   <NavDropdown.Item
                     as={Link}
                     to="/InserimentoNextMatch"
-                    onClick={() => closeNav(350, 150)}
+                    onClick={() => closeNav(350, 200)}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -291,7 +291,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
                     Modifica NextMatch Box
                   </NavDropdown.Item>
 
-                  <NavDropdown.Item as={Link} to="/AlertFix" onClick={() => closeNav(350, 150)}>
+                  <NavDropdown.Item as={Link} to="/AlertFix" onClick={() => closeNav(350, 200)}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -309,7 +309,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
                   <NavDropdown.Item
                     as={Link}
                     to="/GestioneCarosello"
-                    onClick={() => closeNav(350, 150)}
+                    onClick={() => closeNav(350, 200)}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -357,7 +357,7 @@ function BasicExample({ welcomeMessage, user, onLogout }) {
               </NavDropdown.Item>
             </>
           ) : (
-            <NavDropdown.Item as={Link} to="/login" onClick={() => closeNav(350, 150)}>
+            <NavDropdown.Item as={Link} to="/login" onClick={() => closeNav(350, 200)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
