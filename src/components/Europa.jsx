@@ -13,10 +13,10 @@ function UncontrolledExample() {
       id="uncontrolled-tab-example"
       className="justify-content-center mb-3 mt-2 nowrappp"
     >
-      <Tab eventKey="classifica" title="Classifica">
+      <Tab eventKey="classifica" title="Class.">
         {<EuropaClassifica />}
       </Tab>
-      <Tab eventKey="marcatori" title="Marcatori">
+      <Tab eventKey="marcatori" title="Marc.">
         {<MarcatoriEuropa />}
       </Tab>
 
@@ -24,7 +24,7 @@ function UncontrolledExample() {
         <RisultatiEuropa partite={CalendarioEuropa} />
       </Tab>
 
-      <Tab eventKey="RisultatiEuropaLeague" title="Ris.EL" tabClassName="customcolor">
+      <Tab eventKey="RisultatiEuropaLeague" title="Ris." tabClassName="customcolor">
         <RisultatiEL />
       </Tab>
     </Tabs>
