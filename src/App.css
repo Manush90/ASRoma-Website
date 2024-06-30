@@ -107,19 +107,21 @@ li a {
 
 a.nav-link:hover {
   z-index: 1;
-  border-radius: 15px;
-  color: orange !important;
-  background-color: brown;
-  animation: pulse 1s infinite;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  /* border: 0.5px solid whitesmoke; */
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(133, 19, 19);
+  /* animation: pulse 1s infinite; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 1); */
   transition: background-color 0.5s, color 0.5s;
+  padding-inline: 10px;
 }
 
 @media (max-width: 576px) {
   a.nav-link:hover {
     z-index: 1;
     border-radius: none;
-    color: brown !important;
+    color: orange !important;
     background-color: unset;
     border: none;
   }

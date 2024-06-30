@@ -29,48 +29,50 @@ const NewsPage = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <Container className="mt-0">
-      <Row>
-        <Col xs={12}>
-          <div className="mt-2 p-0">
-            <img
-              className="d-block w-100 rounded heightcustom mb-2"
-              src="/ragazzo_sciarpa_roma.jpg"
-              alt="First slide"
-            />
-            <Card className="nohover height100">
-              <Card.Body className="text-white bg-dark border rounded">
-                <Card.Title className="text-center">Ultime Notizie</Card.Title>
-                {currentNews.map((article) => (
-                  <Nav.Link key={article.id} as={Link} to={`/Article/${article.id}`}>
-                    <h6 className="m-0 p-0">{article.date}</h6>
-                    <p className="customcolor">{article.title}</p>
-                    <h6 className="customFontp">{article.subtitle}</h6>
-                    <hr />
-                  </Nav.Link>
-                ))}
-              </Card.Body>
-            </Card>
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={12} className="d-flex justify-content-center mt-3">
-          <Pagination>
-            {Array.from({ length: Math.ceil(news.length / newsPerPage) }, (_, index) => (
-              <Pagination.Item
-                key={index + 1}
-                active={index + 1 === currentPage}
-                onClick={() => paginate(index + 1)}
-              >
-                {index + 1}
-              </Pagination.Item>
-            ))}
-          </Pagination>
-        </Col>
-      </Row>
+    <>
+      <Container className="mt-0">
+        <Row>
+          <Col xs={12}>
+            <div className="mt-2 p-0">
+              <img
+                className="d-block w-100 rounded heightcustom mb-2"
+                src="/ragazzo_sciarpa_roma.jpg"
+                alt="First slide"
+              />
+              <Card className="nohover height100">
+                <Card.Body className="text-white bg-dark border rounded">
+                  <Card.Title className="text-center">Ultime Notizie</Card.Title>
+                  {currentNews.map((article) => (
+                    <Nav.Link key={article.id} as={Link} to={`/Article/${article.id}`}>
+                      <h6 className="m-0 p-0">{article.date}</h6>
+                      <p className="customcolor">{article.title}</p>
+                      <h6 className="customFontp">{article.subtitle}</h6>
+                      <hr />
+                    </Nav.Link>
+                  ))}
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} className="d-flex justify-content-center mt-3">
+            <Pagination>
+              {Array.from({ length: Math.ceil(news.length / newsPerPage) }, (_, index) => (
+                <Pagination.Item
+                  key={index + 1}
+                  active={index + 1 === currentPage}
+                  onClick={() => paginate(index + 1)}
+                >
+                  {index + 1}
+                </Pagination.Item>
+              ))}
+            </Pagination>
+          </Col>
+        </Row>
+      </Container>
       <hr />
-    </Container>
+    </>
   );
 };
 
