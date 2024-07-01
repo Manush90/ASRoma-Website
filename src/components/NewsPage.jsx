@@ -44,9 +44,9 @@ const NewsPage = () => {
                   <Card.Title className="text-center">Ultime Notizie</Card.Title>
                   {currentNews.map((article) => (
                     <Nav.Link key={article.id} as={Link} to={`/Article/${article.id}`}>
-                      <h6 className="m-0 p-0">{article.date}</h6>
-                      <p className="customcolor">{article.title}</p>
-                      <h6 className="customFontp">{article.subtitle}</h6>
+                      <h6 className="m-0 ps-2">{article.date}</h6>
+                      <p className="customcolor ps-2">{article.title}</p>
+                      <h6 className="customFontp ps-2">{article.subtitle}</h6>
                       <hr />
                     </Nav.Link>
                   ))}

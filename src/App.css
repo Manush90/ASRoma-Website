@@ -114,7 +114,6 @@ a.nav-link:hover {
   /* animation: pulse 1s infinite; */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 1); */
   transition: background-color 0.5s, color 0.5s;
-  padding-inline: 10px;
 }
 
 @media (max-width: 576px) {
