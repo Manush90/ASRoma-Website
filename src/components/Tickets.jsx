@@ -76,7 +76,7 @@ function Tickets() {
               <Card.Body>
                 <Card.Title className="text-center titlesizecardticket">AS Roma - Genoa</Card.Title>
                 <Card.Text className="text-center textsizecardticket">
-                  Serie A // giornata <br /> Stadio Olimpico di Roma
+                  Serie A 1a giornata <br /> Stadio Olimpico di Roma
                   <br />
                   19/05/2024
                   <br />
@@ -97,13 +97,15 @@ function Tickets() {
             <Card className="player-card static">
               <Card.Img variant="top" src="/ticket_empty.png" />
               <Card.Body>
-                <Card.Title className="text-center titlesizecardticket">"// - //"</Card.Title>
+                <Card.Title className="text-center titlesizecardticket">
+                  AS ROMA - SS LAZIO
+                </Card.Title>
                 <Card.Text className="text-center textsizecardticket">
-                  Serie A // giornata <br /> Stadio Olimpico di Roma
+                  Serie A 2a giornata <br /> Stadio Olimpico di Roma
                   <br />
-                  --/--/----
+                  23/06/2024
                   <br />
-                  ore --:--
+                  ore 18:00
                   <hr></hr>
                   <Link
                     to="https://www.asroma.com/it/biglietti/"
@@ -120,9 +122,11 @@ function Tickets() {
             <Card className="player-card static">
               <Card.Img variant="top" src="/ticket_empty.png" />
               <Card.Body>
-                <Card.Title className="text-center titlesizecardticket">"// - //"</Card.Title>
+                <Card.Title className="text-center titlesizecardticket">
+                  AS ROMA - UDINESE
+                </Card.Title>
                 <Card.Text className="text-center textsizecardticket">
-                  Serie A // giornata <br /> Stadio Olimpico di Roma
+                  Serie A 5a giornata <br /> Stadio Olimpico di Roma
                   <br />
                   19/05/2024
                   <br />
@@ -143,9 +147,11 @@ function Tickets() {
             <Card className="player-card static">
               <Card.Img variant="top" src="/ticket_empty.png" />
               <Card.Body>
-                <Card.Title className="text-center titlesizecardticket">"// - //"</Card.Title>
+                <Card.Title className="text-center titlesizecardticket">
+                  "AS ROMA - CAGLIARI //"
+                </Card.Title>
                 <Card.Text className="text-center textsizecardticket">
-                  Serie A // giornata <br /> Stadio Olimpico di Roma
+                  Serie A 9a giornata <br /> Stadio Olimpico di Roma
                   <br />
                   19/05/2024
                   <br />
