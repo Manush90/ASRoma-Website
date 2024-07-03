@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { auth, firestore } from "../firebase";
 import { doc, getDoc } from "firebase/firestore";
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [resetEmail, setResetEmail] = useState("");
   const [error, setError] = useState("");
+  const [resetError, setResetError] = useState("");
+  const [resetSuccess, setResetSuccess] = useState("");
   const [welcomeMessage, setWelcomeMessage] = useState("");
 
   const handleSubmit = async (e) => {
@@ -39,6 +42,20 @@ const Login = ({ onLogin }) => {
     } catch (err) {
       setError(err.message);
       console.error("Login error:", err);
+    }
+  };
+
+  const handlePasswordReset = async (e) => {
+    e.preventDefault();
+    setResetError("");
+    setResetSuccess("");
+
+    try {
+      await sendPasswordResetEmail(auth, resetEmail);
+      setResetSuccess("Email di recupero inviata con successo. Controlla la tua casella di posta.");
+    } catch (err) {
+      setResetError(err.message);
+      console.error("Password reset error:", err);
     }
   };
 
@@ -77,7 +94,7 @@ const Login = ({ onLogin }) => {
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="Inserisci  Password"
+                placeholder="Inserisci Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -90,6 +107,33 @@ const Login = ({ onLogin }) => {
           <h6 className="mt-3">
             Non hai un account? <Link to="/register">Registrati Ora</Link>
           </h6>
+          <h6 className="mt-3">
+            Hai dimenticato la password? Inserisci la tua email qui sotto per ricevere un'email di
+            recupero.
+          </h6>
+          <Form onSubmit={handlePasswordReset}>
+            <Form.Group controlId="formBasicEmailReset">
+              <Form.Control
+                type="email"
+                placeholder="Inserisci e-mail per recupero"
+                value={resetEmail}
+                onChange={(e) => setResetEmail(e.target.value)}
+              />
+            </Form.Group>
+            <Button className="customButton mt-3" variant="secondary" type="submit">
+              Recupera Password
+            </Button>
+            {resetError && (
+              <Alert variant="danger" className="mt-3">
+                {resetError}
+              </Alert>
+            )}
+            {resetSuccess && (
+              <Alert variant="success" className="mt-3">
+                {resetSuccess}
+              </Alert>
+            )}
+          </Form>
           <hr></hr>
         </Col>
       </Row>
