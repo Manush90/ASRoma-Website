@@ -148,7 +148,7 @@ function Tickets() {
               <Card.Img variant="top" src="/ticket_empty.png" />
               <Card.Body>
                 <Card.Title className="text-center titlesizecardticket">
-                  "AS ROMA - CAGLIARI //"
+                  AS ROMA - CAGLIARI
                 </Card.Title>
                 <Card.Text className="text-center textsizecardticket">
                   Serie A 9a giornata <br /> Stadio Olimpico di Roma
